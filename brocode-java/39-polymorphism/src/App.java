@@ -12,6 +12,9 @@ public class App {
 
         Vehicle[] vehicles = {car, bike, boat};
 
+        bike.go();
+        vehicles[1].go();
+
         for(Vehicle vehicle : vehicles) {
             vehicle.go();
         }
