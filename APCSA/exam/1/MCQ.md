@@ -181,7 +181,7 @@ Determine the answer to each of the following questions or incomplete statements
     - (A) Mail m = p[10].getBox(57).getmail(4);
     - (B) Mail m = p[9].getBox(56).getMail(3);
     - (C) Mail m = p.getMail(57).getMail(4) [10];
-    - (D) Mail m = getMail(getBox(p[9], 560, 3);
+    - (D) Mail m = getMail(getBox(p[9], 560, 3));
     - (E) Mail m = new Mail(10, 57, 4);
 
 7. **Consider the incomplete function *printEmptyBoxes* given below. *printEmptyBoxes* should print the box numbers of all of the boxes that do not contain mail:**
@@ -195,36 +195,32 @@ Determine the answer to each of the following questions or incomplete statements
         }
 
     Which of the following could be used to replace the missing expression?
+
+        (A)     if( p[k].getBox(x).isAssigned() && !p[k].getBox(x).hasMail() ) {
+                    System.out.println(P[k].getBox(x).getBoxNumber());
+                }
+
+        (B)     if( p[x].getBox(k).isAssigned() && !p[x].getBox(k).hasMail() ) {
+                    System.out.println(p[x].getBox(k).getBoxNumber());
+                }
+
+        (C)     if( p[k].getBox(x).isAssigned() && !p[x].getBox(x).hasMail() ) {
+                    System.out.println(p[k].getBoxNumber(x));
+                }
+
+        (D)     if( p[x].getBox(k).isAssigned() && !p[x].getBox(k).hasMail() ) {
+                    System.out.println(p[x].getBoxNumber(k));
+                }
+
+        (E)     if( p[x].getBox(k).isAssigned() && p[x].getBox(k).getMail() == 0 ) {
+                    System.out.println(k);
+                }
+
     - (A)
-    > if( p[k].getBox(x).isAssigned() && !p[k].getBox(x).hasMail() ) {
-    >
-    >> System.out.println(P[k].getBox(x).getBoxNumber());
-    >
-    > }
     - (B)
-    > if( p[x].getBox(k).isAssigned() && !p[x].getBox(k).hasMail() ) {
-    >
-    >> System.out.println(p[x].getBox(k).getBoxNumber());
-    >
-    > }
     - (C)
-    > if( p[k].getBox(x).isAssigned() && !p[x].getBox(x).hasMail() ) {
-    >
-    >> System.out.println(p[k].getBoxNumber(x));
-    >
-    > }
     - (D)
-    > if( p[x].getBox(k).isAssigned() && !p[x].getBox(k).hasMail() ) {
-    >
-    >> System.out.println(p[x].getBoxNumber(k));
-    >
-    > }
     - (E)
-    > if( p[x].getBox(k).isAssigned() && p[x].getBox(k).getMail() == 0 ) {
-    >
-    >> System.out.println(k);
-    >
-    > }
 ##
 8. **Assume that *a* and *b* are Boolean variables that have been initialized. Consider the following code segment:**
 
@@ -232,11 +228,13 @@ Determine the answer to each of the following questions or incomplete statements
         b = a || b;
 
     Which of the following statements is true?
-    > I. The final value of *a* is the same as the initial value of *a*.
-    >
-    > II. The final value of *b* is the same as the initial value of *b*.
-    >
-    > III. The final value of *a* is the same as the initial value of *b*.
+
+        I.      The final value of *a* is the same as the initial value of *a*.
+
+        II.     The final value of *b* is the same as the initial value of *b*.
+
+        III.    The final value of *a* is the same as the initial value of *b*.
+
     - (A) I only
     - (B) II only
     - (C) III only
@@ -334,52 +332,40 @@ Determine the answer to each of the following questions or incomplete statements
 13. **Question:**
 
     What is the correct way to implement the getPrice method of the *DiningRoomSet* class?
+
+        (A)     public double getPrice(Table t, ArrayList chairs) {
+                    return t.getPrice() + chairs.getPrice();
+                }
+
+        (B)     public double getPrice(Table t, ArrayList chairs) {
+                    return myTable.getPrice() + myChairs.getPrice();
+                }
+
+        (C)     public double getPrice() {
+                    return myTable.getPrice() + myChairs.getPrice();
+                }
+
+        (D)     public double getPrice() {
+                    double result = myTable.getPrice();
+                    for(int k = 0; k < myChairs.size() - 1; k++) {
+                        result += ((Chair)myChairs.get(k)).getPrice();
+                    }
+                    return result;
+                }
+
+        (E)     public double getPrice() {
+                    double result = myTable.getPrice();
+                    for(int k = 0; k < myChairs.length - 1; k++) {
+                        result += ((Chair)myChairs[k]).getPrice();
+                    }
+                    return result;
+                }
+
     - (A)
-    > public double getPrice(Table t, ArrayList chairs) {
-    >
-    >> return t.getPrice() + chairs.getPrice();
-    >
-    > }
     - (B)
-    > public double getPrice(Table t, ArrayList chairs) {
-    >
-    >> return myTable.getPrice() + myChairs.getPrice();
-    >
-    > }
     - (C)
-    > public double getPrice() {
-    >
-    >> return myTable.getPrice() + myChairs.getPrice();
-    >
-    > }
     - (D)
-    > public double getPrice() {
-    >
-    >> double result = myTable.getPrice();
-    >> 
-    >> for(int k = 0; k < myChairs.size() - 1; k++) {
-    >>
-    >>> result += ((Chair)myChairs.get(k)).getPrice();
-    >>
-    >> }
-    >>
-    >> return result;
-    >
-    > }
     - (E)
-    > public double getPrice() {
-    >
-    >> double result = myTable.getPrice();
-    >>
-    >> for(int k = 0; k < myChairs.length - 1; k++) {
-    >>
-    >>> result += ((Chair)myChairs[k]).getPrice();
-    >>
-    >> }
-    >>
-    >> return result;
-    >
-    > }
 ##
 14. **Consider the following output:**
 
@@ -391,66 +377,47 @@ Determine the answer to each of the following questions or incomplete statements
         1
 
     Which of the following code segments produces the above output when executed?
+
+        (A)     for(int j = 6; j < 0; j--) {
+                    for(int k = j; k > 0; k--) {
+                        System.out.print(k + " ");
+                    }
+                    System.out.println(" ");
+                }
+
+        (B)     for(int j = 6; j >= 0; j--) {
+                    for(int k = j; k >= 0; k--) {
+                        System.out.print(k + " ");
+                    }
+                    System.out.println(" ");
+                }
+
+        (C)     for(int j = 0; j < 6; j++) {
+                    for(int k = 6 - j; k > 0; k--) {
+                        System.out.print(k + " ");
+                    }
+                    System.out.println(" ");
+                }
+
+        (D)     for(int j = 0; j < 6; j++) {
+                    for(int k = 7 - j; k > 0; k--) {
+                        System.out.print(k + " ");
+                    }
+                    System.out.println(" ");
+                }
+
+        (E)     for(int j = 0; j < 6; j++) {
+                    for(int k = 6 - j; k >= 0; k--) {
+                        System.out.print(k + " ");
+                    }
+                    System.out.println(" ");
+                }
+
     - (A)
-    > for(int j = 6; j < 0; j--) {
-    >
-    >> for(int k = j; k > 0; k--) {
-    >>
-    >>> System.out.print(k + " ");
-    >>
-    >> }
-    >>
-    >> System.out.println(" ");
-    >
-    > }
     - (B)
-    > for(int j = 6; j >= 0; j--) {
-    >
-    >> for(int k = j; k >= 0; k--) {
-    >>
-    >>> System.out.print(k + " ");
-    >>
-    >> }
-    >>
-    >> System.out.println(" ");
-    >
-    > }
     - (C)
-    > for(int j = 0; j < 6; j++) {
-    >
-    >> for(int k = 6 - j; k > 0; k--) {
-    >>
-    >>> System.out.print(k + " ");
-    >>
-    >> }
-    >> 
-    >> System.out.println(" ");
-    >
-    > }
     - (D)
-    > for(int j = 0; j < 6; j++) {
-    >
-    >> for(int k = 7 - j; k > 0; k--) {
-    >>
-    >>> System.out.print(k + " ");
-    >>
-    >> }
-    >>
-    >> System.out.println(" ");
-    >
-    > }
     - (E)
-    > for(int j = 0; j < 6; j++) {
-    >
-    >> for(int k = 6 - j; k >= 0; k--) {
-    >>
-    >>> System.out.print(k + " ");
-    >>
-    >> }
-    >>
-    >> System.out.println(" ");
-    >
-    > }
 ##
 15. **Consider the following code segment:**
 
@@ -485,11 +452,13 @@ Determine the answer to each of the following questions or incomplete statements
         }
 
     Which of the following methods must be included in the declaration of the *Dog* class in order for the class to successfully compile?
-    > I. public String makeSound()
-    >
-    > II. public String animalType()
-    >
-    > III. public String animalType(animal b)
+
+        I.      public String makeSound()
+
+        II.     public String animalType()
+
+        III.    public String animalType(animal b)
+
     - (A) I only
     - (B) II only
     - (C) I and II only
@@ -770,11 +739,13 @@ Determine the answer to each of the following questions or incomplete statements
         }
 
     For which of the following reasons is the above class declaration incorrect?
-    > I. Objects may not access private data fields of other objects in the same class.
-    >
-    > II. The *Comparable* interface requires that *compareTo* be passed an *Object* rather than a *Point*.
-    >
-    > III. The *Comparable* interface requires that *compareTo* return an *int* rather than a *boolean*.
+
+        I.      Objects may not access private data fields of other objects in the same class.
+
+        II.     The *Comparable* interface requires that *compareTo* be passed an *Object* rather than a *Point*.
+
+        III.    The *Comparable* interface requires that *compareTo* return an *int* rather than a *boolean*.
+        
     - (A) I only
     - (B) III only
     - (C) I and III
