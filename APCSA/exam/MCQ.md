@@ -194,10 +194,14 @@ Determine the answer to each of the following questions or incomplete statements
 
     Which of the following could be used to replace the missing expression?
     - (A)
-    > if(p[k].getBox(x).isAssigned() && !p[k].getBox(x).hasMail()) {
+    > if( p[k].getBox(x).isAssigned() && !p[k].getBox(x).hasMail() ) {
+    >
     >> System.out.println(p[x].getBox(k).getBoxNumber());
+    >
     > }
     - (B)
-    > if(p[x].getBox(k).isAssigned() && !p[x].getBox(k).hasMail()) {
+    > if( p[x].getBox(k).isAssigned() && !p[x].getBox(k).hasMail() ) {
+    >
     >> System.out.println(p[x].getBox(k).getBoxNumber());
+    >
     > }
