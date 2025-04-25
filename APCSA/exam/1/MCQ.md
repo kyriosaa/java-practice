@@ -749,12 +749,12 @@ Determine the answer to each of the following questions or incomplete statements
 
     Assume that *s* has the value "*Elizabeth*" and *t* has the value "*Andrew*" and mystery(s, t) is called. What are the values of *s* and *t* after the call to mystery?
 
-                s                                 t
-            Elizabeth                           Andrew
-            ElizabethAndrew                     AndrewElizabeth
-            ElizabethAndrew                     AndrewElizabethAndrew
-            ElizabethAndrew                     ElizabethAndrewAndrew
-            ElizabethAndrewElizabeth            AndrewElizabethAndrew
+                    s                                 t
+            (A) Elizabeth                           Andrew
+            (B) ElizabethAndrew                     AndrewElizabeth
+            (C) ElizabethAndrew                     AndrewElizabethAndrew
+            (D) ElizabethAndrew                     ElizabethAndrewAndrew
+            (E) ElizabethAndrewElizabeth            AndrewElizabethAndrew
     - (A) 
     - (B) 
     - (C) 
@@ -784,3 +784,22 @@ Determine the answer to each of the following questions or incomplete statements
     - (D) II and III
     - (E) I, II, and III
 ##
+27. **Consider the following abstraction of a *for* loop where <1>, <2>, <3>, and <4> represent legal code in the indicated locations:**
+
+        for(<1>; <2>; <3>) {
+            <4>
+        }
+
+    Which of the following *while* loops has the same functionality as the above *for* loop?
+    - (A)
+            <1>;
+            while(<2>) {
+                <3>;
+                <4>
+            }
+    - (B)
+            <1>;
+            while(<2>) {
+                <4>
+                <3>;
+            }
