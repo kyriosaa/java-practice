@@ -1,11 +1,10 @@
-**APCSA**
-
-**SECTION 1**
-
-**Time - 1 hour and 30 minutes**
-
-**Percent of total exam grade - 50%**
-##
+> **APCSA**
+> 
+> **SECTION 1**
+> 
+> **Time - 1 hour and 30 minutes**
+> 
+> **Percent of total exam grade - 50%**
 
 ## Directions:
 
@@ -194,7 +193,9 @@ Determine the answer to each of the following questions or incomplete statements
         }
 
     Which of the following could be used to replace the missing expression?
-    - (A)   > if(p[k].getBox(x).isAssigned() && !p[k].getBox(x).hasMail()) {
-                > System.out.println(p[x].getBox(k).getBoxNumber());
-            > }
-    - (B)   > asdf
+    - (A)
+    > if(p[k].getBox(x).isAssigned() && !p[k].getBox(x).hasMail()) {
+        > System.out.println(p[x].getBox(k).getBoxNumber());
+    > }
+    - (B)
+    > asdf
