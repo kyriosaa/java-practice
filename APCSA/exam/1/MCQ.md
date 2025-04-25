@@ -515,31 +515,34 @@ Determine the answer to each of the following questions or incomplete statements
         }
 
     Which of the following is the correct output after the following code segment is executed?
+
             Fish Bob = new Shark();
             System.out.println(Bob.endoskeleton);
             Bob.action();
+
+    >
+
+        (A)     bone
+                chomp chomp
+
+        (B)     bone
+                splash splash
+
+        (C)     cartilage
+                splash splash
+
+        (D)     cartilage
+                chomp chomp
+
+        (E)     cartilage
+                splash splash
+                chomp chomp
+
     - (A)
-    > bone
-    >
-    > chomp chomp
     - (B)
-    > bone
-    >
-    > splash splash
     - (C)
-    > cartilage
-    >
-    > splash splash
     - (D)
-    > cartilage
-    >
-    > chomp chomp
     - (E)
-    > cartilage
-    >
-    > splash splash
-    >
-    > chomp chomp
 ##
 **Questions 18-19 refer to the following incomplete method:**
 
@@ -551,33 +554,34 @@ Determine the answer to each of the following questions or incomplete statements
         Line 05:            int temp = sort[index];
         Line 06:            while(index > 0 && sort[index-1] > temp)
         Line 07:            {
-        Line 08:                // Missing code
+        Line 08:                // missing code
         Line 09:            }
         Line 10:        sort[index] = temp;
         Line 11:        }
         Line 12:    }
 
-18. **Which of the following can be used to replace "*// Missing code*" so that the *insertSort* method will execute properly?**
+18. **Which of the following can be used to replace "*//missing code*" so that the *insertSort* method will execute properly?**
+
+        (A)     sort[index] = sort[index-1];
+                index++;
+
+        (B)     sort[index-1] = sort[index];
+                index--;
+
+        (C)     sort[index] = sort[index+1];
+                index++;
+
+        (D)     sort[index] = sort[index-1];
+                index--;
+
+        (E)     sort[index] = sort[index+1];
+                index--;
+
     - (A)
-    > sort[index] = sort[index-1];
-    >
-    > index++;
     - (B)
-    > sort[index-1] = sort[index];
-    >
-    > index--;
     - (C)
-    > sort[index] = sort[index+1];
-    >
-    > index++;
     - (D)
-    > sort[index] = sort[index-1];
-    >
-    > index--;
     - (E)
-    > sort[index] = sort[index+1];
-    >
-    > index--;
 
 19. **Assuming that the "*// Missing code*" is implemented properly, what change can be made to the code in order for the array to be sorted in descending order?**
     - (A) Replace Line 06 with: *while(index < 0 && sort[index-1] < temp)*
@@ -640,11 +644,13 @@ Determine the answer to each of the following questions or incomplete statements
         }
 
     Which of the following statements can be used to replace *// missing code* so that the multiply method is correctly implemented?
-    > I. *return Fraction(numerator * f.getNumerator(), denominator * f.getDenominator());*
-    >
-    > II. *return new Fraction(numerator * f.numerator, denominator * f.denominator());*
-    >
-    > III. *return new Fraction(numerator * f.getNumerator(), denominator * f.getDenominator());*
+
+        I.      return Fraction(numerator * f.getNumerator(), denominator * f.getDenominator());
+
+        II.     return new Fraction(numerator * f.numerator, denominator * f.denominator());
+
+        III.    return new Fraction(numerator * f.getNumerator(), denominator * f.getDenominator());
+
     - (A) I only
     - (B) II only
     - (C) III only
@@ -678,41 +684,24 @@ Determine the answer to each of the following questions or incomplete statements
         }
 
     Consider the following proposed constructors for the *ReducedFraction* class:
-    > I.
-    >
-    >> public ReducedFraction() {
-    >>
-    >>> reducedNumerator = 0;
-    >>>
-    >>> reducedDenominator = 1;
-    >>
-    >> }
-    >
-    > II.
-    >
-    >> public reducedFraction(int n, int d) {
-    >>
-    >>> numerator = n;
-    >>>
-    >>> denominator = d;
-    >>>
-    >>> reducedNumerator = n / gcd(n, d);
-    >>>
-    >>> reducedDenominator = d / gcd(n, d);
-    >>
-    >> }
-    >
-    > III.
-    >
-    >> public ReducedFraction(int n, int d) {
-    >>
-    >>> super(n, d);
-    >>>
-    >>> reducedNumerator = n / gcd(n, d);
-    >>>
-    >>> reducedDenominator = d / gcd(n, d);
-    >>
-    >> }
+
+        I.      public ReducedFraction() {
+                    reducedNumerator = 0;
+                    reducedDenominator = 1;
+                }
+
+        II.     public reducedFraction(int n, int d) {
+                    numerator = n;
+                    denominator = d;
+                    reducedNumerator = n / gcd(n, d);
+                    reducedDenominator = d / gcd(n, d);
+                }
+
+        III.    public ReducedFraction(int n, int d) {
+                    super(n, d);
+                    reducedNumerator = n / gcd(n, d);
+                    reducedDenominator = d / gcd(n, d);
+                }
 
     Which of these constructor(s) would be legal for the *ReducedFraction* class?
     - (A) I only
@@ -727,11 +716,19 @@ Determine the answer to each of the following questions or incomplete statements
         String s2 = new String("hello");
 
     Which of the following is/are correct ways to see if *s1* and *s2* hold identical strings?
-    > I. if(s1 == s2) { // s1 and s2 are identical }
-    >
-    > II. if(s1.compareTo(s2) == 0) { // s1 and s2 are identical }
-    >
-    > III. if(s1.equals(s2)) { // s1 and s2 are identical }
+
+        I.      if(s1 == s2) {
+                    // s1 and s2 are identical
+                }
+
+        II.     if(s1.compareTo(s2) == 0) {
+                    // s1 and s2 are identical
+                }
+
+        III.    if(s1.equals(s2)) {
+                    // s1 and s2 are identical
+                }
+
     - (A) I only
     - (B) III only
     - (C) I and III only
@@ -777,7 +774,7 @@ Determine the answer to each of the following questions or incomplete statements
     >
     > II. The *Comparable* interface requires that *compareTo* be passed an *Object* rather than a *Point*.
     >
-    > III. The *Comparable* interface requires that *compareTo* return an *int* rather than a *boolean**.
+    > III. The *Comparable* interface requires that *compareTo* return an *int* rather than a *boolean*.
     - (A) I only
     - (B) III only
     - (C) I and III
