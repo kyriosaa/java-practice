@@ -660,7 +660,7 @@ Determine the answer to each of the following questions or incomplete statements
         fractionTwo = new Fraction(7, 19);
         // missing code
 
-    Which of the following could be used to replace *// missing code* so that the answer contains the result of multiplying fractionOne by fractionTwo?
+    Which of the following could be used to replace "*// missing code*" so that the answer contains the result of multiplying fractionOne by fractionTwo?
     - (A) answer = fractionOne * fractionTwo
     - (B) answer = multiply(fractionOne, fractionTwo);
     - (C) answer = fractionOne.multiply(fractionTwo);
@@ -721,3 +721,59 @@ Determine the answer to each of the following questions or incomplete statements
     - (E) II and III
 ##
 24. **Consider *s1* and *s2* defined as follows:**
+
+        String s1 = new String("hello");
+        String s2 = new String("hello");
+
+    Which of the following is/are correct ways to see if *s1* and *s2* hold identical strings?
+    > I. if(s1 == s2) { // s1 and s2 are identical }
+    >
+    > II. if(s1.compareTo(s2) == 0) { // s1 and s2 are identical }
+    >
+    > III. if(s1.equals(s2)) { // s1 and s2 are identical }
+    - (A) I only
+    - (B) III only
+    - (C) I and III only
+    - (D) II and III only
+    - (E) I, II, and III
+##
+25. **Consider the following variable and method declarations:**
+
+        String s;
+        String t;
+        public void mystery(String a, String b) {
+            a = a + b;
+            b = b + a;
+        }
+
+    Assume that *s* has the value "*Elizabeth*" and *t* has the value "*Andrew*" and mystery(s, t) is called. What are the values of *s* and *t* after the call to mystery?
+            s                                 t
+    - (A) Elizabeth                         Andrew
+    - (B) ElizabethAndrew                   AndrewElizabeth
+    - (C) ElizabethAndrew                   AndrewElizabethAndrew
+    - (D) ElizabethAndrew                   ElizabethAndrewAndrew
+    - (E) ElizabethAndrewElizabeth          AndrewElizabethAndrew
+##
+26. **Consider the following incomplete and *incorrect* class declaration:**
+
+        public class Point implements Comparable {
+            private int x;
+            private int y;
+            public boolean compareTo(Point other) {
+                return (x == other.x && y == other.y);
+            }
+            // ... constructors and other methods not shown
+        }
+
+    For which of the following reasons is the above class declaration incorrect?
+    > I. Objects may not access private data fields of other objects in the same class.
+    >
+    > II. The *Comparable* interface requires that *compareTo* be passed an *Object* rather than a *Point*.
+    >
+    > III. The *Comparable* interface requires that *compareTo* return an *int* rather than a *boolean**.
+    - (A) I only
+    - (B) III only
+    - (C) I and III
+    - (D) II and III
+    - (E) I, II, and III
+##
