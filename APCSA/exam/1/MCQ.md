@@ -966,39 +966,26 @@ Determine the answer to each of the following questions or incomplete statements
         // precondition: x and y are correctly constructed
         // postcondition: the names of objects x and y are swapped
         public void swap(SomeClass x, SomeClass y) {
-            <missing code>
+            // missing code
         }
 
-    Which of the following code segments can replace "*<missing code>*" so that the method swap works as intended?
-    > I.
-    >
-    >> SomeClass temp;
-    >>
-    >> temp = x;
-    >>
-    >> x = y;
-    >>
-    >> y = temp;
-    >
-    > II. 
-    >
-    >> String temp;
-    >>
-    >> temp = x.myName;
-    >>
-    >> x.myName = y.myName;
-    >>
-    >> y.myName = temp;
-    >
-    > III.
-    >
-    >> String temp;
-    >>
-    >> temp = x.getName();
-    >>
-    >> x.setName(y.getName());
-    >>
-    >> y.setName(temp);
+    Which of the following code segments can replace "*//missing code*" so that the method swap works as intended?
+
+        I.      SomeClass temp;
+                temp = x;
+                x = y;
+                y = temp;
+
+        II.     String temp;
+                temp = x.myName;
+                x.myName = y.myName;
+                y.myName = temp;
+
+        III.    String temp;
+                temp = x.getName();
+                x.setName(y.getName());
+                y.setName(temp);
+
     - (A) I only
     - (B) III only
     - (C) I and III
@@ -1024,12 +1011,12 @@ Determine the answer to each of the following questions or incomplete statements
 
         public int mystery(int x) {
             if(x == 1)
-                return <missing value>;
+                return //missing value;
             else
                 return (2 * mystery(x-1)) + x;
         }
 
-    Which of the following can be used to replace "*<missing value>*" so that mystery(4) returns 34?
+    Which of the following can be used to replace "*//missing value*" so that mystery(4) returns 34?
     - (A) 0
     - (B) 1
     - (C) 2
@@ -1112,3 +1099,11 @@ Determine the answer to each of the following questions or incomplete statements
     - (D)
     - (E)
 ##
+40. **Question:**
+
+    Which of the following is *not* a peripheral?
+    - (A) A color laser pointer
+    - (B) A monitor
+    - (C) A word processing application
+    - (D) A mouse
+    - (E) An external CD-ROM drive
