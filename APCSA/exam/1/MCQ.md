@@ -1,4 +1,4 @@
-> **APCSA**
+> **APCSA - PRACTICE TEST 1**
 > 
 > **SECTION 1**
 > 
@@ -287,3 +287,96 @@ Determine the answer to each of the following questions or incomplete statements
     - (D) -2   0   2
     - (E) -2  -1   0   0   1   2   2   3   4
 ##
+11. **Consider the following method:**
+
+        public void mystery(int count, String s) {
+            if (count <= 0) {
+                return;
+            }
+            if (count % 3 == 0) {
+                System.out.print(s + "--" + s);
+            }
+            else if (count % 3 == 1) {
+                System.out.print(s + "--" + s);
+            }
+            else {
+                System.out.print(s);
+            }
+            mystery(count - 1, s);
+        }
+
+    What is the output by the call *mystery(5, "X");*?
+    - (A) XX - XX - - XXX - X
+    - (B) XX - XX - XX - XX
+    - (C) XXX - - XX - X - XX - - XXX
+    - (D) XX - XXX - - XXX - XX
+    - (E) XXXXX
+##
+**Questions 12-13 refer to the following classes and method descriptions:**
+
+> Class *Table* has a method, *getPrice*, which takes no parameters and returns the price of the table.
+>
+> Class *Chair* also has a method, *getPrice*, which takes no parameters and returns the price of the chair.
+> 
+> Class *DiningRoomSet* has a constructor which is passed a *Table* object and an *ArrayList* of *Chair* objects. It stores these parameters in its private data fields *myTable* and *myChairs*.
+>
+> Class *DiningRoomSet* has a method, *getPrice*, which takes no parameters and returns the price of the dining room set. The price of a dining room set is calculated as the sum of the price of its table and all of its chairs.
+
+12. **Question:**
+    What is the correct way to define the signature of the constructor for the *DiningRoomSet* class?
+    - (A) public void DiningRoomSet(Table t, ArrayList, chairs)
+    - (B) public DiningRoomSet(Table t, ArrayList chairs)
+    - (C) public void DiningRoomSet(Table t, ArrayList Chair Chairs)
+    - (D) public DiningRoomSet(Table t, ArrayList Chair Chairs)
+    - (E) public DiningRoomSet(Table t, Chair Chairs)
+
+13. **Question:**
+    What is the correct way to implement the getPrice method of the *DiningRoomSet* class?
+    - (A)
+    > public double getPrice(Table t, ArrayList chairs) {
+    >
+    >> return t.getPrice() + chairs.getPrice();
+    >
+    > }
+    - (B)
+    > public double getPrice(Table t, ArrayList chairs) {
+    >
+    >> return myTable.getPrice() + myChairs.getPrice();
+    >
+    > }
+    - (C)
+    > public double getPrice() {
+    >
+    >> return myTable.getPrice() + myChairs.getPrice();
+    >
+    > }
+    - (D)
+    > public double getPrice() {
+    >
+    >> double result = myTable.getPrice();
+    >> 
+    >> for(int k = 0; k < myChairs.size() - 1; k++) {
+    >>
+    >>> result += ((Chair)myChairs.get(k)).getPrice();
+    >>
+    >> }
+    >>
+    >> return result;
+    >
+    > }
+    - (E)
+    > public double getPrice() {
+    >
+    >> double result = myTable.getPrice();
+    >>
+    >> for(int k = 0; k < myChairs.length - 1; k++) {
+    >>
+    >>> result += ((Chair)myChairs[k]).getPrice();
+    >>
+    >> }
+    >>
+    >> return result;
+    >
+    > }
+##
+14. **Consider the following output:**
