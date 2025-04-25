@@ -792,13 +792,6 @@ Determine the answer to each of the following questions or incomplete statements
 
     Which of the following *while* loops has the same functionality as the above *for* loop?
     - (A)
-
-        <1>;
-        while(<2>) {
-            <3>;
-            <4>
-        }
-        
     > <1>;
     >
     > while(<2>) {
@@ -861,4 +854,203 @@ Determine the answer to each of the following questions or incomplete statements
     - (C) ((a / b) + c) - (d % (e * f))
     - (D) (a / ((b + c) - d) % e) * f
     - (E) ((a / b) + c) - ((d % e) * f)
+##
+29. **Assume that a program declares and initializes x as follows:**
+
+        String[] x;
+        x = new String[10];
+        initialize(x);          // Fills the array x with valid strings each of length 5
+
+    Which of the following code segments correctly traverses the array and prints out the first character of all ten strings followed by the second character of all ten strings, and so on?
+    > I.
+    >
+    >> int i;
+    >>
+    >> int j;
+    >>
+    >> for(i = 0; i < 10; i++) {
+    >>
+    >>> for(j = 0; j < 5; j++) {
+    >>>
+    >>>> System.out.print(x[i].substring(j, j+1));
+    >>>
+    >>> }
+    >>
+    >> }
+    >
+    > II.
+    > 
+    >> int i;
+    >>
+    >> int j;
+    >>
+    >> for(i = 0; i < 5; i++) {
+    >>
+    >>> for(j = 0; j < 10; j++) {
+    >>>
+    >>>> System.out.print(x[j].substring(i, i+1));
+    >>>
+    >>> }
+    >>
+    >> }
+    >
+    > III.
+    > 
+    >> int i;
+    >>
+    >> int j;
+    >>
+    >> for(i = 0; i < 5; i++) {
+    >>
+    >>> for(j = 0; j < 10; j++) {
+    >>>
+    >>>> System.out.print(x[i].substring(j, j+1));
+    >>>
+    >>> }
+    >>
+    >> }
+    - (A) I only
+    - (B) II only
+    - (C) I and II
+    - (D) II and III
+    - (E) I, II, and III
+##
+30. **Consider the following declaration and assignment statements:**
+
+        int a = 7;
+        int b == 4;
+        double c;
+        c = a / b;
+
+    After the assignment statement is executed, what's the value of *c*?
+    - (A) 1.0
+    - (B) 1.75
+    - (C) 2.0
+    - (D) An error occurs because *c* was not initialized
+    - (E) An error occurs because *a* and *b* are integers and *c* is a double
+##
+31. **Consider the following code segment:**
+
+        int x;
+        x = /* initialized to an integer */
+        if(x % 2 == 0 && x / 3 == 1) 
+            System.out.print("Yes");
+        
+    For what values of *x* will the word "Yes" be printed when the code segment is executed?
+    - (A) 0
+    - (B) 4
+    - (C) Whenever x is even and x is not divisible by 3
+    - (D) Whenever x is odd and x is divisible by 3
+    - (E) Whenevr x is even and x is divisible by 3
+##
+32. **Consider the following incomplete class definition:**
+
+        public class SomeClass {
+            private String myName;
+
+            // postcondition: returns myName
+            public String getName() {
+                /* implementation not shown */
+            }
+
+            // postcondition: myName == name
+            public void setName(String name) {
+                /* implementation not shown */
+            }
+
+            // ... constructors, other methods and private data not shown
+        }
+
+    Now consider the method swap, not part of the SomeClass class.
+
+        // precondition: x and y are correctly constructed
+        // postcondition: the names of objects x and y are swapped
+        public void swap(SomeClass x, SomeClass y) {
+            <missing code>
+        }
+
+    Which of the following code segments can replace "*<missing code>*" so that the method swap works as intended?
+    > I.
+    >
+    >> SomeClass temp;
+    >>
+    >> temp = x;
+    >>
+    >> x = y;
+    >>
+    >> y = temp;
+    >
+    > II. 
+    >
+    >> String temp;
+    >>
+    >> temp = x.myName;
+    >>
+    >> x.myName = y.myName;
+    >>
+    >> y.myName = temp;
+    >
+    > III.
+    >
+    >> String temp;
+    >>
+    >> temp = x.getName();
+    >>
+    >> x.setName(y.getName());
+    >>
+    >> y.setName(temp);
+    - (A) I only
+    - (B) III only
+    - (C) I and III
+    - (D) II and III
+    - (E) I, II, and III
+##
+33. **A bookstore wants to store information about the different types of books it sells.**
+
+    > For each book, it wants to keep track of the title of the book, the author of the book, and whether the book is a work of fiction or nonfiction.
+    >
+    > If the book is a work of fiction, then the bookstore wants to keep track of whether it is a romance novel, a mystery novel, or science fiction.
+    >
+    > If the book is a work of nonfiction, then the bookstore wants to keep track of whether it is a biography, a cookbook, or a self-helf book.
+
+    Which of the following is the best design?
+    - (A) Use one class, *Book*, which has three data fields: *String title*, *String author*, and *int bookType*.
+    - (B) Use four unrelated classes: Book, Title, Author, and BookType.
+    - (C) Use a class *Book* which has two data fields: *String title*, *String author*, and a subclass: *BookType*.
+    - (D) Use a class *Book* which has two data fields: *String title*, *String author*, and two subclasses: *RomanceNovel*, *Mystery*, *ScienceFiction*, *Biography*, *Cookbook*, and *SelfHelpBook*.
+    - (E) Use a class *Book* which has two data fields: *String title*, *String author*, and two subclasses: *FictionWork* and *NonFictionWork*. The class *FictionWork* has three subclasses, *RomanceNovel*, *Mystery*, and *ScienceFiction*. The class *NonFictionWork* has three subclasses: *Biography*, *Cookbook*, and *SelfHelpBook*.
+##
+34. **Consider the following code:**
+
+        public int mystery(int x) {
+            if(x == 1)
+                return <missing value>;
+            else
+                return (2 * mystery(x-1)) + x;
+        }
+
+    Which of the following can be used to replace "*<missing value>*" so that mystery(4) returns 34?
+    - (A) 0
+    - (B) 1
+    - (C) 2
+    - (D) 3
+    - (E) 4
+##
+35. **Consider the following code segment:**
+
+        int[] X;
+        int[] Y;
+        X = initializeX();      // returns a valid initialized int[]
+        Y = initializeY();      // returns a valid initialized int[]
+
+        for(int k = 0; k < X.length && X[k] == Y[k]; k++) {
+            /* some code */
+        }
+
+    Assuming that after *X* and *Y* are initialized, *X.length == Y.length*, which of the following must be true after executing this code segment?
+    - (A) k < X.length
+    - (B) k < X.length && X[k] == Y[k]
+    - (C) k < X.length && X[k] != Y[k]
+    - (D) k >= X.length || X[k] == Y[k]
+    - (E) k >= X.length || X[k] != Y[k]
 ##
