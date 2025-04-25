@@ -670,6 +670,7 @@ Determine the answer to each of the following questions or incomplete statements
 23. **The following incomplete class declaration is intended to extend the *Fraction* class so that fractions can be manipulated in reduced form (lowest terms):**
 
     Note that a fraction can be reduced to lowest terms by dividing both the numerator and denominator by the greatest common divisor (gcd) of the numerator and denominator.
+
         public class ReducedFraction extends Fraction {
             private int reducedNumerator;
             private int reducedDenominator;
@@ -747,6 +748,7 @@ Determine the answer to each of the following questions or incomplete statements
         }
 
     Assume that *s* has the value "*Elizabeth*" and *t* has the value "*Andrew*" and mystery(s, t) is called. What are the values of *s* and *t* after the call to mystery?
+
             s                                 t
     - (A) Elizabeth                         Andrew
     - (B) ElizabethAndrew                   AndrewElizabeth
