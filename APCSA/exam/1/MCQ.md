@@ -496,3 +496,69 @@ Determine the answer to each of the following questions or incomplete statements
     - (D) II and III only
     - (E) I, II, and III
 ##
+17. **Consider the following two classes:**
+
+        public static class Fish {
+            public String endoskeleton = "bone";
+
+            public void action() {
+                System.out.println("splash splash");
+            }
+        }
+
+        public static class Shark extends Fish {
+            public void action() {
+                System.out.println("chomp chomp");
+            }
+
+            public String endoskeleton = "cartilage";
+        }
+
+    Which of the following is the correct output after the following code segment is executed?
+            Fish Bob = new Shark();
+            System.out.println(Bob.endoskeleton);
+            Bob.action();
+    - (A)
+    > bone
+    >
+    > chomp chomp
+    - (B)
+    > bone
+    >
+    > splash splash
+    - (C)
+    > cartilage
+    >
+    > splash splash
+    - (D)
+    > cartilage
+    >
+    > chomp chomp
+    - (E)
+    > cartilage
+    >
+    > splash splash
+    >
+    > chomp chomp
+##
+**Questions 18-19 refer to the following incomplete method:**
+
+        // The following insertSort method sorts the values in an integer array, sort, in ascending order.
+
+        Line 01:    public static void insertSort(int[] sort)
+        Line 02:    {
+        Line 03:        for(int index = 1; index < sort.length; index++)
+        Line 04:        {
+        Line 05:            int temp = sort[index];
+        Line 06:            while(index > 0 && sort[index-1] > temp)
+        Line 07:            {
+        Line 08:                // Missing code
+        Line 09:            }
+        Line 10:        sort[index] = temp;
+        Line 11:        }
+        Line 12:    }
+
+    Which of the following can be used to replace "// Missing code" so that the *insertSort* method will execute properly?
+    - (A)
+    > asdf
+    
