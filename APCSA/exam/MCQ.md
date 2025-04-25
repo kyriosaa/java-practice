@@ -22,7 +22,7 @@ Determine the answer to each of the following questions or incomplete statements
 
 ## MULTIPLE CHOICE QUESTIONS
 
-1. Consider the following methods:
+1. **Consider the following methods:**
 
         public void trial() {
             int a = 10;
@@ -45,7 +45,7 @@ Determine the answer to each of the following questions or incomplete statements
     - (D) 20102010
     - (E) 20101020
 
-2. Consider the following method:
+2. **Consider the following method:**
 
         /* Precondition: a > b > 0 */
         public static int mystery(int a, int b) {
@@ -63,6 +63,6 @@ Determine the answer to each of the following questions or incomplete statements
     - (D) The sum of all the integers greater than *y* but lessthan or equal to *x*
     - (E) The sum of all the integers less than *y* but greater than or equal to *x*
 
-3. Consider the following method:
+3. **Consider the following method:**
 
         public void mystery(int n)
