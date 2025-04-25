@@ -42,7 +42,7 @@ Determine the answer to each of the following questions or incomplete statements
     What is printed as the result of the call *trial()*?
     - (A) 2010
     - (B) 2010105
-    - **(C) 2010510**   <- Correct
+    - (C) 2010510
     - (D) 20102010
     - (E) 20101020
 ##
