@@ -196,7 +196,7 @@ Determine the answer to each of the following questions or incomplete statements
     - (A)
     > if( p[k].getBox(x).isAssigned() && !p[k].getBox(x).hasMail() ) {
     >
-    >> System.out.println(p[x].getBox(k).getBoxNumber());
+    >> System.out.println(P[k].getBox(x).getBoxNumber());
     >
     > }
     - (B)
@@ -205,3 +205,36 @@ Determine the answer to each of the following questions or incomplete statements
     >> System.out.println(p[x].getBox(k).getBoxNumber());
     >
     > }
+    - (C)
+    > if( p[k].getBox(x).isAssigned() && !p[x].getBox(x).hasMail() ) {
+    >
+    >> System.out.println(p[k].getBoxNumber(x));
+    >
+    > }
+    - (D)
+    > if( p[x].getBox(k).isAssigned() && !p[x].getBox(k).hasMail() ) {
+    >
+    >> System.out.println(p[x].getBoxNumber(k));
+    >
+    > }
+    - (E)
+    > if( p[x].getBox(k).isAssigned() && p[x].getBox(k).getMail() == 0 ) {
+    >
+    >> System.out.println(k);
+    >
+    > }
+##
+8. **Assume that *a* and *b* are Boolean variables that have been initialized. Consider the following code segment:**
+
+        a = a && b;
+        b = a || b;
+
+    Which of the following statements is true?
+    > I.    The final value of *a* is the same as the initial value of *a*.
+    > II.   The final value of *b* is the same as the initial value of *b*.
+    > III.  The final value of *a* is the same as the initial value of *b*.
+    - (A) I only
+    - (B) II only
+    - (C) III only
+    - (D) I and II only
+    - (E) II and III only
