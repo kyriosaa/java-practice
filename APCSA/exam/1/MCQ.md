@@ -1,9 +1,3 @@
-<style>
-r { color: Red }
-o { color: Orange }
-g { color: Green }
-</style>
-
 > **APCSA - PRACTICE TEST 1**
 > 
 > **SECTION 1**
@@ -15,14 +9,14 @@ g { color: Green }
 
 ## Directions:
 
-<r>Determine</r> the answer to each of the following questions or incomplete statements, using the available space for any necessary scratchwork. Then decide which is the best of the choices given and fill in the corresponding oval on the answer sheet. No credit will be given for anything written in the examination booklet. Do not spend too much time on any one problem.
+Determine the answer to each of the following questions or incomplete statements, using the available space for any necessary scratchwork. Then decide which is the best of the choices given and fill in the corresponding oval on the answer sheet. No credit will be given for anything written in the examination booklet. Do not spend too much time on any one problem.
 
 
 ## Notes:
 
 - Assume that the classes listed in the Quick Reference have been imported where appropriate.
 - Assume that declarations of variables and methods appear within the context of an enclosing class.
-- Assume that method calls that are not prefixed with an object or class name and are not shown within a complete class definition appear ]within the context of an enclosing class.
+- Assume that method calls that are not prefixed with an object or class name and are not shown within a complete class definition appear within the context of an enclosing class.
 - Unless otherwise noted in the question, assume that parameters in the method calls are not *null* and that methods are called only when their preconditions are satisfied.
 
 
@@ -1059,4 +1053,62 @@ g { color: Green }
     - (C) k < X.length && X[k] != Y[k]
     - (D) k >= X.length || X[k] == Y[k]
     - (E) k >= X.length || X[k] != Y[k]
+##
+36. **Question:**
+
+    Which of the following would *not* cause a run-time exception?
+    - (A) Dividing an integer by zero
+    - (B) Using an object that has been declared but not instantiated
+    - (C) Accessing an array element with an array index that is equal to the length of the array
+    - (D) Attempting to cast an object to a subclass of which it is not an instance
+    - (E) Attempting to call a method with the wrong number of arguments
+##
+37. **Assume that a and b are properly initialized variables of type *Double*:**
+
+    Which of the following is an equivalent expression to:
+
+        a.doubleValue() != b.doubleValue()
+
+    - (A) a != b
+    - (B) a.notEquals(b)
+    - (C) !(a.doubleValue().equals(b.doubleValue()))
+    - (D) !(a.compareTo(b))
+    - (E) a.compareTo(b) != 0
+##
+38. **Question:**
+
+    Which of the following would be the least effective way of ensuring reliability in a program?
+    - (A) Encapsulating functionality in a class by declaring all data fields to be public
+    - (B) Defining and following preconditions and postconditions for every method
+    - (C) Including assertions at key places in the code
+    - (D) Using descriptive variable names
+    - (E) Indenting code in a consistent and logical manner
+##
+39. **Consider a dictionary that has 1,000 pages with 50 words on each page:**
+
+    In order to look up a given target word, a student is considering using one of the following three methods:
+
+    *Method 1*
+    > Use a binary search technique to find the correct page (comparing the target word with the first word on a given page). When the correct page is found, use a sequential search technique to find the target word on the page.
+
+    *Method 2*
+    > Use a sequential search technique to find the correct page (comparing the target word with the first word on a given page). When the correct page is found, use another sequential search technique to find the target word on the page.
+
+    *Method 3*
+    > Use a sequential search technique on all of the words in the dictionary to find the target word.
+
+    Which of the following best characterizes the greatest number of words that will be examined using each method?
+
+            Method 1        Method 2        Method 3
+        (A) 10              50              1000
+        (B) 55              500             2500
+        (C) 55              525             25000
+        (D) 60              1050            1050
+        (E) 60              1050            50000
+
+    - (A)
+    - (B)
+    - (C)
+    - (D)
+    - (E)
 ##
