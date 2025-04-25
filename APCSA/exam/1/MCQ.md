@@ -792,6 +792,11 @@ Determine the answer to each of the following questions or incomplete statements
 
     Which of the following *while* loops has the same functionality as the above *for* loop?
     - (A)
+        <1>;
+        while(<2>) {
+            <3>;
+            <4>
+        }
     > <1>;
     >
     > while(<2>) {
