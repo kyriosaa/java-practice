@@ -39,11 +39,11 @@ Determine the answer to each of the following questions or incomplete statements
         }
 
     What is printed as the result of the call *trial()*?
-    (A) 2010
-    (B) 2010105
-    (C) 2010510
-    (D) 20102010
-    (E) 20101020
+    - (A) 2010
+    - (B) 2010105
+    - (C) 2010510
+    - (D) 20102010
+    - (E) 20101020
 
 2. Consider the following method:
 
@@ -57,11 +57,11 @@ Determine the answer to each of the following questions or incomplete statements
         }
     
     What is returned by the call *mystery(x, y)*?
-    (A) The sum of all the integers greater than *y* but less than or equal to *x*
-    (B) The sum of all the integers greater than or equal to *y* but less than or equal to *x*
-    (C) The sum of all the integers greater than *y* but less than *x*
-    (D) The sum of all the integers greater than *y* but lessthan or equal to *x*
-    (E) The sum of all the integers less than *y* but greater than or equal to *x*
+    - (A) The sum of all the integers greater than *y* but less than or equal to *x*
+    - (B) The sum of all the integers greater than or equal to *y* but less than or equal to *x*
+    - (C) The sum of all the integers greater than *y* but less than *x*
+    - (D) The sum of all the integers greater than *y* but lessthan or equal to *x*
+    - (E) The sum of all the integers less than *y* but greater than or equal to *x*
 
 3. Consider the following method:
 
