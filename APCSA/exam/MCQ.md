@@ -78,7 +78,7 @@ Determine the answer to each of the following questions or incomplete statements
     - (C) 0010012
     - (D) 00100123
     - (E) 001001200100123
-
+##
 4. **Consider an array of integers:**
 
         {4, 10, 1, 2, 6, 7, 3, 5}
@@ -89,7 +89,7 @@ Determine the answer to each of the following questions or incomplete statements
     - (C) {1, 2, 3, 10, 6, 7, 4, 5}
     - (D) {4, 3, 1, 2, 6, 7, 10, 5}
     - (E) {5, 3, 7, 6, 2, 1, 10, 4}
-
+##
 5. **Consider the following code segment:**
 
         int k;
@@ -108,7 +108,7 @@ Determine the answer to each of the following questions or incomplete statements
     - (C) {6, 6, 5, 4, 3, 2, 1}
     - (D) {7, 7, 6, 5, 4, 3, 2}
     - (E) {7, 7, 7, 7, 7, 7, 7}
-
+##
 **Questions 6-7 refer to the following two classes:**
 
         public class PostOffice {
@@ -195,9 +195,9 @@ Determine the answer to each of the following questions or incomplete statements
     Which of the following could be used to replace the missing expression?
     - (A)
     > if(p[k].getBox(x).isAssigned() && !p[k].getBox(x).hasMail()) {
-    >   System.out.println(p[x].getBox(k).getBoxNumber());
+    >> System.out.println(p[x].getBox(k).getBoxNumber());
     > }
     - (B)
     > if(p[x].getBox(k).isAssigned() && !p[x].getBox(k).hasMail()) {
-    >   System.out.println(p[x].getBox(k).getBoxNumber());
+    >> System.out.println(p[x].getBox(k).getBoxNumber());
     > }
