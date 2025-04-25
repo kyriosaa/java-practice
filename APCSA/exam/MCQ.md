@@ -44,7 +44,7 @@ Determine the answer to each of the following questions or incomplete statements
     - (C) 2010510
     - (D) 20102010
     - (E) 20101020
-
+##
 2. **Consider the following method:**
 
         /* Precondition: a > b > 0 */
@@ -62,7 +62,7 @@ Determine the answer to each of the following questions or incomplete statements
     - (C) The sum of all the integers greater than *y* but less than *x*
     - (D) The sum of all the integers greater than *y* but lessthan or equal to *x*
     - (E) The sum of all the integers less than *y* but greater than or equal to *x*
-
+##
 3. **Consider the following method:**
 
         public void mystery(int n) {
@@ -194,7 +194,7 @@ Determine the answer to each of the following questions or incomplete statements
         }
 
     Which of the following could be used to replace the missing expression?
-    - (A)   if(p[k].getBox(x).isAssigned() && !p[k].getBox(x).hasMail()) {
-                System.out.println(p[x].getBox(k).getBoxNumber());
-            }
-    - (B)   asdf
+    - (A)   > if(p[k].getBox(x).isAssigned() && !p[k].getBox(x).hasMail()) {
+                > System.out.println(p[x].getBox(k).getBoxNumber());
+            > }
+    - (B)   > asdf
