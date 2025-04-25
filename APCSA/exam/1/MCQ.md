@@ -792,14 +792,66 @@ Determine the answer to each of the following questions or incomplete statements
 
     Which of the following *while* loops has the same functionality as the above *for* loop?
     - (A)
-            <1>;
-            while(<2>) {
-                <3>;
-                <4>
-            }
+    > <1>;
+    >
+    > while(<2>) {
+    >
+    >> <3>;
+    >>
+    >> <4>
+    >
+    > }
     - (B)
-            <1>;
-            while(<2>) {
-                <4>
-                <3>;
-            }
+    > <1>;
+    >
+    > while(<2>) {
+    >
+    >> <4>
+    >>
+    >> <3>;
+    >
+    > }
+    - (C)
+    > <1>;
+    >
+    >while(!<2>) {
+    >
+    >> <3>;
+    >>
+    >> <4>
+    >
+    > }
+    - (D)
+    > <1>;
+    >
+    > while(!<2>) {
+    >
+    >> <4>
+    >>
+    >> <3>;
+    >
+    > }
+    - (E)
+    > <1>;
+    >
+    > <3>;
+    >
+    > while(<2>) {
+    >
+    >> <4>
+    >>
+    >> <3>;
+    >
+    > }
+##
+28. **Consider the following expression:**
+
+        a / b + c - d % e * f
+
+    Which of the expressions given below is equivalent to the one given above?
+    - (A) ((a / b) + (c - d)) % (e * f)
+    - (B) ((((a / b) + c) - d) % e) * f
+    - (C) ((a / b) + c) - (d % (e * f))
+    - (D) (a / ((b + c) - d) % e) * f
+    - (E) ((a / b) + c) - ((d % e) * f)
+##
