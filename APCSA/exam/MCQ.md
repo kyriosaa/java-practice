@@ -220,7 +220,7 @@ Determine the answer to each of the following questions or incomplete statements
     - (E)
     > if( p[x].getBox(k).isAssigned() && p[x].getBox(k).getMail() == 0 ) {
     >
-    >> System.out.println(k);
+    >   System.out.println(k);
     >
     > }
 ##
@@ -231,7 +231,9 @@ Determine the answer to each of the following questions or incomplete statements
 
     Which of the following statements is true?
     > I. The final value of *a* is the same as the initial value of *a*.
+    >
     > II. The final value of *b* is the same as the initial value of *b*.
+    >
     > III. The final value of *a* is the same as the initial value of *b*.
     - (A) I only
     - (B) II only
