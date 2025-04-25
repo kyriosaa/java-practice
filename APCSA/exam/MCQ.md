@@ -230,11 +230,56 @@ Determine the answer to each of the following questions or incomplete statements
         b = a || b;
 
     Which of the following statements is true?
-    > I.    The final value of *a* is the same as the initial value of *a*.
-    > II.   The final value of *b* is the same as the initial value of *b*.
-    > III.  The final value of *a* is the same as the initial value of *b*.
+    > I. The final value of *a* is the same as the initial value of *a*.
+    > II. The final value of *b* is the same as the initial value of *b*.
+    > III. The final value of *a* is the same as the initial value of *b*.
     - (A) I only
     - (B) II only
     - (C) III only
     - (D) I and II only
     - (E) II and III only
+##
+9. **Consider the following code segment:**
+
+        int x;
+        x = 53;
+        if (x > 10) {
+            System.out.print("A");
+        }
+        if (x > 30) {
+            System.out.print("B");
+        }
+        else if (x > 40) {
+            System.out.print("C");
+        }
+        if (x > 50) {
+            System.out.print("D");
+        }
+        if (x > 70) {
+            System.out.print("E");
+        }
+    
+    What is the output when the code is executed?
+    - (A) A
+    - (B) D
+    - (C) ABD
+    - (D) ABCD
+    - (E) ABCDE
+##
+10. **Consider the following code segment:**
+
+        int j;
+        int k;
+        for(j = -2; j <= 2; j = j + 2) {
+            for(k = j; k < j + 3; k++) {
+                System.out.print(k + " ");
+            }
+        }
+
+    What is the output when the code is executed?
+    - (A) -2  -1   0
+    - (B) -2  -1   0   1   2
+    - (C)  0   1   2   0   1   2   0   1   2
+    - (D) -2   0   2
+    - (E) -2  -1   0   0   1   2   2   3   4
+##
