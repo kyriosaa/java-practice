@@ -544,7 +544,6 @@ Determine the answer to each of the following questions or incomplete statements
 **Questions 18-19 refer to the following incomplete method:**
 
         // The following insertSort method sorts the values in an integer array, sort, in ascending order.
-
         Line 01:    public static void insertSort(int[] sort)
         Line 02:    {
         Line 03:        for(int index = 1; index < sort.length; index++)
@@ -558,7 +557,167 @@ Determine the answer to each of the following questions or incomplete statements
         Line 11:        }
         Line 12:    }
 
-    Which of the following can be used to replace "// Missing code" so that the *insertSort* method will execute properly?
+18. **Which of the following can be used to replace "*// Missing code*" so that the *insertSort* method will execute properly?**
     - (A)
-    > asdf
-    
+    > sort[index] = sort[index-1];
+    >
+    > index++;
+    - (B)
+    > sort[index-1] = sort[index];
+    >
+    > index--;
+    - (C)
+    > sort[index] = sort[index+1];
+    >
+    > index++;
+    - (D)
+    > sort[index] = sort[index-1];
+    >
+    > index--;
+    - (E)
+    > sort[index] = sort[index+1];
+    >
+    > index--;
+
+19. **Assuming that the "*// Missing code*" is implemented properly, what change can be made to the code in order for the array to be sorted in descending order?**
+    - (A) Replace Line 06 with: *while(index < 0 && sort[index-1] < temp)*
+    - (B) Replace Line 06 with: *while(index < 0 && sort[index+1] < temp)*
+    - (C) Replace Line 06 with: *while(index > 0 && sort[index-1] < temp)*
+    - (D) Replace Line 03 with: *for(int index = sort.length - 1; index > 0; index--)*
+    - (E) Replace Line 03 with: *for(int index = 1; index > 0; index--)*
+##
+20. **Which of the following arrays would be sorted the slowest using insertion sort?**
+    - (A) [3  4  6  2  7  3  9]
+    - (B) [3  2  5  4  6  7  9]
+    - (C) [9  7  6  5  4  3  2]
+    - (D) [2  3  4  5  6  7  9]
+    - (E) [9  3  2  4  5  7  6]
+##
+**Questions 21-23 refer to the following incomplete class declaration used to represent fractions with integral numerators and denominators:**
+
+        public class Fraction {
+            private int numerator;
+            private int denominator;
+
+            public Fraction() {
+                numerator = 0;
+                denominator = 1;
+            }
+
+            public Fraction(int n, int d) {
+                numerator = n;
+                denominator = d;
+            }
+
+            // postcondition: returns the numerator
+            public int getNumerator() {
+                /* implementation not shown */
+            }
+
+            // postcondition: returns the denominator
+            public int getDenominator() {
+                /* implementation not shown */
+            }
+
+            // postcondition: returns the greatest common divisor of x and y
+            public int gcd(int x, int y) {
+                /* implementation not shown */
+            }
+
+            // postcondition: returns the Fraction that is the result of multiplying this Fraction and f
+            public Fraction multiply(Fraction f) {
+                /* implementation not shown */
+            }
+
+            // ... other methods not shown
+        }
+
+21. **Consider the method multiply of the Fraction class:**
+
+        // postcondition: returns the Fraction that is the result of multiplying this Fraction and f
+        public Fraction multiply(Fraction f) {
+            // missing code
+        }
+
+    Which of the following statements can be used to replace *// missing code* so that the multiply method is correctly implemented?
+    > I. *return Fraction(numerator * f.getNumerator(), denominator * f.getDenominator());*
+    >
+    > II. *return new Fraction(numerator * f.numerator, denominator * f.denominator());*
+    >
+    > III. *return new Fraction(numerator * f.getNumerator(), denominator * f.getDenominator());*
+    - (A) I only
+    - (B) II only
+    - (C) III only
+    - (D) I and III
+    - (E) II and III
+
+22. **Consider the use of the Fraction class to multiply the fractions (3/4) and (7/19). Consider the following code:**
+
+        Fraction fractionOne;
+        Fraction fractionTwo;
+        Fraction answer;
+        fractionOne = new Fraction(3, 4);
+        fractionTwo = new Fraction(7, 19);
+        // missing code
+
+    Which of the following could be used to replace *// missing code* so that the answer contains the result of multiplying fractionOne by fractionTwo?
+    - (A) answer = fractionOne * fractionTwo
+    - (B) answer = multiply(fractionOne, fractionTwo);
+    - (C) answer = fractionOne.multiply(fractionTwo);
+    - (D) answer = new Fraction(fractionOne, fractionTwo);
+    - (E) answer = (fractionOne.getNumerator() * fractionTwo.getNumerator()) / (fractionOne.getDenominator() * fractionTwo.getDenominator());
+
+23. **The following incomplete class declaration is intended to extend the *Fraction* class so that fractions can be manipulated in reduced form (lowest terms):**
+
+    Note that a fraction can be reduced to lowest terms by dividing both the numerator and denominator by the greatest common divisor (gcd) of the numerator and denominator.
+        public class ReducedFraction extends Fraction {
+            private int reducedNumerator;
+            private int reducedDenominator;
+            // ... constructors and other methods not shown
+        }
+
+    Consider the following proposed constructors for the *ReducedFraction* class:
+    > I.
+    >
+    >> public ReducedFraction() {
+    >>
+    >>> reducedNumerator = 0;
+    >>>
+    >>> reducedDenominator = 1;
+    >>
+    >> }
+    >
+    > II.
+    >
+    >> public reducedFraction(int n, int d) {
+    >>
+    >>> numerator = n;
+    >>>
+    >>> denominator = d;
+    >>>
+    >>> reducedNumerator = n / gcd(n, d);
+    >>>
+    >>> reducedDenominator = d / gcd(n, d);
+    >>
+    >> }
+    >
+    > III.
+    >
+    >> public ReducedFraction(int n, int d) {
+    >>
+    >>> super(n, d);
+    >>>
+    >>> reducedNumerator = n / gcd(n, d);
+    >>>
+    >>> reducedDenominator = d / gcd(n, d);
+    >>
+    >> }
+
+    Which of these constructor(s) would be legal for the *ReducedFraction* class?
+    - (A) I only
+    - (B) II only
+    - (C) III only
+    - (D) I and III
+    - (E) II and III
+##
+24. **Consider *s1* and *s2* defined as follows:**
