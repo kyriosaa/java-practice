@@ -6,6 +6,7 @@
 > 
 > **Percent of total exam grade - 50%**
 
+
 ## Directions:
 
 Determine the answer to each of the following questions or incomplete statements, using the available space for any necessary scratchwork. Then decide which is the best of the choices given and fill in the corresponding oval on the answer sheet. No credit will be given for anything written in the examination booklet. Do not spend too much time on any one problem.
