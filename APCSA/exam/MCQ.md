@@ -27,6 +27,7 @@ Determine the answer to each of the following questions or incomplete statements
             int a = 10;
             int b = 5;
             doublevalues(a, b);
+            System.out.print(b);
             System.out.print(a);
         }
 
@@ -40,7 +41,7 @@ Determine the answer to each of the following questions or incomplete statements
     What is printed as the result of the call *trial()*?
     - (A) 2010
     - (B) 2010105
-    - (C) 2010510
+    - **(C) 2010510**   <- Correct
     - (D) 20102010
     - (E) 20101020
 ##
@@ -220,7 +221,7 @@ Determine the answer to each of the following questions or incomplete statements
     - (E)
     > if( p[x].getBox(k).isAssigned() && p[x].getBox(k).getMail() == 0 ) {
     >
-    >   System.out.println(k);
+    >> System.out.println(k);
     >
     > }
 ##
