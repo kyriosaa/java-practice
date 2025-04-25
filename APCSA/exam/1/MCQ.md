@@ -749,12 +749,17 @@ Determine the answer to each of the following questions or incomplete statements
 
     Assume that *s* has the value "*Elizabeth*" and *t* has the value "*Andrew*" and mystery(s, t) is called. What are the values of *s* and *t* after the call to mystery?
 
-            s                                 t
-    - (A) Elizabeth                         Andrew
-    - (B) ElizabethAndrew                   AndrewElizabeth
-    - (C) ElizabethAndrew                   AndrewElizabethAndrew
-    - (D) ElizabethAndrew                   ElizabethAndrewAndrew
-    - (E) ElizabethAndrewElizabeth          AndrewElizabethAndrew
+                s                                 t
+            Elizabeth                           Andrew
+            ElizabethAndrew                     AndrewElizabeth
+            ElizabethAndrew                     AndrewElizabethAndrew
+            ElizabethAndrew                     ElizabethAndrewAndrew
+            ElizabethAndrewElizabeth            AndrewElizabethAndrew
+    - (A) 
+    - (B) 
+    - (C) 
+    - (D) 
+    - (E) 
 ##
 26. **Consider the following incomplete and *incorrect* class declaration:**
 
