@@ -323,6 +323,7 @@ Determine the answer to each of the following questions or incomplete statements
 > Class *DiningRoomSet* has a method, *getPrice*, which takes no parameters and returns the price of the dining room set. The price of a dining room set is calculated as the sum of the price of its table and all of its chairs.
 
 12. **Question:**
+
     What is the correct way to define the signature of the constructor for the *DiningRoomSet* class?
     - (A) public void DiningRoomSet(Table t, ArrayList, chairs)
     - (B) public DiningRoomSet(Table t, ArrayList chairs)
@@ -331,6 +332,7 @@ Determine the answer to each of the following questions or incomplete statements
     - (E) public DiningRoomSet(Table t, Chair Chairs)
 
 13. **Question:**
+
     What is the correct way to implement the getPrice method of the *DiningRoomSet* class?
     - (A)
     > public double getPrice(Table t, ArrayList chairs) {
@@ -380,3 +382,117 @@ Determine the answer to each of the following questions or incomplete statements
     > }
 ##
 14. **Consider the following output:**
+
+        6   5   4   3   2   1
+        5   4   3   2   1
+        4   3   2   1
+        3   2   1
+        2   1
+        1
+
+    Which of the following code segments produces the above output when executed?
+    - (A)
+    > for(int j = 6; j < 0; j--) {
+    >
+    >> for(int k = j; k > 0; k--) {
+    >>
+    >>> System.out.print(k + " ");
+    >>
+    >> }
+    >>
+    >> System.out.println(" ");
+    >
+    > }
+    - (B)
+    > for(int j = 6; j >= 0; j--) {
+    >
+    >> for(int k = j; k >= 0; k--) {
+    >>
+    >>> System.out.print(k + " ");
+    >>
+    >> }
+    >>
+    >> System.out.println(" ");
+    >
+    > }
+    - (C)
+    > for(int j = 0; j < 6; j++) {
+    >
+    >> for(int k = 6 - j; k > 0; k--) {
+    >>
+    >>> System.out.print(k + " ");
+    >>
+    >> }
+    >> 
+    >> System.out.println(" ");
+    >
+    > }
+    - (D)
+    > for(int j = 0; j < 6; j++) {
+    >
+    >> for(int k = 7 - j; k > 0; k--) {
+    >>
+    >>> System.out.print(k + " ");
+    >>
+    >> }
+    >>
+    >> System.out.println(" ");
+    >
+    > }
+    - (E)
+    > for(int j = 0; j < 6; j++) {
+    >
+    >> for(int k = 6 - j; k >= 0; k--) {
+    >>
+    >>> System.out.print(k + " ");
+    >>
+    >> }
+    >>
+    >> System.out.println(" ");
+    >
+    > }
+##
+15. **Consider the following code segment:**
+
+        List<Integer> list = new ArrayList<Integer>();
+        list.add(new Integer(7));
+        list.add(new Integer(6));
+        list.add(1, new Integer(5));
+        list.add(1, new Integer(4));
+        list.add(new Integer(3));
+        list.set(2, new Integer(2));
+        list.add(1, new Integer(1));
+        System.out.println(list);
+
+    What is printed as a result of executing this code segment?
+    - (A) [1, 4, 2, 7, 6, 3]
+    - (B) [7, 1, 4, 2, 6, 3]
+    - (C) [7, 2, 5, 4, 3, 1]
+    - (D) [7, 6, 2, 4, 3, 1]
+    - (E) [7, 1, 2]
+##
+16. **Consider the following declarations:**
+
+        public interface Animal {
+            String makeSound();
+            String animalType();
+        }
+
+        public static class Dog implements Animal {
+            public String makeSound(Animal a) {
+                // Implementation not shown
+            }
+        }
+
+    Which of the following methods must be included in the declaration of the *Dog* class in order for the class to successfully compile?
+    > I. public String makeSound()
+    >
+    > II. public String animalType()
+    >
+    > III. public String animalType(animal b)
+    - (A) I only
+    - (B) II only
+    - (C) I and II only
+    - (D) II and III only
+    - (E) I, II, and III
+##
