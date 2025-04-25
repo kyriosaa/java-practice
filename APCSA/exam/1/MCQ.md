@@ -791,58 +791,43 @@ Determine the answer to each of the following questions or incomplete statements
         }
 
     Which of the following *while* loops has the same functionality as the above *for* loop?
+
+        (A)     <1>;
+                while(<2>) {
+                    <3>;
+                    <4>
+                }
+
+        (B)     <1>;
+                while(<2>) {
+                    <4>
+                    <3>;
+                }
+
+        (C)     <1>;
+                while(!<2>) {
+                    <3>;
+                    <4>
+                }
+
+        (D)     <1>;
+                while(!<2>) {
+                    <4>
+                    <3>;
+                }
+
+        (E)     <1>;
+                <3>;
+                while(<2>) {
+                    <4>
+                    <3>;
+                }
+
     - (A)
-    > <1>;
-    >
-    > while(<2>) {
-    >
-    >> <3>;
-    >>
-    >> <4>
-    >
-    > }
     - (B)
-    > <1>;
-    >
-    > while(<2>) {
-    >
-    >> <4>
-    >>
-    >> <3>;
-    >
-    > }
     - (C)
-    > <1>;
-    >
-    >while(!<2>) {
-    >
-    >> <3>;
-    >>
-    >> <4>
-    >
-    > }
     - (D)
-    > <1>;
-    >
-    > while(!<2>) {
-    >
-    >> <4>
-    >>
-    >> <3>;
-    >
-    > }
     - (E)
-    > <1>;
-    >
-    > <3>;
-    >
-    > while(<2>) {
-    >
-    >> <4>
-    >>
-    >> <3>;
-    >
-    > }
 ##
 28. **Consider the following expression:**
 
@@ -862,53 +847,31 @@ Determine the answer to each of the following questions or incomplete statements
         initialize(x);          // Fills the array x with valid strings each of length 5
 
     Which of the following code segments correctly traverses the array and prints out the first character of all ten strings followed by the second character of all ten strings, and so on?
-    > I.
-    >
-    >> int i;
-    >>
-    >> int j;
-    >>
-    >> for(i = 0; i < 10; i++) {
-    >>
-    >>> for(j = 0; j < 5; j++) {
-    >>>
-    >>>> System.out.print(x[i].substring(j, j+1));
-    >>>
-    >>> }
-    >>
-    >> }
-    >
-    > II.
-    > 
-    >> int i;
-    >>
-    >> int j;
-    >>
-    >> for(i = 0; i < 5; i++) {
-    >>
-    >>> for(j = 0; j < 10; j++) {
-    >>>
-    >>>> System.out.print(x[j].substring(i, i+1));
-    >>>
-    >>> }
-    >>
-    >> }
-    >
-    > III.
-    > 
-    >> int i;
-    >>
-    >> int j;
-    >>
-    >> for(i = 0; i < 5; i++) {
-    >>
-    >>> for(j = 0; j < 10; j++) {
-    >>>
-    >>>> System.out.print(x[i].substring(j, j+1));
-    >>>
-    >>> }
-    >>
-    >> }
+
+        I.      int i;
+                int j;
+                for(i = 0; i < 10; i++) {
+                    for(j = 0; j < 5; j++) {
+                        System.out.print(x[i].substring(j, j+1));
+                    }
+                }
+
+        II.     int i;
+                int j;
+                for(i = 0; i < 5; i++) {
+                    for(j = 0; j < 10; j++) {
+                        System.out.print(x[j].substring(i, i+1));
+                    }
+                }
+
+        III.    int i;
+                int j;
+                for(i = 0; i < 5; i++) {
+                    for(j = 0; j < 10; j++) {
+                        System.out.print(x[i].substring(j, j+1));
+                    }
+                }
+
     - (A) I only
     - (B) II only
     - (C) I and II
