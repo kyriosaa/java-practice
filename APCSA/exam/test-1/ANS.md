@@ -1,10 +1,4 @@
-> **APCSA - PRACTICE TEST 1**
->
-> **SECTION 1**
->
-> **Time - 1 hour and 30 minutes**
-> 
-> **Percent of total exam grade - 50%**
+> **APCSA - PRACTICE TEST 1 ANSWER SHEET**
 
 **THESE ANSWERS ARE NOT VERIFIED, PLEASE DOUBLE CHECK THEM ALL BEFORE USING IT**
 

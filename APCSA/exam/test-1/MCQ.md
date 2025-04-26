@@ -3,8 +3,10 @@
 > **SECTION 1**
 > 
 > **Time - 1 hour and 30 minutes**
+>
+> **Number of Questions - 40**
 > 
-> **Percent of total exam grade - 50%**
+> **Percent of Total Grade - 50%**
 
 
 ## Directions:
