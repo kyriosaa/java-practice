@@ -9,22 +9,21 @@
 > **Percent of Total Grade - 50%**
 
 
-# Directions:
+## Directions:
 
 SHOW ALL YOUR WORK. REMEMBER THAT PROGRAM SEGMENTS ARE TO BE WRITTEN IN JAVA.
 
 
-# Notes:
+## Notes:
 
 - Assume that the classes listed in the Java Quick Reference have been imported where appropriate.
 - Unless otherwise noted in the equation, assume that the parameters in method calls are not null and that methods are ccalled only when their preconditions are satisfied.
 - In writing solutions for each question, you may use any of the accessible methods that are listed in classes defined in that question. Writing significant amounts of code that can be replaced by a call to one of these methods will not receive full credit.
 
 
-# FREE RESPONSE QUESTIONS
+## FREE RESPONSE QUESTIONS
 
-## 1.
-    In a certain school, students are permitted to enroll in one elective class from a list of electives offered. Because there are a limited number of spaces in each class for students, and because some electives are more popular than others, a lottery system was devised by the school to assign students to electives.
+1.  In a certain school, students are permitted to enroll in one elective class from a list of electives offered. Because there are a limited number of spaces in each class for students, and because some electives are more popular than others, a lottery system was devised by the school to assign students to electives.
 
     Each student lists three choices for electives. The school orders the students randomly and assigns each student to the first available elective in the student's list of three choices. If none of the three choices is available (because those electives are fully enrolled), the school does not assign the student to an elective.
 
@@ -201,8 +200,7 @@ SHOW ALL YOUR WORK. REMEMBER THAT PROGRAM SEGMENTS ARE TO BE WRITTEN IN JAVA.
 
 ##
 
-## 2.  
-    Consider a deck of *n* cards where *n* is even and each card is uniquely labeled from 1 to *n*.
+2.  Consider a deck of *n* cards where *n* is even and each card is uniquely labeled from 1 to *n*.
 
     A *shuffle* is performed when the deck is divided into two stacks and the stacks are interlaced so that a new stack is formed by alternately taking cards from each stack.
 
