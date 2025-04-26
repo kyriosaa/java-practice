@@ -170,7 +170,7 @@ SHOW ALL YOUR WORK. REMEMBER THAT PROGRAM SEGMENTS ARE TO BE WRITTEN IN JAVA.
                 // ... constructors, other methods, and other private data not shown
             }
 
-    ***Question 1***
+    ###### Question 1
     > Write the <code>School</code> method <code>getElectiveByName</code>. Method <code>getElectiveByName</code> should return the <code>Elective</code> in <code>electiveList</code> that has the given name.
 
     Complete method <code>getElectiveByName</code> below.
@@ -181,5 +181,5 @@ SHOW ALL YOUR WORK. REMEMBER THAT PROGRAM SEGMENTS ARE TO BE WRITTEN IN JAVA.
 
     >
 
-    ***Question 2***
+    ###### Question 2
     > asdf
