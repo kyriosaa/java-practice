@@ -88,11 +88,11 @@ Determine the answer to each of the following questions or incomplete statements
         {4, 10, 1, 2, 6, 7, 3, 5}
 
     If selection sort is used to order the array from smallest to largest values, which of the following represents a possible state of the array at some point during the selection sort process?
-    - (A) {1, 4, 10, 2, 3, 6, 7, 5}
-    - (B) {1, 2, 4, 6, 10, 7, 3, 5}
-    - (C) {1, 2, 3, 10, 6, 7, 4, 5}
-    - (D) {4, 3, 1, 2, 6, 7, 10, 5}
-    - (E) {5, 3, 7, 6, 2, 1, 10, 4}
+    - (A) <code>{1, 4, 10, 2, 3, 6, 7, 5}</code>
+    - (B) <code>{1, 2, 4, 6, 10, 7, 3, 5}</code>
+    - (C) <code>{1, 2, 3, 10, 6, 7, 4, 5}</code>
+    - (D) <code>{4, 3, 1, 2, 6, 7, 10, 5}</code>
+    - (E) <code>{5, 3, 7, 6, 2, 1, 10, 4}</code>
 ##
 5. **Consider the following code segment:**
 
@@ -107,11 +107,11 @@ Determine the answer to each of the following questions or incomplete statements
         }
 
     What values will A contain after the code segment is executed?
-    - (A) {1, 1, 2, 3, 4, 5, 6}
-    - (B) {1, 2, 3, 4, 5, 6, 7}
-    - (C) {6, 6, 5, 4, 3, 2, 1}
-    - (D) {7, 7, 6, 5, 4, 3, 2}
-    - (E) {7, 7, 7, 7, 7, 7, 7}
+    - (A) <code>{1, 1, 2, 3, 4, 5, 6}</code>
+    - (B) <code>{1, 2, 3, 4, 5, 6, 7}</code>
+    - (C) <code>{6, 6, 5, 4, 3, 2, 1}</code>
+    - (D) <code>{7, 7, 6, 5, 4, 3, 2}</code>
+    - (E) <code>{7, 7, 7, 7, 7, 7, 7}</code>
 ##
 **Questions 6-7 refer to the following two classes:**
 
@@ -218,7 +218,11 @@ Determine the answer to each of the following questions or incomplete statements
                     System.out.println(k);
                 }
 
-    - (A)
+    - (A)   <code>  
+                if( p[k].getBox(x).isAssigned() && !p[k].getBox(x).hasMail() ) {
+                    System.out.println(P[k].getBox(x).getBoxNumber());
+                }
+            </code>
     - (B)
     - (C)
     - (D)
