@@ -176,28 +176,28 @@ SHOW ALL YOUR WORK. REMEMBER THAT PROGRAM SEGMENTS ARE TO BE WRITTEN IN JAVA.
 
     (a) **Write the <code>School</code> method <code>getElectiveByName</code>. Method <code>getElectiveByName</code> should return the <code>Elective</code> in <code>electiveList</code> that has the given name.**
 
-        Complete method <code>getElectiveByName</code> below
+    Complete method <code>getElectiveByName</code> below
 
-                // precondition:  name is the name of an Elective in electiveList
-                // postcondition: returns the Elective in electiveList with the given name
-                private Elective getElectiveByName(String name)
+            // precondition:  name is the name of an Elective in electiveList
+            // postcondition: returns the Elective in electiveList with the given name
+            private Elective getElectiveByName(String name)
 
     (b) **Write the <code>School</code> method <code>assignElectivesToStudents</code>. Method <code>assignElectivesToStudents</code> should assign electives to students as described at the beginning of this question.**
 
     **In writing method <code>assignElectivesToStudents</code> you may use the <code>private</code> helper method <code>getElectiveByName</code> specified in part (a). Assume that <code>getElectiveByName</code> works as specified, regardless of what you wrote in part (a). Solutions that reimplement functionality provided by this method, rather than invoking it, will not receive full credit.**
 
-        Complete method <code>assignElectivesToStudents</code> below
+    Complete method <code>assignElectivesToStudents</code> below
 
-                // postcondition: All Students in studentList have been either assigned their first available elective choice or not assigned
-                //                All electives in electiveList have been updated appropriately as Students are assigned to them
-                public void assignElectivesToStudents()
+            // postcondition: All Students in studentList have been either assigned their first available elective choice or not assigned
+            //                All electives in electiveList have been updated appropriately as Students are assigned to them
+            public void assignElectivesToStudents()
 
     (c) **Write the <code>School</code> method <code>studentsWithoutElectives</code>. Method <code>studentsWithoutElectives</code> should return <code>ArrayList</code> of all Students in <code>studentList</code> who do not have an <code>Elective</code> assigned to them.**
 
-        Complete method <code>studentsWithoutElectives</code> below
+    Complete method <code>studentsWithoutElectives</code> below
 
-                // postcondition: returns a list of those Students who have not been assigned an Elective
-                public ArrayList studentsWithoutElectives()
+            // postcondition: returns a list of those Students who have not been assigned an Elective
+            public ArrayList studentsWithoutElectives()
 
 ##
 
