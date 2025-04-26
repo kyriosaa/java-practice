@@ -218,11 +218,9 @@ Determine the answer to each of the following questions or incomplete statements
                     System.out.println(k);
                 }
 
-    - (A)   <code>  
-                if( p[k].getBox(x).isAssigned() && !p[k].getBox(x).hasMail() ) {
-                    System.out.println(P[k].getBox(x).getBoxNumber());
-                }
-            </code>
+    - (A)   <code>if( p[k].getBox(x).isAssigned() && !p[k].getBox(x).hasMail() ) {
+                        System.out.println(P[k].getBox(x).getBoxNumber());
+                    }</code>
     - (B)
     - (C)
     - (D)
