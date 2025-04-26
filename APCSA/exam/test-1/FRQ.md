@@ -84,7 +84,7 @@ SHOW ALL YOUR WORK. REMEMBER THAT PROGRAM SEGMENTS ARE TO BE WRITTEN IN JAVA.
                 // precondition: name is the name of an Elective in electiveList
                 // postcondition: returns the Elective in electiveList with the given name
                 private Elective getElectiveByName(String name) {
-                    /* to be implemented in part(a) */
+                    /* to be implemented in part (a) */
                 }
 
                 // postcondition: returns the size of electiveList
@@ -99,12 +99,12 @@ SHOW ALL YOUR WORK. REMEMBER THAT PROGRAM SEGMENTS ARE TO BE WRITTEN IN JAVA.
                 // postcondition: All Students in studentList have been either assigned their first available elective choice or not assigned
                 //                All Electives in electiveList have been updated appropriately as Students are assigned to them
                 public void assignElectivesToStudents() {
-                    /* to be implemented in part(b) */
+                    /* to be implemented in part (b) */
                 }
 
                 // postcondition: returns a list of those Students who have not been assigned an Elective
                 public ArrayList<Student> studentsWithoutElectives() {
-                    /* to be implemented in part(c) */
+                    /* to be implemented in part (c) */
                 }
 
                 // ... constructors, other methods, and other private data not shown
@@ -170,9 +170,11 @@ SHOW ALL YOUR WORK. REMEMBER THAT PROGRAM SEGMENTS ARE TO BE WRITTEN IN JAVA.
                 // ... constructors, other methods, and other private data not shown
             }
 
+    > --------------------
     >
     > Questions below
     >
+    > --------------------
 
     (a) **Write the <code>School</code> method <code>getElectiveByName</code>. Method <code>getElectiveByName</code> should return the <code>Elective</code> in <code>electiveList</code> that has the given name.**
 
@@ -210,3 +212,66 @@ SHOW ALL YOUR WORK. REMEMBER THAT PROGRAM SEGMENTS ARE TO BE WRITTEN IN JAVA.
     Dividing the deck in half produces two stacks of cards - one stack with cards 0 through 4, the other with cards 5 through 9. Interlacing the stacks produces a deck in the following order:
 
     ![alt text](https://github.com/kyriosaa/java-practice/blob/main/APCSA/exam/test-1/images/frq-q2-order.png "FRQ Q2")
+
+    The number of times needed to shuffle the deck until it returns to its original order is called the *reorder count*. Note that the reorder count for a deck of ten cards is six:
+
+    ![alt text](https://github.com/kyriosaa/java-practice/blob/main/APCSA/exam/test-1/images/frq-q2-count.png "FRQ Q2")
+
+    A deck is modeled by the following incomplete declaration of the <code>Deck</code> class:
+
+            public class Deck {
+                private int[] cards;
+
+                public Deck(int numCards) {
+                    /* code not shown */
+                }
+
+                public boolean inOrder() {
+                    /* to be implemented in part (a) */
+                }
+
+                public void shuffle() {
+                    /* to be implemented in part (b) */
+                }
+
+                public int reorderingCount() {
+                    /* to be implemented in part (c) */
+                }
+            }
+
+    > --------------------
+    >
+    > Questions below
+    >
+    > --------------------
+
+    (a) **Write the <code>Deck</code> method <code>inOrder</code>. Method <code>inOrder</code> should return true if the cards in the deck are in numerical order from 0 to <code>cards.length - 1</code> and should return false otherwise. Cards are in numberical order if <code>cards[k] == k</code> for all <code>0 <= k < cards.length</code>.**
+
+    Complete method <code>inOrder</code> below
+
+            // precondition:  For all k such that 0 <= k < cards.length, 0 <= cards[k] < cards.length and each cards[k] is unique
+            // postcondition: returns true if cards[k] == k for all 0 <= k < cards.length
+            //                returns false otherwise
+            public boolean inOrder()
+
+    (b) **Write the <code>Deck</code> method <code>shuffle</code>. Method <code>shuffle</code> should divide the deck into two equal stacks and interlace them evenly as described at the beginning of this question.**
+
+    Complete method <code>shuffle</code> below
+
+            // postcondition: the deck is shuffled by dividing the deck into two equal stacks that are evenly interlaced
+            public void shuffle()
+
+    (c) **Write the <code>Deck</code> method <code>reorderCount</code>. Method <code>reorderCount</code> should return the number of shuffles necessary to return the deck into its original order.**
+
+    **In writing method <code>reorderCount</code> you may use the methods <code>inOrder</code> and <code>shuffle</code> as specified in parts (a) and (b). Assume that <code>inOrder</code> and <code>shuffle</code> work as specified, regardless of what you wrote it parts (a) and (b). Solutions that reimplement functionality provided by these methods, rather than invoking them, will not receive full credit.**
+
+    Complete method <code>reorderCount</code> below
+
+            // postcondition: Returns the number of shuffles necessary to return the cards in the deck
+            //                to their original numerical order such that inOrder() == true
+            //                The cards in the deck are in their original numerical order
+            public int reorderCount()
+        
+##
+
+3.  Consider the design of an electronic cookbook modeled with the following class declarations:
