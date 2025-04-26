@@ -9,21 +9,22 @@
 > **Percent of Total Grade - 50%**
 
 
-## Directions:
+# Directions:
 
 SHOW ALL YOUR WORK. REMEMBER THAT PROGRAM SEGMENTS ARE TO BE WRITTEN IN JAVA.
 
 
-## Notes:
+# Notes:
 
 - Assume that the classes listed in the Java Quick Reference have been imported where appropriate.
 - Unless otherwise noted in the equation, assume that the parameters in method calls are not null and that methods are ccalled only when their preconditions are satisfied.
 - In writing solutions for each question, you may use any of the accessible methods that are listed in classes defined in that question. Writing significant amounts of code that can be replaced by a call to one of these methods will not receive full credit.
 
 
-## FREE RESPONSE QUESTIONS
+# FREE RESPONSE QUESTIONS
 
-1.  In a certain school, students are permitted to enroll in one elective class from a list of electives offered. Because there are a limited number of spaces in each class for students, and because some electives are more popular than others, a lottery system was devised by the school to assign students to electives.
+## 1.
+    In a certain school, students are permitted to enroll in one elective class from a list of electives offered. Because there are a limited number of spaces in each class for students, and because some electives are more popular than others, a lottery system was devised by the school to assign students to electives.
 
     Each student lists three choices for electives. The school orders the students randomly and assigns each student to the first available elective in the student's list of three choices. If none of the three choices is available (because those electives are fully enrolled), the school does not assign the student to an elective.
 
@@ -170,7 +171,7 @@ SHOW ALL YOUR WORK. REMEMBER THAT PROGRAM SEGMENTS ARE TO BE WRITTEN IN JAVA.
                 // ... constructors, other methods, and other private data not shown
             }
 
-    ### Question 1 (a)
+    ### Question (a)
     > Write the <code>School</code> method <code>getElectiveByName</code>. Method <code>getElectiveByName</code> should return the <code>Elective</code> in <code>electiveList</code> that has the given name.
 
     Complete method <code>getElectiveByName</code> below
@@ -179,7 +180,7 @@ SHOW ALL YOUR WORK. REMEMBER THAT PROGRAM SEGMENTS ARE TO BE WRITTEN IN JAVA.
             // postcondition: returns the Elective in electiveList with the given name
             private Elective getElectiveByName(String name)
 
-    ### Question 2 (b)
+    ### Question (b)
     > Write the <code>School</code> method <code>assignElectivesToStudents</code>. Method <code>assignElectivesToStudents</code> should assign electives to students as described at the beginning of this question.
     >
     > In writing method <code>assignElectivesToStudents</code> you may use the <code>private</code> helper method <code>getElectiveByName</code> specified in part (a). Assume that <code>getElectiveByName</code> works as specified, regardless of what you wrote in part (a). Solutions that reimplement functionality provided by this method, rather than invoking it, will not receive full credit.
@@ -190,7 +191,7 @@ SHOW ALL YOUR WORK. REMEMBER THAT PROGRAM SEGMENTS ARE TO BE WRITTEN IN JAVA.
             //                All electives in electiveList have been updated appropriately as Students are assigned to them
             public void assignElectivesToStudents()
 
-    ### Question 3 (c)
+    ### Question (c)
     > Write the <code>School</code> method <code>studentsWithoutElectives</code>. Method <code>studentsWithoutElectives</code> should return <code>ArrayList</code> of all Students in <code>studentList</code> who do not have an <code>Elective</code> assigned to them.
 
     Complete method <code>studentsWithoutElectives</code> below
@@ -200,7 +201,8 @@ SHOW ALL YOUR WORK. REMEMBER THAT PROGRAM SEGMENTS ARE TO BE WRITTEN IN JAVA.
 
 ##
 
-2.  Consider a deck of *n* cards where *n* is even and each card is uniquely labeled from 1 to *n*.
+## 2.  
+    Consider a deck of *n* cards where *n* is even and each card is uniquely labeled from 1 to *n*.
 
     A *shuffle* is performed when the deck is divided into two stacks and the stacks are interlaced so that a new stack is formed by alternately taking cards from each stack.
 
@@ -208,4 +210,4 @@ SHOW ALL YOUR WORK. REMEMBER THAT PROGRAM SEGMENTS ARE TO BE WRITTEN IN JAVA.
 
     Dividing the deck in half produces two stacks of cards - one stack with cards 0 through 4, the other with cards 5 through 9. Interlacing the stacks produces a deck in the following order:
 
-    ![alt text]()
+    ![alt text](https://github.com/kyriosaa/java-practice/blob/main/APCSA/exam/test-1/images/frq-q2-order.png "FRQ Q2")
