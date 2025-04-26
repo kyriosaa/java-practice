@@ -170,16 +170,42 @@ SHOW ALL YOUR WORK. REMEMBER THAT PROGRAM SEGMENTS ARE TO BE WRITTEN IN JAVA.
                 // ... constructors, other methods, and other private data not shown
             }
 
-    ### Question 1
+    ### Question 1 (a)
     > Write the <code>School</code> method <code>getElectiveByName</code>. Method <code>getElectiveByName</code> should return the <code>Elective</code> in <code>electiveList</code> that has the given name.
 
-    Complete method <code>getElectiveByName</code> below.
+    Complete method <code>getElectiveByName</code> below
 
             // precondition:  name is the name of an Elective in electiveList
             // postcondition: returns the Elective in electiveList with the given name
             private Elective getElectiveByName(String name)
 
+    ### Question 2 (b)
+    > Write the <code>School</code> method <code>assignElectivesToStudents</code>. Method <code>assignElectivesToStudents</code> should assign electives to students as described at the beginning of this question.
     >
+    > In writing method <code>assignElectivesToStudents</code> you may use the <code>private</code> helper method <code>getElectiveByName</code> specified in part (a). Assume that <code>getElectiveByName</code> works as specified, regardless of what you wrote in part (a). Solutions that reimplement functionality provided by this method, rather than invoking it, will not receive full credit.
 
-    ### Question 2
-    > asdf
+    Complete method <code>assignElectivesToStudents</code> below
+
+            // postcondition: All Students in studentList have been either assigned their first available elective choice or not assigned
+            //                All electives in electiveList have been updated appropriately as Students are assigned to them
+            public void assignElectivesToStudents()
+
+    ### Question 3 (c)
+    > Write the <code>School</code> method <code>studentsWithoutElectives</code>. Method <code>studentsWithoutElectives</code> should return <code>ArrayList</code> of all Students in <code>studentList</code> who do not have an <code>Elective</code> assigned to them.
+
+    Complete method <code>studentsWithoutElectives</code> below
+
+            // postcondition: returns a list of those Students who have not been assigned an Elective
+            public ArrayList studentsWithoutElectives()
+
+##
+
+2.  Consider a deck of *n* cards where *n* is even and each card is uniquely labeled from 1 to *n*.
+
+    A *shuffle* is performed when the deck is divided into two stacks and the stacks are interlaced so that a new stack is formed by alternately taking cards from each stack.
+
+    For instance, a deck of ten cards is in order when the card labeled 0 is on the top of the deck and the card labeled 9 is on the bottom of the deck.
+
+    Dividing the deck in half produces two stacks of cards - one stack with cards 0 through 4, the other with cards 5 through 9. Interlacing the stacks produces a deck in the following order:
+
+    ![alt text]()
