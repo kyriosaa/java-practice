@@ -218,26 +218,24 @@ Determine the answer to each of the following questions or incomplete statements
                     System.out.println(k);
                 }
 
-    - (A)   <code>if( p[k].getBox(x).isAssigned() && !p[k].getBox(x).hasMail() ) {
-                        System.out.println(P[k].getBox(x).getBoxNumber());
-                    }</code>
+    - (A)
     - (B)
     - (C)
     - (D)
     - (E)
 ##
-8. **Assume that *a* and *b* are Boolean variables that have been initialized. Consider the following code segment:**
+8. **Assume that <code>a</code> and <code>b</code> are Boolean variables that have been initialized. Consider the following code segment:**
 
         a = a && b;
         b = a || b;
 
     Which of the following statements is true?
 
-        I.      The final value of *a* is the same as the initial value of *a*.
-
-        II.     The final value of *b* is the same as the initial value of *b*.
-
-        III.    The final value of *a* is the same as the initial value of *b*.
+    > I. The final value of <code>a</code> is the same as the initial value of <code>a</code>.
+    >
+    > II. The final value of <code>b</code> is the same as the initial value of <code>b</code>.
+    >
+    > III. The final value of <code>a</code> is the same as the initial value of <code>b</code>.
 
     - (A) I only
     - (B) II only
@@ -307,7 +305,7 @@ Determine the answer to each of the following questions or incomplete statements
             mystery(count - 1, s);
         }
 
-    What is the output by the call *mystery(5, "X");*?
+    What is the output by the call <code>mystery(5, "X");</code>?
     - (A) XX - XX - - XXX - X
     - (B) XX - XX - XX - XX
     - (C) XXX - - XX - X - XX - - XXX
@@ -316,26 +314,26 @@ Determine the answer to each of the following questions or incomplete statements
 ##
 **Questions 12-13 refer to the following classes and method descriptions:**
 
-> Class *Table* has a method, *getPrice*, which takes no parameters and returns the price of the table.
+> Class <code>Table</code> has a method, <code>getPrice</code>, which takes no parameters and returns the price of the table.
 >
-> Class *Chair* also has a method, *getPrice*, which takes no parameters and returns the price of the chair.
+> Class <code>Chair</code> also has a method, <code>getPrice</code>, which takes no parameters and returns the price of the chair.
 > 
-> Class *DiningRoomSet* has a constructor which is passed a *Table* object and an *ArrayList* of *Chair* objects. It stores these parameters in its private data fields *myTable* and *myChairs*.
+> Class <code>DiningRoomSet</code> has a constructor which is passed a <code>Table</code> object and an <code>ArrayList</code> of <code>Chair</code> objects. It stores these parameters in its private data fields <code>myTable</code> and <code>myChairs</code>.
 >
-> Class *DiningRoomSet* has a method, *getPrice*, which takes no parameters and returns the price of the dining room set. The price of a dining room set is calculated as the sum of the price of its table and all of its chairs.
+> Class <coode>DiningRoomSet</code> has a method, <code>getPrice</code>, which takes no parameters and returns the price of the dining room set. The price of a dining room set is calculated as the sum of the price of its table and all of its chairs.
 
 12. **Question:**
 
-    What is the correct way to define the signature of the constructor for the *DiningRoomSet* class?
-    - (A) public void DiningRoomSet(Table t, ArrayList, chairs)
-    - (B) public DiningRoomSet(Table t, ArrayList chairs)
-    - (C) public void DiningRoomSet(Table t, ArrayList Chair Chairs)
-    - (D) public DiningRoomSet(Table t, ArrayList Chair Chairs)
-    - (E) public DiningRoomSet(Table t, Chair Chairs)
+    What is the correct way to define the signature of the constructor for the <code>DiningRoomSet</code> class?
+    - (A) <code>public void DiningRoomSet(Table t, ArrayList, chairs)</code>
+    - (B) <code>public DiningRoomSet(Table t, ArrayList chairs)</code>
+    - (C) <code>public void DiningRoomSet(Table t, ArrayList Chair Chairs)</code>
+    - (D) <code>public DiningRoomSet(Table t, ArrayList Chair Chairs)</code>
+    - (E) <code>public DiningRoomSet(Table t, Chair Chairs)</code>
 
 13. **Question:**
 
-    What is the correct way to implement the getPrice method of the *DiningRoomSet* class?
+    What is the correct way to implement the getPrice method of the <code>DiningRoomSet</code> class?
 
         (A)     public double getPrice(Table t, ArrayList chairs) {
                     return t.getPrice() + chairs.getPrice();
@@ -455,13 +453,13 @@ Determine the answer to each of the following questions or incomplete statements
             }
         }
 
-    Which of the following methods must be included in the declaration of the *Dog* class in order for the class to successfully compile?
+    Which of the following methods must be included in the declaration of the <code>Dog</code> class in order for the class to successfully compile?
 
-        I.      public String makeSound()
-
-        II.     public String animalType()
-
-        III.    public String animalType(animal b)
+    > I. <code>public String makeSound()</code>
+    >
+    > II. <code>public String animalType()</code>
+    >
+    > III. <code>public String animalType(animal b)</code>
 
     - (A) I only
     - (B) II only
@@ -533,7 +531,7 @@ Determine the answer to each of the following questions or incomplete statements
         Line 11:        }
         Line 12:    }
 
-18. **Which of the following can be used to replace "*//missing code*" so that the *insertSort* method will execute properly?**
+18. **Which of the following can be used to replace <code>//missing code</code> so that the <code>insertSort</code> method will execute properly?**
 
         (A)     sort[index] = sort[index-1];
                 index++;
@@ -556,19 +554,19 @@ Determine the answer to each of the following questions or incomplete statements
     - (D)
     - (E)
 
-19. **Assuming that the "*// Missing code*" is implemented properly, what change can be made to the code in order for the array to be sorted in descending order?**
-    - (A) Replace Line 06 with: *while(index < 0 && sort[index-1] < temp)*
-    - (B) Replace Line 06 with: *while(index < 0 && sort[index+1] < temp)*
-    - (C) Replace Line 06 with: *while(index > 0 && sort[index-1] < temp)*
-    - (D) Replace Line 03 with: *for(int index = sort.length - 1; index > 0; index--)*
-    - (E) Replace Line 03 with: *for(int index = 1; index > 0; index--)*
+19. **Assuming that the <code>//missing code</code> is implemented properly, what change can be made to the code in order for the array to be sorted in descending order?**
+    - (A) Replace Line 06 with: <code>while(index < 0 && sort[index-1] < temp)</code>
+    - (B) Replace Line 06 with: <code>while(index < 0 && sort[index+1] < temp)</code>
+    - (C) Replace Line 06 with: <code>while(index > 0 && sort[index-1] < temp)</code>
+    - (D) Replace Line 03 with: <code>for(int index = sort.length - 1; index > 0; index--)</code>
+    - (E) Replace Line 03 with: <code>for(int index = 1; index > 0; index--)</code>
 ##
 20. **Which of the following arrays would be sorted the slowest using insertion sort?**
-    - (A) [3  4  6  2  7  3  9]
-    - (B) [3  2  5  4  6  7  9]
-    - (C) [9  7  6  5  4  3  2]
-    - (D) [2  3  4  5  6  7  9]
-    - (E) [9  3  2  4  5  7  6]
+    - (A) <code>[3  4  6  2  7  3  9]</code>
+    - (B) <code>[3  2  5  4  6  7  9]</code>
+    - (C) <code>[9  7  6  5  4  3  2]</code>
+    - (D) <code>[2  3  4  5  6  7  9]</code>
+    - (E) <code>[9  3  2  4  5  7  6]</code>
 ##
 **Questions 21-23 refer to the following incomplete class declaration used to represent fractions with integral numerators and denominators:**
 
@@ -616,13 +614,13 @@ Determine the answer to each of the following questions or incomplete statements
             // missing code
         }
 
-    Which of the following statements can be used to replace *// missing code* so that the multiply method is correctly implemented?
+    Which of the following statements can be used to replace <code>//missing code</code> so that the multiply method is correctly implemented?
 
-        I.      return Fraction(numerator * f.getNumerator(), denominator * f.getDenominator());
-
-        II.     return new Fraction(numerator * f.numerator, denominator * f.denominator());
-
-        III.    return new Fraction(numerator * f.getNumerator(), denominator * f.getDenominator());
+    > I. <code>return Fraction(numerator * f.getNumerator(), denominator * f.getDenominator());</code>
+    >
+    > II. <code>return new Fraction(numerator * f.numerator, denominator * f.denominator());</code>
+    >
+    > III. <code>return new Fraction(numerator * f.getNumerator(), denominator * f.getDenominator());</code>
 
     - (A) I only
     - (B) II only
@@ -639,14 +637,14 @@ Determine the answer to each of the following questions or incomplete statements
         fractionTwo = new Fraction(7, 19);
         // missing code
 
-    Which of the following could be used to replace "*// missing code*" so that the answer contains the result of multiplying fractionOne by fractionTwo?
-    - (A) answer = fractionOne * fractionTwo
-    - (B) answer = multiply(fractionOne, fractionTwo);
-    - (C) answer = fractionOne.multiply(fractionTwo);
-    - (D) answer = new Fraction(fractionOne, fractionTwo);
-    - (E) answer = (fractionOne.getNumerator() * fractionTwo.getNumerator()) / (fractionOne.getDenominator() * fractionTwo.getDenominator());
+    Which of the following could be used to replace <code>//missing code</code> so that the answer contains the result of multiplying fractionOne by fractionTwo?
+    - (A) <code>answer = fractionOne * fractionTwo</code>
+    - (B) <code>answer = multiply(fractionOne, fractionTwo);</code>
+    - (C) <code>answer = fractionOne.multiply(fractionTwo);</code>
+    - (D) <code>answer = new Fraction(fractionOne, fractionTwo);</code>
+    - (E) <code>answer = (fractionOne.getNumerator() * fractionTwo.getNumerator()) / (fractionOne.getDenominator() * fractionTwo.getDenominator());</code>
 
-23. **The following incomplete class declaration is intended to extend the *Fraction* class so that fractions can be manipulated in reduced form (lowest terms):**
+23. **The following incomplete class declaration is intended to extend the <code>Fraction</code> class so that fractions can be manipulated in reduced form (lowest terms):**
 
     Note that a fraction can be reduced to lowest terms by dividing both the numerator and denominator by the greatest common divisor (gcd) of the numerator and denominator.
 
@@ -656,7 +654,7 @@ Determine the answer to each of the following questions or incomplete statements
             // ... constructors and other methods not shown
         }
 
-    Consider the following proposed constructors for the *ReducedFraction* class:
+    Consider the following proposed constructors for the <code>ReducedFraction</code> class:
 
         I.      public ReducedFraction() {
                     reducedNumerator = 0;
@@ -676,19 +674,19 @@ Determine the answer to each of the following questions or incomplete statements
                     reducedDenominator = d / gcd(n, d);
                 }
 
-    Which of these constructor(s) would be legal for the *ReducedFraction* class?
+    Which of these constructor(s) would be legal for the <code>ReducedFraction</code> class?
     - (A) I only
     - (B) II only
     - (C) III only
     - (D) I and III
     - (E) II and III
 ##
-24. **Consider *s1* and *s2* defined as follows:**
+24. **Consider <code>s1</code> and <code>s2</code> defined as follows:**
 
         String s1 = new String("hello");
         String s2 = new String("hello");
 
-    Which of the following is/are correct ways to see if *s1* and *s2* hold identical strings?
+    Which of the following is/are correct ways to see if <code>s1</code> and <code>s2</code> hold identical strings?
 
         I.      if(s1 == s2) {
                     // s1 and s2 are identical
@@ -717,7 +715,7 @@ Determine the answer to each of the following questions or incomplete statements
             b = b + a;
         }
 
-    Assume that *s* has the value "*Elizabeth*" and *t* has the value "*Andrew*" and mystery(s, t) is called. What are the values of *s* and *t* after the call to mystery?
+    Assume that <code>s</code> has the value "<code>Elizabeth</code>" and <code>t</code> has the value "<code>Andrew</code>" and <code>mystery(s, t)</code> is called. What are the values of <code>s</code> and <code>t</code> after the call to mystery?
 
                     s                                 t
             (A) Elizabeth                           Andrew
@@ -744,11 +742,11 @@ Determine the answer to each of the following questions or incomplete statements
 
     For which of the following reasons is the above class declaration incorrect?
 
-        I.      Objects may not access private data fields of other objects in the same class.
-
-        II.     The *Comparable* interface requires that *compareTo* be passed an *Object* rather than a *Point*.
-
-        III.    The *Comparable* interface requires that *compareTo* return an *int* rather than a *boolean*.
+    > I. Objects may not access private data fields of other objects in the same class.
+    >
+    > II. The <code>Comparable</code> interface requires that <code>compareTo</code> be passed an <code>Object</code> rather than a <code>Point</code>.
+    >
+    > III. The <code>Comparable</code> interface requires that <code>compareTo</code> return an <code>int</code> rather than a <code>boolean</code>.
         
     - (A) I only
     - (B) III only
@@ -756,13 +754,13 @@ Determine the answer to each of the following questions or incomplete statements
     - (D) II and III
     - (E) I, II, and III
 ##
-27. **Consider the following abstraction of a *for* loop where <1>, <2>, <3>, and <4> represent legal code in the indicated locations:**
+27. **Consider the following abstraction of a <code>for</code> loop where <code><1></code>, <code><2></code>, <code><3></code>, and <code><4></code> represent legal code in the indicated locations:**
 
         for(<1>; <2>; <3>) {
             <4>
         }
 
-    Which of the following *while* loops has the same functionality as the above *for* loop?
+    Which of the following <code>while</code> loops has the same functionality as the above <code>for</code> loop?
 
         (A)     <1>;
                 while(<2>) {
@@ -857,12 +855,12 @@ Determine the answer to each of the following questions or incomplete statements
         double c;
         c = a / b;
 
-    After the assignment statement is executed, what's the value of *c*?
+    After the assignment statement is executed, what's the value of <code>c</code>?
     - (A) 1.0
     - (B) 1.75
     - (C) 2.0
-    - (D) An error occurs because *c* was not initialized
-    - (E) An error occurs because *a* and *b* are integers and *c* is a double
+    - (D) An error occurs because <code>c</code> was not initialized
+    - (E) An error occurs because <code>a</code> and <code>b</code> are integers and <code>c</code> is a double
 ##
 31. **Consider the following code segment:**
 
@@ -871,7 +869,7 @@ Determine the answer to each of the following questions or incomplete statements
         if(x % 2 == 0 && x / 3 == 1) 
             System.out.print("Yes");
         
-    For what values of *x* will the word "Yes" be printed when the code segment is executed?
+    For what values of <code>x</code> will the word "Yes" be printed when the code segment is executed?
     - (A) 0
     - (B) 4
     - (C) Whenever x is even and x is not divisible by 3
@@ -904,7 +902,7 @@ Determine the answer to each of the following questions or incomplete statements
             // missing code
         }
 
-    Which of the following code segments can replace "*//missing code*" so that the method swap works as intended?
+    Which of the following code segments can replace <code>//missing code</code> so that the method swap works as intended?
 
         I.      SomeClass temp;
                 temp = x;
@@ -936,11 +934,11 @@ Determine the answer to each of the following questions or incomplete statements
     > If the book is a work of nonfiction, then the bookstore wants to keep track of whether it is a biography, a cookbook, or a self-helf book.
 
     Which of the following is the best design?
-    - (A) Use one class, *Book*, which has three data fields: *String title*, *String author*, and *int bookType*.
+    - (A) Use one class, <code>Book</code>, which has three data fields: <code>String title</code>, <code>String author</code>, and <code>int bookType</code>.
     - (B) Use four unrelated classes: Book, Title, Author, and BookType.
-    - (C) Use a class *Book* which has two data fields: *String title*, *String author*, and a subclass: *BookType*.
-    - (D) Use a class *Book* which has two data fields: *String title*, *String author*, and two subclasses: *RomanceNovel*, *Mystery*, *ScienceFiction*, *Biography*, *Cookbook*, and *SelfHelpBook*.
-    - (E) Use a class *Book* which has two data fields: *String title*, *String author*, and two subclasses: *FictionWork* and *NonFictionWork*. The class *FictionWork* has three subclasses, *RomanceNovel*, *Mystery*, and *ScienceFiction*. The class *NonFictionWork* has three subclasses: *Biography*, *Cookbook*, and *SelfHelpBook*.
+    - (C) Use a class <code>Book</code> which has two data fields: <code>String title</code>, <code>String author</code>, and a subclass: <code>BookType</code>.
+    - (D) Use a class <code>Book</code> which has two data fields: <code>String title</code>, <code>String author</code>, and two subclasses: <code>RomanceNovel</code>, <code>Mystery</code>, <code>ScienceFiction</code>, <code>Biography</code>, <code>Cookbook</code>, and <code>SelfHelpBook</code>.
+    - (E) Use a class <code>Book</code> which has two data fields: <code>String title</code>, <code>String author</code>, and two subclasses: <code>FictionWork</code> and <code>NonFictionWork</code>. The class <code>FictionWork</code> has three subclasses, <code>RomanceNovel</code>, <code>Mystery</code>, and <code>ScienceFiction</code>. The class <code>NonFictionWork</code> has three subclasses: <code>Biography</code>, <code>Cookbook</code>, and <code>SelfHelpBook</code>.
 ##
 34. **Consider the following code:**
 
@@ -951,7 +949,7 @@ Determine the answer to each of the following questions or incomplete statements
                 return (2 * mystery(x-1)) + x;
         }
 
-    Which of the following can be used to replace "*//missing value*" so that mystery(4) returns 34?
+    Which of the following can be used to replace <code>//missing value</code> so that <code>mystery(4)</code> returns 34?
     - (A) 0
     - (B) 1
     - (C) 2
@@ -969,12 +967,12 @@ Determine the answer to each of the following questions or incomplete statements
             /* some code */
         }
 
-    Assuming that after *X* and *Y* are initialized, *X.length == Y.length*, which of the following must be true after executing this code segment?
-    - (A) k < X.length
-    - (B) k < X.length && X[k] == Y[k]
-    - (C) k < X.length && X[k] != Y[k]
-    - (D) k >= X.length || X[k] == Y[k]
-    - (E) k >= X.length || X[k] != Y[k]
+    Assuming that after <code>X</code> and <code>Y</code> are initialized, <code>X.length == Y.length</code>, which of the following must be true after executing this code segment?
+    - (A) <code>k < X.length</code>
+    - (B) <code>k < X.length && X[k] == Y[k]</code>
+    - (C) <code>k < X.length && X[k] != Y[k]</code>
+    - (D) <code>k >= X.length || X[k] == Y[k]</code>
+    - (E) <code>k >= X.length || X[k] != Y[k]</code>
 ##
 36. **Question:**
 
@@ -985,17 +983,17 @@ Determine the answer to each of the following questions or incomplete statements
     - (D) Attempting to cast an object to a subclass of which it is not an instance
     - (E) Attempting to call a method with the wrong number of arguments
 ##
-37. **Assume that a and b are properly initialized variables of type *Double*:**
+37. **Assume that a and b are properly initialized variables of type <code>Double</code>:**
 
     Which of the following is an equivalent expression to:
 
         a.doubleValue() != b.doubleValue()
 
-    - (A) a != b
-    - (B) a.notEquals(b)
-    - (C) !(a.doubleValue().equals(b.doubleValue()))
-    - (D) !(a.compareTo(b))
-    - (E) a.compareTo(b) != 0
+    - (A) <code>a != b</code>
+    - (B) <code>a.notEquals(b)</code>
+    - (C) <code>!(a.doubleValue().equals(b.doubleValue()))</code>
+    - (D) <code>!(a.compareTo(b))</code>
+    - (E) <code>a.compareTo(b) != 0</code>
 ##
 38. **Question:**
 
