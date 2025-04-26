@@ -434,11 +434,11 @@ Determine the answer to each of the following questions or incomplete statements
         System.out.println(list);
 
     What is printed as a result of executing this code segment?
-    - (A) [1, 4, 2, 7, 6, 3]
-    - (B) [7, 1, 4, 2, 6, 3]
-    - (C) [7, 2, 5, 4, 3, 1]
-    - (D) [7, 6, 2, 4, 3, 1]
-    - (E) [7, 1, 2]
+    - (A) <code>[1, 4, 2, 7, 6, 3]</code>
+    - (B) <code>[7, 1, 4, 2, 6, 3]</code>
+    - (C) <code>[7, 2, 5, 4, 3, 1]</code>
+    - (D) <code>[7, 6, 2, 4, 3, 1]</code>
+    - (E) <code>[7, 1, 2]</code>
 ##
 16. **Consider the following declarations:**
 
@@ -804,11 +804,11 @@ Determine the answer to each of the following questions or incomplete statements
         a / b + c - d % e * f
 
     Which of the expressions given below is equivalent to the one given above?
-    - (A) ((a / b) + (c - d)) % (e * f)
-    - (B) ((((a / b) + c) - d) % e) * f
-    - (C) ((a / b) + c) - (d % (e * f))
-    - (D) (a / ((b + c) - d) % e) * f
-    - (E) ((a / b) + c) - ((d % e) * f)
+    - (A) <code>((a / b) + (c - d)) % (e * f)</code>
+    - (B) <code>((((a / b) + c) - d) % e) * f</code>
+    - (C) <code>((a / b) + c) - (d % (e * f))</code>
+    - (D) <code>(a / ((b + c) - d) % e) * f</code>
+    - (E) <code>((a / b) + c) - ((d % e) * f)</code>
 ##
 29. **Assume that a program declares and initializes x as follows:**
 
@@ -872,9 +872,9 @@ Determine the answer to each of the following questions or incomplete statements
     For what values of <code>x</code> will the word "Yes" be printed when the code segment is executed?
     - (A) 0
     - (B) 4
-    - (C) Whenever x is even and x is not divisible by 3
-    - (D) Whenever x is odd and x is divisible by 3
-    - (E) Whenevr x is even and x is divisible by 3
+    - (C) Whenever <code>x</code> is even and <code>x</code> is not divisible by 3
+    - (D) Whenever <code>x</code> is odd and <code>x</code> is divisible by 3
+    - (E) Whenevr <code>x</code> is even and <code>x</code> is divisible by 3
 ##
 32. **Consider the following incomplete class definition:**
 

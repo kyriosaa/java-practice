@@ -111,3 +111,73 @@ SHOW ALL YOUR WORK. REMEMBER THAT PROGRAM SEGMENTS ARE TO BE WRITTEN IN JAVA.
             }
         
     The Student class includes the following methods and private data:
+    - <code>getChoice</code> - This method returns the name of the given elective choice of the student. The first elective choice has index 0, the second has index 1, and the third has index 2.
+    - <code>hasElective</code> - This method returns true if the student has been assigned an elective; it returns false otherwise.
+    - <code>assignElective</code> - This method assigns the given elective to this student.
+
+            public class Student {
+                // precondition: 0 <= index < 3
+                // postcondition: returns the name of the given elective choice
+                public String getChoice(int index) {
+                    /* code not shown */
+                }
+
+                // postcondition: returns true if an Elective has been assigned to this Student
+                public boolean hasElective() {
+                    /* code not shown */
+                }
+
+                // precondition: e is not null
+                // postcondition: e has been assigned to this Student; e has not been modified
+                public void assignElective(Elective e) {
+                    /* code not shown */
+                }
+
+                // ... constructors, other methods, and other private data not shown
+            }
+
+    The Elective class includes the following methods:
+    - <code>getName</code> - This method returns the name of this elective.
+    - <code>getMaxClassSize</code> - This method returns the maximum number of students that can be assigned to this elective.
+    - <code>getClassSize</code> - This method returns the number of students that have been assigned to this elective.
+    - <code>addStudent</code> - This method assigns the given student to this elective.
+
+            public class Elective {
+                // postcondition: returns the name of this Elective
+                public String getName() {
+                    /* code not shown */
+                }
+
+                // postcondition: returns the maximum number of Students that can be added to this Elective
+                public int getMaxClassSize() {
+                    /* code not shown */
+                }
+
+                // postcondition: returns the number of Students that have been added to this Elective
+                //                0 <= getClassSize() <= getMaxClassSize()
+                public int getClassSize() {
+                    /* code not shown */
+                }
+
+                // precondition:  getClassSize() < getMaxClassSize() 
+                //                s is not null
+                // postcondition: s has been added to this Elective
+                //                getClassSize() has been increased by 1
+                public void addStudent(Student s) {
+                    /* code not shown */
+                }
+
+                // ... constructors, other methods, and other private data not shown
+            }
+
+    *Question 1*
+    > Write the <code>School</code> method <code>getElectiveByName</code>. Method <code>getElectiveByName</code> should return the <code>Elective</code> in <code>electiveList</code> that has the given name.
+    > ##
+    > Complete method <code>getElectiveByName</code> below.
+
+            // precondition:  name is the name of an Elective in electiveList
+            // postcondition: returns the Elective in electiveList with the given name
+            private Elective getElectiveByName(String name)
+
+    *Question 2*
+    > asdf
