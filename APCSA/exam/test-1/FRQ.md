@@ -275,3 +275,98 @@ SHOW ALL YOUR WORK. REMEMBER THAT PROGRAM SEGMENTS ARE TO BE WRITTEN IN JAVA.
 ##
 
 3.  Consider the design of an electronic cookbook modeled with the following class declarations:
+
+            public class Cookbook {
+                private ArrayList recipeList;
+                // each entry is an instance of a Recipe representing one recipe in the cookbook
+
+                // precondition:  numPeople > 0
+                // postcondition: All recipes in recipeList have been converted to server numPeople number of people
+                public void standardize(int numPeople) {
+                    /* code not shown */
+                }
+
+                // ... constructors, other methods, and other private data not shown
+            }
+
+            public class Ingredient {
+                private String name;
+                // the name of this ingredient
+
+                private double amount;
+                // the amount of this ingredient needed in the recipe
+
+                // postcondition: returns the amount of this ingredient needed in the recipe
+                public double getAmount() {
+                    /* code not shown */
+                }
+
+                // precondition:  amt > 0.0
+                // postcondition: amount has been set to amt
+                public void setAmount(double amt) {
+                    /* code not shown */
+                }
+
+                // precondition:  newNumber > 0
+                // postcondition: numberServed has been set to newNumber
+                public void setNumberServed(int newNumber) {
+                    /* code not shown */
+                }
+
+                // ... constructors and other methods not shown
+            }
+
+    > --------------------
+    >
+    > Questions below
+    >
+    > --------------------
+
+    (a) **A recipe in the cookbook is modeled by the class <code>Recipe</code> with the following data and operations:**
+
+    ***Data***
+    - **return the list of ingredients**
+    - **the name of the recipe**
+    - **the list of ingredients used in the recipe**
+    - **the description of the preparation process for the recipe**
+    - **the number of people served by the recipe**
+
+    ***Operations***
+    - **create a recipe with a given name and number of people served**
+    - **add an ingredient to the recipe**
+    - **set the description of the preparation process for the recipe**
+    - **return the name of the recipe**
+    - **return the number of people served by the recipe**
+    - **scale the recipe to serve a given new number of people by changing the amount of each ingredient appropriately**
+
+    Write the definition of the class <code>Recipe</code>, showing the appropriate data definitions and constructor and method signatures. You should *not* write the implementations of the constructor or methods for the <code>Recipe</code> class.
+
+    (b) **Using the signature you wrote in part (a), write the implementation for the method that scales the recipe to serve a given new number of people.**
+
+    **In writing this method, you may call any of the methods in the <code>Recipe</code> class (as you definied it in part (a)) or in the <code>Ingredient</code> class. Assume that these methods work as specified.**
+
+    Write the implementation below
+
+    (c) **Write the <code>Cookbook</code> method <code>standardize</code> as described at the beginning of the question.**
+
+    **In writing this method, you may call any of the methods in the <code>Recipe</code> class (as you defined it in part (a)). Assume that these methods work as specified**
+
+    Complete method <code>standardize</code> below
+
+            // precondition:  numPeople > 0
+            // postcondition: All recipes in recipeList have been scaled to serve numPeople number of people
+            public void standardize(int numPeople)
+
+##
+
+4.  Consider a school that contains x number of students that all start their first period class in one of n classrooms. This scenario can be represented using three classes. The <code>School</code> class contains an array of all the <code>Classrooms</code> in the school. The <code>Classroom</code> class has fields for the teacher in charge of the room <code>teacherName</code> and an array of all the <code>Students</code> in the classroom <code>Students</code>. The <code>Student</code> class has a field for the name of the student <code>studentName</code> and the ID number of the student <code>studentID</code>.
+
+    The <code>School</code> class contains a method <code>findStudent</code> that takes a teacher's name and a student ID as arguments and returns the name of the student. The method utilizes a sequential search algorithm to find the correct classroom and a binary search algorithm to find the correct student. If the student is not found in the school, the method returns "Student Not Found."
+
+    > --------------------
+    >
+    > Question below
+    >
+    > --------------------
+
+    **Write the complete <code>School</code>, <code>Classroom</code>, and <code>Student</code> classes, including any instance variables, constructors, and necessary methods. You may assume that the student ID numbers in each classroom are sorted in ascending order.**
