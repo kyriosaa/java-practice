@@ -41,7 +41,7 @@ Determine the answer to each of the following questions or incomplete statements
             System.out.print(d);
         }
 
-    What is printed as the result of the call *trial()*?
+    What is printed as the result of the call <code>trial()</code>?
     - (A) 2010
     - (B) 2010105
     - (C) 2010510
@@ -59,12 +59,12 @@ Determine the answer to each of the following questions or incomplete statements
             return d;
         }
     
-    What is returned by the call *mystery(x, y)*?
-    - (A) The sum of all the integers greater than *y* but less than or equal to *x*
-    - (B) The sum of all the integers greater than or equal to *y* but less than or equal to *x*
-    - (C) The sum of all the integers greater than *y* but less than *x*
-    - (D) The sum of all the integers greater than *y* but lessthan or equal to *x*
-    - (E) The sum of all the integers less than *y* but greater than or equal to *x*
+    What is returned by the call <code>mystery(x, y)</code>?
+    - (A) The sum of all the integers greater than <code>y</code> but less than or equal to <code>x</code>
+    - (B) The sum of all the integers greater than or equal to <code>y</code> but less than or equal to <code>x</code>
+    - (C) The sum of all the integers greater than <code>y</code> but less than <code>x</code>
+    - (D) The sum of all the integers greater than <code>y</code> but lessthan or equal to <code>x</code>
+    - (E) The sum of all the integers less than <code>y</code> but greater than or equal to <code>x</code>
 ##
 3. **Consider the following method:**
 
@@ -76,7 +76,7 @@ Determine the answer to each of the following questions or incomplete statements
             }
         }
 
-    What value is returned by the call *mystery(3)*?
+    What value is returned by the call <code>mystery(3)</code>?
     - (A) 0123
     - (B) 00123
     - (C) 0010012
@@ -179,14 +179,14 @@ Determine the answer to each of the following questions or incomplete statements
         PostOffice p[];
         p = new PostOffice[10];
 
-    Assuming that the box has been assigned and that it has at least four pieces of mail waiting in it, what is the correct way of getting the fourth piece of mail from the 57th box of the tenth post office of *p*?
-    - (A) Mail m = p[10].getBox(57).getmail(4);
-    - (B) Mail m = p[9].getBox(56).getMail(3);
-    - (C) Mail m = p.getMail(57).getMail(4) [10];
-    - (D) Mail m = getMail(getBox(p[9], 560, 3));
-    - (E) Mail m = new Mail(10, 57, 4);
+    Assuming that the box has been assigned and that it has at least four pieces of mail waiting in it, what is the correct way of getting the fourth piece of mail from the 57th box of the tenth post office of <code>p</code>?
+    - (A) <code>Mail m = p[10].getBox(57).getmail(4);</code>
+    - (B) <code>Mail m = p[9].getBox(56).getMail(3);</code>
+    - (C) <code>Mail m = p.getMail(57).getMail(4) [10];</code>
+    - (D) <code>Mail m = getMail(getBox(p[9], 560, 3));</code>
+    - (E) <code>Mail m = new Mail(10, 57, 4);</code>
 
-7. **Consider the incomplete function *printEmptyBoxes* given below. *printEmptyBoxes* should print the box numbers of all of the boxes that do not contain mail:**
+7. **Consider the incomplete function <code>printEmptyBoxes</code> given below. <code>printEmptyBoxes</code> should print the box numbers of all of the boxes that do not contain mail:**
 
         public void printEmptyBoxes(PostOffice p[]) {
             for(int k = 0; k < p.length - 1; k++) {
