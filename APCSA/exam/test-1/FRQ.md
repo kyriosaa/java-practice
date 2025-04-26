@@ -64,7 +64,50 @@ SHOW ALL YOUR WORK. REMEMBER THAT PROGRAM SEGMENTS ARE TO BE WRITTEN IN JAVA.
     >
     > All three of Katharine's choices are now fully enrolled. Katharine will remain unassigned to an elective.
 
-    In this problem, the school is modeled by the class *School*. Students and electives are modeled by the class *Student* and *Elective* respectively.
+    In this problem, the school is modeled by the class <code>School</code>. Students and electives are modeled by the class <code>Student</code> and <code>Elective</code> respectively.
 
     The <code>School</code> class includes the following methods and private data:
-    - <code>studentList</code> - This
+    - <code>studentList</code> - This <code>ArrayList</code> holds the list of students in the order in which the students should be scheduled.
+    - <code>electiveList</code> - This <code>ArrayList</code> holds the electives that students may choose.
+    - <code>getElectiveByName</code> - This method returns the <code>Elective</code> in <code>electiveList</code> with the given name.
+    - <code>assignElectivesToStudents</code> - This method encapsulates the functionality of assigning students (if possible) their first, second, or third elective choice.
+    - <code>studentsWithoutElectives</code> - This method returns an <code>ArrayList</code> containing students that have not been assigned an elective.
+
+            public class School {
+                private ArrayList<Student> studentList;
+                // each entry is an instance of a Student representing one student at the school
+                // students are in the order they should be scheduled
+
+                private ArrayList<Elective> electiveList;
+                // each entry is an instance of an Elective representing one elective offered at the school
+
+                // precondition: name is the name of an Elective in electiveList
+                // postcondition: returns the Elective in electiveList with the given name
+                private Elective getElectiveByName(String name) {
+                    /* to be implemented in part(a) */
+                }
+
+                // postcondition: returns the size of electiveList
+                private int getElectiveListSize() {
+                    returns electiveList.size();
+                }
+
+                private int getStudentListSize() {
+                    returns studentList.size();
+                }
+
+                // postcondition: All Students in studentList have been either assigned their first available elective choice or not assigned
+                //                All Electives in electiveList have been updated appropriately as Students are assigned to them
+                public void assignElectivesToStudents() {
+                    /* to be implemented in part(b) */
+                }
+
+                // postcondition: returns a list of those Students who have not been assigned an Elective
+                public ArrayList<Student> studentsWithoutElectives() {
+                    /* to be implemented in part(c) */
+                }
+
+                // ... constructors, other methods, and other private data not shown
+            }
+        
+    The Student class includes the following methods and private data:
