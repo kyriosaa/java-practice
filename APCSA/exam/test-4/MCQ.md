@@ -24,24 +24,26 @@ Determine the answer to each of the following questions or incomplete statements
 
 ## MULTIPLE CHOICE QUESTIONS
 
-1.  **What will be the result of the following statement?**
+1.  **Consider the following code segment:**
 
     ```java
     (int) (5 / 2)
     ```
 
+    What will be the result of the following statement?
     - (A) 2
     - (B) 2.5
     - (C) 3
     - (D) 5
     - (E) The statement would generate an error.
 ##
-2.  **Which of the following statements is equivalent to the following code?**
+2.  **Consider the following code segment:**
 
     ```java
     num += 1
     ```
 
+    Which of the following statements is equivalent to the following code?
     - (A)
     ```java
     num = 1
