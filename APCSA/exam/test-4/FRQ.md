@@ -25,31 +25,31 @@ SHOW ALL YOUR WORK. REMEMBER THAT PROGRAM SEGMENTS ARE TO BE WRITTEN IN JAVA.
 
 1.  A day care has a program to keep track of its employees and which children they care for during the day. An <code>Employee</code> has a minimum and maximum age they can watch. The <code>DayCare</code> also has a maximum ratio that specifies the maximum number of children a single employee can watch. Below is the full <code>DayCare</code> class:
 
-        ```java
-        public class DayCare {
-            private ArrayList<Employee> employees;
-            private ArrayList<Child> children;
-            private int maxRatio;
-            
-            public DayCare(int maxRatio) {
-                employees = new ArrayList<Employee>();
-                children = new ArrayList<Child>();
-                this.maxRatio = maxRatio;
-            }
-
-            public boolean findEmployeeForChild(Child c) {
-                /* To be completed in part a */
-            }
-
-            public boolean runDayCare() {
-                /* To be completed in part b */
-            }
-
-            public boolean addChild(Child c) {
-                /* To be completed in part c */
-            }
+    ```java
+    public class DayCare {
+        private ArrayList<Employee> employees;
+        private ArrayList<Child> children;
+        private int maxRatio;
+        
+        public DayCare(int maxRatio) {
+            employees = new ArrayList<Employee>();
+            children = new ArrayList<Child>();
+            this.maxRatio = maxRatio;
         }
-        ```
+
+        public boolean findEmployeeForChild(Child c) {
+            /* To be completed in part a */
+        }
+
+        public boolean runDayCare() {
+            /* To be completed in part b */
+        }
+
+        public boolean addChild(Child c) {
+            /* To be completed in part c */
+        }
+    }
+    ```
 
     > --------------------
     >
@@ -109,6 +109,7 @@ SHOW ALL YOUR WORK. REMEMBER THAT PROGRAM SEGMENTS ARE TO BE WRITTEN IN JAVA.
             ```java
             /* Return true if the Child was added to the ArrayList, false otherwise */
             public boolean addChild(Child c)
+            ```
 
 ##
 
