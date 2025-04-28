@@ -6,9 +6,11 @@
 
 1.  >   **A**
     >
-    > You start with the division in the second pair of parenthesis to get a result of 2.5. This is not the final answer, however, so (B) is not correct. When this number is cast to an integer by the (<code>int</code>), it removes the decimal to result in a final value of 2. Casting to an integer never rounds so (C) is incorrect.
+    >> You start with the division in the second pair of parenthesis to get a result of 2.5. This is not the final answer, however, so (B) is not correct. When this number is cast to an integer by the (<code>int</code>), it removes the decimal to result in a final value of 2. Casting to an integer never rounds so (C) is incorrect.
 
-2.  >   **E**
+2.  >>   **E**
+    >
+    > The += operator is a shortcut to adding to a numeric variable. Answer (A) is incorrect because it changes the value of num to 1 instead of adding 1. Answer (B) successfully adds 1 to the value of num, but it does not store the new result in num so the variable remains unchanged. (C) would be correct without the 1 at the end, but as written it would result in a syntax error. (D) is incorrect because in an assignment statement the variable being assigned a value needs to appear on the left.
 
 3.  >   **C**
 
