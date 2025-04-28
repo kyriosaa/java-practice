@@ -101,147 +101,147 @@
 # FRQ ANSWER SHEET
 
 ## 1.  
-    (a)
+(a)
 
-        ```java
-        public boolean findEmployeeForChild(Child c) {
-            for(Employee e: employees) {
-                if(e.childrenAssigned() < maxRatio && e.canTeach(c.getAge())) {
-                    e.assignChild(c);
-                    return true;
-                }
-            }
-            return false;
-        }
-        ```
-
-    This can also be done with a typical for loop or a while loop and the .get method. A loop is necessary to look at each <code>Employee</code> in the ArrayList. You must then make sure the chosen <code>Employee</code> doesn't already have the maximum number of children allowed. You must also send the age of the <code>Child</code> using the <code>getAge</code> accessor to the <code>canTeach</code> method to see if the chosen <code>Employee</code> is eligible to teach the given <code>Child</code>.
-
-    If an <code>Employee</code> is found for the given <code>Child</code>, you need to assign the <code>Child</code> to the <code>Employee</code> using the <code>assignChild</code> method and return true.
-
-    You should not return false inside the loop since it is possible a different <code>Employee</code> is eligible to teach the given <code>Child</code>.
-
-    **Rubric:**
-    > (+1) For loop correctly iterates through all elements of the employees list.
-    >
-    > (+1) If statement correctly determines if children assigned to the current employee are less than the maximum allowed.
-    >
-    > (+1) If statement correctly determines if current employee can teach the given child based on their age.
-    >
-    > (+1) The child is assigned to the employee if they meet both conditions.
-    >
-    > (+1) True is returned if the child is assigned to an employee, false is returned otherwise.
-
-
-    ##
-
-    (b)
-
-    ```java
-    public boolean runDayCare() {
-        for(Child c: children) {
-            if(findEmployeeForChild(c) == false) {
-                return false;
-            }
-        }
-        return true;
-    }
-    ```
-
-    This can also be done with a typical for loop or a while loop and the .get method. A loop is needed to look at each <code>Child</code> in the ArrayList. You must then call the <code>findEmployeeForChild</code> method from Part A to see if there is an <code>Employee</code> eligible to teach the current <code>Child</code>. If not, you need to return false. You shouldn't return true inside the loop since it is possible there is a later <code>Child</code> who can't be taught by any of the <code>Employees</code> in the ArrayList.
-
-    **Rubric:**
-    > (+1) For loop correctly iterates through all elements of the children list.
-    > 
-    > (+1) The findEmployeeForChild method is called correctly.
-
-
-    ##
-
-    (c)
-
-    ```java
-    public boolean addChild(Child c) {
-        if(findEmployeeForChild(c) == true) {
-            children.add(c);
+```java
+public boolean findEmployeeForChild(Child c) {
+    for(Employee e: employees) {
+        if(e.childrenAssigned() < maxRatio && e.canTeach(c.getAge())) {
+            e.assignChild(c);
             return true;
         }
-        return false;
     }
-    ```
+    return false;
+}
+```
 
-    You must then call the <code>findEmployeeForChild</code> method from Part A to see if there is an <code>Employee</code> eligible to teach the given <code>Child</code>. If there is, you add the <code>Child</code> to the ArrayList using the <code>add</code> method and return true. If there isn't, you return false.
+This can also be done with a typical for loop or a while loop and the .get method. A loop is necessary to look at each <code>Employee</code> in the ArrayList. You must then make sure the chosen <code>Employee</code> doesn't already have the maximum number of children allowed. You must also send the age of the <code>Child</code> using the <code>getAge</code> accessor to the <code>canTeach</code> method to see if the chosen <code>Employee</code> is eligible to teach the given <code>Child</code>.
 
-    **Rubric:**
-    > (+1) The findEmployeeForChild method is called correctly.
-    >
-    > (+1) Children are added to the children list correctly if an employee is found.
+If an <code>Employee</code> is found for the given <code>Child</code>, you need to assign the <code>Child</code> to the <code>Employee</code> using the <code>assignChild</code> method and return true.
+
+You should not return false inside the loop since it is possible a different <code>Employee</code> is eligible to teach the given <code>Child</code>.
+
+**Rubric:**
+> (+1) For loop correctly iterates through all elements of the employees list.
+>
+> (+1) If statement correctly determines if children assigned to the current employee are less than the maximum allowed.
+>
+> (+1) If statement correctly determines if current employee can teach the given child based on their age.
+>
+> (+1) The child is assigned to the employee if they meet both conditions.
+>
+> (+1) True is returned if the child is assigned to an employee, false is returned otherwise.
+
+
+##
+
+(b)
+
+```java
+public boolean runDayCare() {
+    for(Child c: children) {
+        if(findEmployeeForChild(c) == false) {
+            return false;
+        }
+    }
+    return true;
+}
+```
+
+This can also be done with a typical for loop or a while loop and the .get method. A loop is needed to look at each <code>Child</code> in the ArrayList. You must then call the <code>findEmployeeForChild</code> method from Part A to see if there is an <code>Employee</code> eligible to teach the current <code>Child</code>. If not, you need to return false. You shouldn't return true inside the loop since it is possible there is a later <code>Child</code> who can't be taught by any of the <code>Employees</code> in the ArrayList.
+
+**Rubric:**
+> (+1) For loop correctly iterates through all elements of the children list.
+> 
+> (+1) The findEmployeeForChild method is called correctly.
+
+
+##
+
+(c)
+
+```java
+public boolean addChild(Child c) {
+    if(findEmployeeForChild(c) == true) {
+        children.add(c);
+        return true;
+    }
+    return false;
+}
+```
+
+You must then call the <code>findEmployeeForChild</code> method from Part A to see if there is an <code>Employee</code> eligible to teach the given <code>Child</code>. If there is, you add the <code>Child</code> to the ArrayList using the <code>add</code> method and return true. If there isn't, you return false.
+
+**Rubric:**
+> (+1) The findEmployeeForChild method is called correctly.
+>
+> (+1) Children are added to the children list correctly if an employee is found.
 
 ## 2.  
-    (a)
+(a)
 
-    ```java
-    public class Player extends Person {
-        private String position;
+```java
+public class Player extends Person {
+    private String position;
 
-        public Player(String name, int age, String pos) {
-            super(name, age);
-            position = pos;
-        }
-
-        public void changePosition(String p) {
-            position = p;
-        }
+    public Player(String name, int age, String pos) {
+        super(name, age);
+        position = pos;
     }
-    ```
 
-    The class header must look exactly the same as the header above. The public class Player part would be necessary for any class you are writing called <code>Player</code>. The extends Person part is necessary because a <code>Player</code> is a <code>Person</code>.
+    public void changePosition(String p) {
+        position = p;
+    }
+}
+```
 
-    The position variable **must** be declared as private and it must be a String.
+The class header must look exactly the same as the header above. The public class Player part would be necessary for any class you are writing called <code>Player</code>. The extends Person part is necessary because a <code>Player</code> is a <code>Person</code>.
 
-    The constructor (public Player), must take three parameters in the order shown above since the example shows the name, age, and position in that order. They can be called whatever you want, however. The name and age variables must be sent to the <code>Person</code> class using the super() call and they must be in the given order. The position variable should be set after the super() call.
+The position variable **must** be declared as private and it must be a String.
 
-    The <code>changePosition</code> method should be void and should take a String parameter. The only thing it needs to do is set the class-level position variable.
+The constructor (public Player), must take three parameters in the order shown above since the example shows the name, age, and position in that order. They can be called whatever you want, however. The name and age variables must be sent to the <code>Person</code> class using the super() call and they must be in the given order. The position variable should be set after the super() call.
 
-    **Rubric:**
-    > (+1) <code>public class Player</code>
-    >
-    > (+1) <code>extends Person</code>
-    >
-    > (+1) A String variable is declared as private.
-    >
-    > (+1) The constructor header is correct (<code>public Player</code>)
-    >
-    > (+1) The constructor takes a String paremeter, an integer parameter, and a String parameter in that order.
-    >
-    > (+1) The constructor calls uses super to initialize the name and age.
-    >
-    > (+1) The constructor initializes the class-level String variable.
-    >
-    > (+1) The header for <code>changePosition</code> is correct.
-    >
-    > (+1) The <code>changePosition</code> method correctly modifies the class-level String variable.
+The <code>changePosition</code> method should be void and should take a String parameter. The only thing it needs to do is set the class-level position variable.
+
+**Rubric:**
+> (+1) <code>public class Player</code>
+>
+> (+1) <code>extends Person</code>
+>
+> (+1) A String variable is declared as private.
+>
+> (+1) The constructor header is correct (<code>public Player</code>)
+>
+> (+1) The constructor takes a String paremeter, an integer parameter, and a String parameter in that order.
+>
+> (+1) The constructor calls uses super to initialize the name and age.
+>
+> (+1) The constructor initializes the class-level String variable.
+>
+> (+1) The header for <code>changePosition</code> is correct.
+>
+> (+1) The <code>changePosition</code> method correctly modifies the class-level String variable.
 
 ## 3.
-    (a)
+(a)
 
-    ```java
-    public static String getFirstName(String name) {
-        int space = name.indexOf(" ");
-        String first = name.substring(0, space);
-        return first;
-    }
-    ```
+```java
+public static String getFirstName(String name) {
+    int space = name.indexOf(" ");
+    String first = name.substring(0, space);
+    return first;
+}
+```
 
-    You need to use the <code>indexOf</code> method to find the location of the space. Once you know where the space is located, you can use the <code>substring</code> method to extract from the beginning of the name (index 0) up to the space. Since the second parameter of the <code>substring</code> method is excluded, the space will not be included when the first name is returned.
+You need to use the <code>indexOf</code> method to find the location of the space. Once you know where the space is located, you can use the <code>substring</code> method to extract from the beginning of the name (index 0) up to the space. Since the second parameter of the <code>substring</code> method is excluded, the space will not be included when the first name is returned.
 
-    **Rubric:**
-    > (+1) The <code>indexOf</code> method is used correctly to find the first space.
-    >
-    > (+1) The <code>substring</code> method is used correctly to extract the first name.
-    >
-    > (+1) The first name is returned correctly.
+**Rubric:**
+> (+1) The <code>indexOf</code> method is used correctly to find the first space.
+>
+> (+1) The <code>substring</code> method is used correctly to extract the first name.
+>
+> (+1) The first name is returned correctly.
 
-    ##
-    (b)
+##
+(b)
 
