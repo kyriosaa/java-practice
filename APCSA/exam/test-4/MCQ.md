@@ -603,4 +603,215 @@ public class BaseballPlayer {
     - (D) The data must be integers
     - (E) Both A and C are required to use binary search
 ##
-29. 
+29. **An <code>ArrayList</code> has the following elements with each step of sorting shown:**
+
+        Original List:      42 25 10 20 09
+        Step 1:             09 25 10 20 42
+        Step 2:             09 10 25 20 42
+        Step 3:             09 10 20 25 42
+        Step 4:             09 10 20 25 42
+
+    What sorting method is being used?
+    - (A) Bubble Sort
+    - (B) Insertion Sort
+    - (C) Merge Sort
+    - (D) Quick Sort
+    - (E) Selection Sort
+##
+30. **Consider the following code segment:**
+
+    ```java
+    int x = 0;
+    for(String temp: myList)
+        if(temp.substring(0, 1).equals("s"))
+            x++;
+    ```
+
+    What will be stored in the variable <code>x</code> after the code above is executed (assuming <code>myList</code> is an <code>ArrayList</code> of Strings)?
+    - (A) The number of elements in <code>myList</code> equal to "s"
+    - (B) The number of elements in <code>myList</code> that start with "s"
+    - (C) The number of elements in <code>myList</code> that end with "s"
+    - (D) The total number of elements in <code>myList</code>
+    - (E) <code>x</code> will remain equal to 0
+##
+31. **What is the correct way to declare and initialize a 2D array of Strings with 5 rows and 10 columns?**
+
+    - (A)
+    ```java
+    String myArray = new array[10][5];
+    ```
+    - (B)
+    ```java
+    String myArray = new String[5][10];
+    ```
+    - (C)
+    ```java
+    String[] myArray = new String[10][5];
+    ```
+    - (D)
+    ```java
+    String[][] myArray = new String[5][10];
+    ```
+    - (E)
+    ```java
+    String[][] myArray = new String[10][5];
+    ```
+##
+32. **Consider the following code segment:**
+
+    ```java
+    int x = 0;
+    for(int[] row: myArray)
+        for(int temp: row)
+            x += temp;
+    ```
+
+    What will be stored in the variable <code>x</code> after the code above executes assuming <code>myArray</code> is a 2D array of integers?
+    - (A) The total number of elements in the 2D array
+    - (B) The total number of rows in the 2D array
+    - (C) The total number of columns in the 2D array
+    - (D) The sum of all the elements in the 2D array
+    - (E) The sum of the elements in the first row of the 2D array
+##
+33. **Consider the following code segment:**
+
+    ```java
+    for(int row = 0; row <= myArray.length; row++)
+        for(int col = 0; col <= /* CONDITION */; col++)
+    ```
+
+    - (A)
+    ```java
+    myArray.length
+    ```
+    - (B)
+    ```java
+    myArray.length - 1
+    ```
+    - (C)
+    ```java
+    myArray[0].length
+    ```
+    - (D)
+    ```java
+    myArray[0].length - 1
+    ```
+    - (E)
+    ```java
+    myArray[length - 1]
+    ```
+##
+34. **What would the class header look like for a class called <code>Teacher</code> that is a subclass of <code>Employee</code>?**
+
+    - (A)
+    ```java
+    public class Teacher
+    ```
+    - (B)
+    ```java
+    public class Teacher extends Employee
+    ```
+    - (C)
+    ```java
+    public class Teacher implements Employee
+    ```
+    - (D)
+    ```java
+    public class Employee extends Teacher
+    ```
+    - (E)
+    ```java
+    public class Employee implements Teacher
+    ```
+##
+35. **Consider the following code segment:**
+
+    ```java
+    1.  public void Teacher(String name, int salary) {
+    2.      super(name);
+    3.      this.salary = salary;    
+    4.  }
+    ```
+
+    The constructor above has an error. Which line contains the error?
+    - (A) Line 1
+    - (B) Line 2
+    - (C) Line 3
+    - (D) Lines 1 and 2
+    - (E) Lines 2 and 3
+##
+36. **If you create a class that has a method called <code>calculatePerimeter</code> that overrides a superclass method of the same name, what object-oriented programming concept is this an example of?**
+
+    - (A) Abstraction
+    - (B) Class Design
+    - (C) Encapsulation
+    - (D) Inheritance
+    - (E) Polymorphism
+##
+37. **Which of the following is the superclass for all classes in Java?**
+
+    - (A) Class
+    - (B) Comparable
+    - (C) Java
+    - (D) Object
+    - (E) String
+##
+38. **Consider the following code segment:**
+
+    ```java
+    1.  public int sum(int sum) {
+    2.      int total;
+    3.      if(num == 1)
+    4.          total = 1;
+    5.      else
+    6.          total = num + sum(num - 1)
+    7.      return total;
+    8.  }
+    ```
+
+    Which line contains the base case in the recursive code above?
+    - (A) Line 2
+    - (B) Line 3
+    - (C) Line 4
+    - (D) Line 6
+    - (E) Line 7
+##
+39. **Consider the following code segment:**
+
+    ```java
+    public int sum(int sum) {
+        int total;
+        if(num == 1) 
+            total = 1;
+        else
+            total = num + sum(num - 1)
+        return total;
+    }
+    ```
+
+    What would be the result of the call <code>sum(5)</code>?
+    - (A) 4
+    - (B) 5
+    - (C) 10
+    - (D) 14
+    - (E) 15
+##
+40. **Consider the following code segment:**
+
+    ```java
+    public int fib(int num) {
+        if(num <= 1)
+            return n;
+        else
+            return fib(n - 1) + fib(n - 2)
+    }
+    ```
+
+    How many recursive calls would occur with the call <code>fib(5)</code>?
+    - (A) 0
+    - (B) 1
+    - (C) 5
+    - (D) 10
+    - (E) 15
+
+> **END SECTION 1**
