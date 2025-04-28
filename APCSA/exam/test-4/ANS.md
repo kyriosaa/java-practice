@@ -2,7 +2,7 @@
 
 **THESE ANSWERS ARE VERIFIED BY THE OFFICIAL ANSWER SHEET. PLEASE CHECK IT IN THE RESOURCES FOLDER IF NEED BE**
 
-## MCQ ANSWER SHEET
+# MCQ ANSWER SHEET
 
 1.  >   **A**
     >
@@ -98,9 +98,9 @@
 
 40. >   **E**
 
-## FRQ ANSWER SHEET
+# FRQ ANSWER SHEET
 
-1.  ### (a)
+## 1.  (a)
 
     ```java
     public boolean findEmployeeForChild(Child c) {
