@@ -5,6 +5,8 @@
 ## MCQ ANSWER SHEET
 
 1.  >   **A**
+    >
+    > You start with the division in the second pair of parenthesis to get a result of 2.5. This is not the final answer, however, so (B) is not correct. When this number is cast to an integer by the (<code>int</code>), it removes the decimal to result in a final value of 2. Casting to an integer never rounds so (C) is incorrect.
 
 2.  >   **E**
 
