@@ -73,68 +73,72 @@ SHOW ALL YOUR WORK. REMEMBER THAT PROGRAM SEGMENTS ARE TO BE WRITTEN IN JAVA.
     - <code>assignElectivesToStudents</code> - This method encapsulates the functionality of assigning students (if possible) their first, second, or third elective choice.
     - <code>studentsWithoutElectives</code> - This method returns an <code>ArrayList</code> containing students that have not been assigned an elective.
 
-            public class School {
-                private ArrayList<Student> studentList;
-                // each entry is an instance of a Student representing one student at the school
-                // students are in the order they should be scheduled
+    ```java
+    public class School {
+        private ArrayList<Student> studentList;
+        // each entry is an instance of a Student representing one student at the school
+        // students are in the order they should be scheduled
 
-                private ArrayList<Elective> electiveList;
-                // each entry is an instance of an Elective representing one elective offered at the school
+        private ArrayList<Elective> electiveList;
+        // each entry is an instance of an Elective representing one elective offered at the school
 
-                // precondition: name is the name of an Elective in electiveList
-                // postcondition: returns the Elective in electiveList with the given name
-                private Elective getElectiveByName(String name) {
-                    /* to be implemented in part (a) */
-                }
+        // precondition: name is the name of an Elective in electiveList
+        // postcondition: returns the Elective in electiveList with the given name
+        private Elective getElectiveByName(String name) {
+            /* to be implemented in part (a) */
+        }
 
-                // postcondition: returns the size of electiveList
-                private int getElectiveListSize() {
-                    returns electiveList.size();
-                }
+        // postcondition: returns the size of electiveList
+        private int getElectiveListSize() {
+            returns electiveList.size();
+        }
 
-                private int getStudentListSize() {
-                    returns studentList.size();
-                }
+        private int getStudentListSize() {
+            returns studentList.size();
+        }
 
-                // postcondition: All Students in studentList have been either assigned their first available elective choice or not assigned
-                //                All Electives in electiveList have been updated appropriately as Students are assigned to them
-                public void assignElectivesToStudents() {
-                    /* to be implemented in part (b) */
-                }
+        // postcondition: All Students in studentList have been either assigned their first available elective choice or not assigned
+        //                All Electives in electiveList have been updated appropriately as Students are assigned to them
+        public void assignElectivesToStudents() {
+            /* to be implemented in part (b) */
+        }
 
-                // postcondition: returns a list of those Students who have not been assigned an Elective
-                public ArrayList<Student> studentsWithoutElectives() {
-                    /* to be implemented in part (c) */
-                }
+        // postcondition: returns a list of those Students who have not been assigned an Elective
+        public ArrayList<Student> studentsWithoutElectives() {
+            /* to be implemented in part (c) */
+        }
 
-                // ... constructors, other methods, and other private data not shown
-            }
+        // ... constructors, other methods, and other private data not shown
+    }
+    ```
         
     The Student class includes the following methods and private data:
     - <code>getChoice</code> - This method returns the name of the given elective choice of the student. The first elective choice has index 0, the second has index 1, and the third has index 2.
     - <code>hasElective</code> - This method returns true if the student has been assigned an elective; it returns false otherwise.
     - <code>assignElective</code> - This method assigns the given elective to this student.
 
-            public class Student {
-                // precondition: 0 <= index < 3
-                // postcondition: returns the name of the given elective choice
-                public String getChoice(int index) {
-                    /* code not shown */
-                }
+    ```java
+    public class Student {
+        // precondition: 0 <= index < 3
+        // postcondition: returns the name of the given elective choice
+        public String getChoice(int index) {
+            /* code not shown */
+        }
 
-                // postcondition: returns true if an Elective has been assigned to this Student
-                public boolean hasElective() {
-                    /* code not shown */
-                }
+        // postcondition: returns true if an Elective has been assigned to this Student
+        public boolean hasElective() {
+            /* code not shown */
+        }
 
-                // precondition: e is not null
-                // postcondition: e has been assigned to this Student; e has not been modified
-                public void assignElective(Elective e) {
-                    /* code not shown */
-                }
+        // precondition: e is not null
+        // postcondition: e has been assigned to this Student; e has not been modified
+        public void assignElective(Elective e) {
+            /* code not shown */
+        }
 
-                // ... constructors, other methods, and other private data not shown
-            }
+        // ... constructors, other methods, and other private data not shown
+    }
+    ```
 
     The Elective class includes the following methods:
     - <code>getName</code> - This method returns the name of this elective.
@@ -142,33 +146,35 @@ SHOW ALL YOUR WORK. REMEMBER THAT PROGRAM SEGMENTS ARE TO BE WRITTEN IN JAVA.
     - <code>getClassSize</code> - This method returns the number of students that have been assigned to this elective.
     - <code>addStudent</code> - This method assigns the given student to this elective.
 
-            public class Elective {
-                // postcondition: returns the name of this Elective
-                public String getName() {
-                    /* code not shown */
-                }
+    ```java
+    public class Elective {
+        // postcondition: returns the name of this Elective
+        public String getName() {
+            /* code not shown */
+        }
 
-                // postcondition: returns the maximum number of Students that can be added to this Elective
-                public int getMaxClassSize() {
-                    /* code not shown */
-                }
+        // postcondition: returns the maximum number of Students that can be added to this Elective
+        public int getMaxClassSize() {
+            /* code not shown */
+        }
 
-                // postcondition: returns the number of Students that have been added to this Elective
-                //                0 <= getClassSize() <= getMaxClassSize()
-                public int getClassSize() {
-                    /* code not shown */
-                }
+        // postcondition: returns the number of Students that have been added to this Elective
+        //                0 <= getClassSize() <= getMaxClassSize()
+        public int getClassSize() {
+            /* code not shown */
+        }
 
-                // precondition:  getClassSize() < getMaxClassSize() 
-                //                s is not null
-                // postcondition: s has been added to this Elective
-                //                getClassSize() has been increased by 1
-                public void addStudent(Student s) {
-                    /* code not shown */
-                }
+        // precondition:  getClassSize() < getMaxClassSize() 
+        //                s is not null
+        // postcondition: s has been added to this Elective
+        //                getClassSize() has been increased by 1
+        public void addStudent(Student s) {
+            /* code not shown */
+        }
 
-                // ... constructors, other methods, and other private data not shown
-            }
+        // ... constructors, other methods, and other private data not shown
+    }
+    ```
 
     > --------------------
     >
@@ -180,9 +186,13 @@ SHOW ALL YOUR WORK. REMEMBER THAT PROGRAM SEGMENTS ARE TO BE WRITTEN IN JAVA.
 
     Complete method <code>getElectiveByName</code> below
 
-            // precondition:  name is the name of an Elective in electiveList
-            // postcondition: returns the Elective in electiveList with the given name
-            private Elective getElectiveByName(String name)
+    ```java
+    // precondition:  name is the name of an Elective in electiveList
+    // postcondition: returns the Elective in electiveList with the given name
+    private Elective getElectiveByName(String name)
+    ```
+
+    > --------------------
 
     (b) **Write the <code>School</code> method <code>assignElectivesToStudents</code>. Method <code>assignElectivesToStudents</code> should assign electives to students as described at the beginning of this question.**
 
@@ -190,16 +200,22 @@ SHOW ALL YOUR WORK. REMEMBER THAT PROGRAM SEGMENTS ARE TO BE WRITTEN IN JAVA.
 
     Complete method <code>assignElectivesToStudents</code> below
 
-            // postcondition: All Students in studentList have been either assigned their first available elective choice or not assigned
-            //                All electives in electiveList have been updated appropriately as Students are assigned to them
-            public void assignElectivesToStudents()
+    ```java
+    // postcondition: All Students in studentList have been either assigned their first available elective choice or not assigned
+    //                All electives in electiveList have been updated appropriately as Students are assigned to them
+    public void assignElectivesToStudents()
+    ```
+
+    > --------------------
 
     (c) **Write the <code>School</code> method <code>studentsWithoutElectives</code>. Method <code>studentsWithoutElectives</code> should return <code>ArrayList</code> of all Students in <code>studentList</code> who do not have an <code>Elective</code> assigned to them.**
 
     Complete method <code>studentsWithoutElectives</code> below
 
-            // postcondition: returns a list of those Students who have not been assigned an Elective
-            public ArrayList studentsWithoutElectives()
+    ```java
+    // postcondition: returns a list of those Students who have not been assigned an Elective
+    public ArrayList studentsWithoutElectives()
+    ```
 
 ##
 
@@ -219,25 +235,27 @@ SHOW ALL YOUR WORK. REMEMBER THAT PROGRAM SEGMENTS ARE TO BE WRITTEN IN JAVA.
 
     A deck is modeled by the following incomplete declaration of the <code>Deck</code> class:
 
-            public class Deck {
-                private int[] cards;
+    ```java
+    public class Deck {
+        private int[] cards;
 
-                public Deck(int numCards) {
-                    /* code not shown */
-                }
+        public Deck(int numCards) {
+            /* code not shown */
+        }
 
-                public boolean inOrder() {
-                    /* to be implemented in part (a) */
-                }
+        public boolean inOrder() {
+            /* to be implemented in part (a) */
+        }
 
-                public void shuffle() {
-                    /* to be implemented in part (b) */
-                }
+        public void shuffle() {
+            /* to be implemented in part (b) */
+        }
 
-                public int reorderingCount() {
-                    /* to be implemented in part (c) */
-                }
-            }
+        public int reorderingCount() {
+            /* to be implemented in part (c) */
+        }
+    }
+    ```
 
     > --------------------
     >
@@ -249,17 +267,25 @@ SHOW ALL YOUR WORK. REMEMBER THAT PROGRAM SEGMENTS ARE TO BE WRITTEN IN JAVA.
 
     Complete method <code>inOrder</code> below
 
-            // precondition:  For all k such that 0 <= k < cards.length, 0 <= cards[k] < cards.length and each cards[k] is unique
-            // postcondition: returns true if cards[k] == k for all 0 <= k < cards.length
-            //                returns false otherwise
-            public boolean inOrder()
+    ```java
+    // precondition:  For all k such that 0 <= k < cards.length, 0 <= cards[k] < cards.length and each cards[k] is unique
+    // postcondition: returns true if cards[k] == k for all 0 <= k < cards.length
+    //                returns false otherwise
+    public boolean inOrder()
+    ```
+
+    > --------------------
 
     (b) **Write the <code>Deck</code> method <code>shuffle</code>. Method <code>shuffle</code> should divide the deck into two equal stacks and interlace them evenly as described at the beginning of this question.**
 
     Complete method <code>shuffle</code> below
 
-            // postcondition: the deck is shuffled by dividing the deck into two equal stacks that are evenly interlaced
-            public void shuffle()
+    ```java
+    // postcondition: the deck is shuffled by dividing the deck into two equal stacks that are evenly interlaced
+    public void shuffle()
+    ```
+
+    > --------------------
 
     (c) **Write the <code>Deck</code> method <code>reorderCount</code>. Method <code>reorderCount</code> should return the number of shuffles necessary to return the deck into its original order.**
 
@@ -267,54 +293,58 @@ SHOW ALL YOUR WORK. REMEMBER THAT PROGRAM SEGMENTS ARE TO BE WRITTEN IN JAVA.
 
     Complete method <code>reorderCount</code> below
 
-            // postcondition: Returns the number of shuffles necessary to return the cards in the deck
-            //                to their original numerical order such that inOrder() == true
-            //                The cards in the deck are in their original numerical order
-            public int reorderCount()
+    ```java
+    // postcondition: Returns the number of shuffles necessary to return the cards in the deck
+    //                to their original numerical order such that inOrder() == true
+    //                The cards in the deck are in their original numerical order
+    public int reorderCount()
+    ```
         
 ##
 
 3.  Consider the design of an electronic cookbook modeled with the following class declarations:
 
-            public class Cookbook {
-                private ArrayList recipeList;
-                // each entry is an instance of a Recipe representing one recipe in the cookbook
+    ```java
+    public class Cookbook {
+        private ArrayList recipeList;
+        // each entry is an instance of a Recipe representing one recipe in the cookbook
 
-                // precondition:  numPeople > 0
-                // postcondition: All recipes in recipeList have been converted to server numPeople number of people
-                public void standardize(int numPeople) {
-                    /* code not shown */
-                }
+        // precondition:  numPeople > 0
+        // postcondition: All recipes in recipeList have been converted to server numPeople number of people
+        public void standardize(int numPeople) {
+            /* code not shown */
+        }
 
-                // ... constructors, other methods, and other private data not shown
-            }
+        // ... constructors, other methods, and other private data not shown
+    }
 
-            public class Ingredient {
-                private String name;
-                // the name of this ingredient
+    public class Ingredient {
+        private String name;
+        // the name of this ingredient
 
-                private double amount;
-                // the amount of this ingredient needed in the recipe
+        private double amount;
+        // the amount of this ingredient needed in the recipe
 
-                // postcondition: returns the amount of this ingredient needed in the recipe
-                public double getAmount() {
-                    /* code not shown */
-                }
+        // postcondition: returns the amount of this ingredient needed in the recipe
+        public double getAmount() {
+            /* code not shown */
+        }
 
-                // precondition:  amt > 0.0
-                // postcondition: amount has been set to amt
-                public void setAmount(double amt) {
-                    /* code not shown */
-                }
+        // precondition:  amt > 0.0
+        // postcondition: amount has been set to amt
+        public void setAmount(double amt) {
+            /* code not shown */
+        }
 
-                // precondition:  newNumber > 0
-                // postcondition: numberServed has been set to newNumber
-                public void setNumberServed(int newNumber) {
-                    /* code not shown */
-                }
+        // precondition:  newNumber > 0
+        // postcondition: numberServed has been set to newNumber
+        public void setNumberServed(int newNumber) {
+            /* code not shown */
+        }
 
-                // ... constructors and other methods not shown
-            }
+        // ... constructors and other methods not shown
+    }
+    ```
 
     > --------------------
     >
@@ -341,11 +371,15 @@ SHOW ALL YOUR WORK. REMEMBER THAT PROGRAM SEGMENTS ARE TO BE WRITTEN IN JAVA.
 
     Write the definition of the class <code>Recipe</code>, showing the appropriate data definitions and constructor and method signatures. You should *not* write the implementations of the constructor or methods for the <code>Recipe</code> class.
 
+    > --------------------
+
     (b) **Using the signature you wrote in part (a), write the implementation for the method that scales the recipe to serve a given new number of people.**
 
     **In writing this method, you may call any of the methods in the <code>Recipe</code> class (as you definied it in part (a)) or in the <code>Ingredient</code> class. Assume that these methods work as specified.**
 
     Write the implementation below
+
+    > --------------------
 
     (c) **Write the <code>Cookbook</code> method <code>standardize</code> as described at the beginning of the question.**
 
@@ -353,9 +387,11 @@ SHOW ALL YOUR WORK. REMEMBER THAT PROGRAM SEGMENTS ARE TO BE WRITTEN IN JAVA.
 
     Complete method <code>standardize</code> below
 
-            // precondition:  numPeople > 0
-            // postcondition: All recipes in recipeList have been scaled to serve numPeople number of people
-            public void standardize(int numPeople)
+    ```java
+    // precondition:  numPeople > 0
+    // postcondition: All recipes in recipeList have been scaled to serve numPeople number of people
+    public void standardize(int numPeople)
+    ```
 
 ##
 
