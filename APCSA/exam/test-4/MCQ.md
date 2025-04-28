@@ -396,3 +396,211 @@ Determine the answer to each of the following questions or incomplete statements
     - (D) "msisipi"
     - (E) "mississippi"
 ##
+20. **Consider the following code segment:**
+
+    ```java
+    String[] cities = {"Chicago", "London", "Tokyo", "Manila"};
+    for(String city : cities)
+        System.out.println(city);
+    ```
+
+    What will be printed by the code above?
+    - (A) 
+    ```java
+    Chicago
+    ```
+    - (B)
+    ```java
+    ChicagoLondonTokyoManila
+    ```
+    - (C)
+    ```java
+    Chicago
+    London
+    Tokyo
+    Manila
+    ```
+    - (D)
+    ```java
+    Manila
+    Tokyo
+    London
+    ```
+    - (E)
+    ```java
+    // Nothing will be printed
+    ```
+##
+**The following class will be used for questions 21-23**
+
+```java
+public class BaseballPlayer {
+    String firstName;
+    String lastName;
+    int number;
+    String position;
+
+    public BaseballPlayer(String first, String last, int num) {
+        // Constructor
+    }
+
+    public void setPosition(String pos) {
+        // Implementation not shown
+    }
+}
+```
+
+21. **Question:**
+
+    The constructor needs to initialize the <code>firstName</code>, <code>lastName</code>, and <code>number</code> variables. What code would be used to complete the constructor?
+    - (A)
+    ```java
+    first = firstName;
+    last = lastName;
+    num = number;
+    ```
+    - (B)
+    ```java
+    firstName = first;
+    lastName = last;
+    number = num;
+    ```
+    - (C)
+    ```java
+    String first = firstName;
+    String last = lastName;
+    int num = number;
+    ```
+    - (D)
+    ```java
+    String firstName = first;
+    String lastName = last;
+    int number = num;
+    ```
+    - (E)
+    ```java
+    String first = String firstName;
+    String last = String lastName;
+    int num = int number;
+    ```
+
+22. **Question:**
+
+    How would you implement the <code>setPosition</code> mutator to set the <code>position</code> variable of a <code>BaseballPlayer</code>?
+    - (A)
+    ```java
+    return pos;
+    ```
+    - (B)
+    ```java
+    return position;
+    ```
+    - (C)
+    ```java
+    pos = position;
+    ```
+    - (D)
+    ```java
+    position = pos;
+    ```
+    - (E)
+    ```java
+    String pos = position;
+    ```
+
+23. **Question:**
+
+    If the parameters of the constructor were called <code>firstName</code>, <code>lastName</code>, and <code>number</code>, what could you do to initialize the class-level variables?
+    - (A) Change the names of the parameters
+    - (B) Change the names of the class-level variables
+    - (C) Use the <code>this</code> keyword in front of the parameters within the constructor
+    - (D) Use the <code>this</code> keyword in front of the class-level variables within the constructor
+    - (E) It isn't possible to initialize the class-level variables if the parameters have the same name
+##
+24. **Which of the following correctly creates a String array of length 10?**
+
+    - (A)
+    ```java
+    String myArray = new String[10];
+    ```
+    - (B)
+    ```java
+    myArray String = new String[10];
+    ```
+    - (C)
+    ```java
+    String myArray = new array[10];
+    ```
+    - (D)
+    ```java
+    String[] myArray = new array[10];
+    ```
+    - (E)
+    ```java
+    String[] myArray = new String[10];
+    ```
+##
+25. **Consider the following code segment:**
+
+    ```java
+    String temp = players[0];
+    for(int i = 1; i < players.length; i++)
+        if(players[i].compareTo(temp) < 0)
+            temp = players[i];
+    ```
+
+    What does the code above do, assuming players is an array of Strings?
+    - (A) Find Strings in the array that are equal to <code>temp</code>
+    - (B) Find the String in the array that comes first alphabetically and store it in <code>temp</code>
+    - (C) Find the String in the array that comes last alphabetically and store it in <code>temp</code>
+    - (D) Find the first String in the array that comes before <code>temp</code> alphabetically and store it in <code>temp</code>
+    - (E) Find the first String in the array that comes after <code>temp</code> alphabetically and store it in <code>temp</code>
+##
+26. **Consider the following code segment:**
+
+    ```java
+    int x = 0;
+    for(int i = 0; i < nums.length; i++)
+        if(nums[i] % 2 == 0)
+            x++;
+    ```
+
+    What does the code above do, assuming <code>nums</code> is an array of integers?
+    - (A) Count the number of items in <code>nums</code>
+    - (B) Get the total of all the numbers in <code>nums</code>
+    - (C) Get the total of all the even numbers in <code>nums</code>
+    - (D) Count the number of even numbers in <code>nums</code>
+    - (E) Count the number of odd numbers in <code>nums</code>
+##
+27. **How would you access the 10th element of an array called <code>myArray</code>?**
+
+    - (A)
+    ```java
+    myArray[9]
+    ```
+    - (B)
+    ```java
+    myArray[10]
+    ```
+    - (C)
+    ```java
+    myArray = 9
+    ```
+    - (D)
+    ```java
+    myArray = 10
+    ```
+    - (E)
+    ```java
+    [10]myArray
+    ```
+##
+28. **Which of the following is required to use binary search?**
+
+    - (A) The data must be stored in an array
+    - (B) The data must be stored in an <code>ArrayList</code>
+    - (C) The data must be stored
+    - (D) The data must be integers
+    - (E) Both A and C are required to use binary search
+##
+29. 
