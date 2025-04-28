@@ -51,11 +51,9 @@ SHOW ALL YOUR WORK. REMEMBER THAT PROGRAM SEGMENTS ARE TO BE WRITTEN IN JAVA.
     }
     ```
 
-    ------------------------------------------------------------
-    >
-    > Questions below
-    >
-    ------------------------------------------------------------
+    ##
+    Questions below
+    ##
 
     (a) **An <code>Employee</code> can only teach children between the employee's minimum age (inclusive) and maximum age (inclusive). They can also only teach children up to the day care's maximum ratio (inclusive). Below is the full <code>Employee</code> class.**
 
@@ -95,7 +93,7 @@ SHOW ALL YOUR WORK. REMEMBER THAT PROGRAM SEGMENTS ARE TO BE WRITTEN IN JAVA.
     }
     ```
 
-    ------------------------------------------------------------
+    ##
 
     (b) **To run the <code>DayCare</code> for a day, each <code>Child</code> must be assigned to an <code>Employee</code>. If an <code>Employee</code> can not be found for a <code>Child</code>, the <code>DayCare</code> cannot run for the day.**
 
@@ -108,7 +106,7 @@ SHOW ALL YOUR WORK. REMEMBER THAT PROGRAM SEGMENTS ARE TO BE WRITTEN IN JAVA.
     }
     ```
 
-    ------------------------------------------------------------
+    ##
 
     (c) **When a <code>Child</code> is added to the roster of the <code>DayCare</code>, the <code>DayCare</code> should first make sure there could be an <code>Employee</code> available to teach that <code>Child</code>.**
 
@@ -121,7 +119,7 @@ SHOW ALL YOUR WORK. REMEMBER THAT PROGRAM SEGMENTS ARE TO BE WRITTEN IN JAVA.
     }
     ```
 
-##
+------------------------------------------------------------
 
 2.  A baseball team consists of different people including players, coaches, and people who work in the front office making trades and other transactions. The following <code>Person</code> class is used for all of the people who work for the team.
 
@@ -149,11 +147,9 @@ SHOW ALL YOUR WORK. REMEMBER THAT PROGRAM SEGMENTS ARE TO BE WRITTEN IN JAVA.
     }
     ```
 
-    ------------------------------------------------------------
-    >
-    > Question below
-    >
-    ------------------------------------------------------------
+    ##
+    Question below
+    ##
 
     (a) **A <code>Player</code> has a name and age just like any person on the team, but they also have a <code>position</code>. The position could be something like "catcher," "left fielder," or "infielder." A <code>Player</code> should also be able to change their position using a method called <code>changePosition</code>. Here is an example of a <code>Player</code> object.**
 
@@ -164,7 +160,7 @@ SHOW ALL YOUR WORK. REMEMBER THAT PROGRAM SEGMENTS ARE TO BE WRITTEN IN JAVA.
 
     Write the entire <code>Player</code> class below.
 
-##
+------------------------------------------------------------
 
 3.  A class is designed to store someone's full name. You can assume the name has only one space between the first name and the last name. The class has methods to extract the first name, last name, and number of vowels in the name. You can see an example below.
 
@@ -175,11 +171,9 @@ SHOW ALL YOUR WORK. REMEMBER THAT PROGRAM SEGMENTS ARE TO BE WRITTEN IN JAVA.
     Name.countVowels(fullName);     // returns 6
     ```
 
-    ------------------------------------------------------------
-    >
-    > Questions below
-    >
-    ------------------------------------------------------------
+    ##
+    Questions below
+    ##
 
     (a) **The <code>getFirstName</code> method returns the first name based on a given full name. You can assume that full name has only one space between the first name and the last name. Write the <code>getFirstName</code> method below.**
 
@@ -189,7 +183,7 @@ SHOW ALL YOUR WORK. REMEMBER THAT PROGRAM SEGMENTS ARE TO BE WRITTEN IN JAVA.
     }
     ```
 
-    ------------------------------------------------------------
+    ##
 
     (b) **The <code>getLastName</code> method returns the last name based on a given full name. You can assume that full name has only one space between the first name and the last name. Write the <code>getLastName</code> method below.**
 
@@ -199,7 +193,7 @@ SHOW ALL YOUR WORK. REMEMBER THAT PROGRAM SEGMENTS ARE TO BE WRITTEN IN JAVA.
     }
     ```
 
-    ------------------------------------------------------------
+    ##
 
     (c) **The <code>countVowels</code> method counts the number of vowels in the given name. You can assume we will only count the letters a, e, i, o, and u as vowels. Write the entire <code>countVowels</code> method below.**
 
@@ -209,7 +203,7 @@ SHOW ALL YOUR WORK. REMEMBER THAT PROGRAM SEGMENTS ARE TO BE WRITTEN IN JAVA.
     }
     ```
 
-##
+------------------------------------------------------------
 
 4.  A city parking lot has a sign that keeps track of how many parking spaces are available in the lot. The class for the parking lot is detailed below.
 
@@ -231,11 +225,9 @@ SHOW ALL YOUR WORK. REMEMBER THAT PROGRAM SEGMENTS ARE TO BE WRITTEN IN JAVA.
     }
     ```
 
-    ------------------------------------------------------------
-    >
-    > Questions below
-    >
-    ------------------------------------------------------------
+    ##
+    Questions below
+    ##
 
     (a) **Write the <code>openSpaces</code> method that returns how many spaces are available in the parking lot. If a space is empty, it will be equal to null.**
 
@@ -246,7 +238,7 @@ SHOW ALL YOUR WORK. REMEMBER THAT PROGRAM SEGMENTS ARE TO BE WRITTEN IN JAVA.
     }
     ```
 
-    ------------------------------------------------------------
+    ##
 
     (b) **Complete the <code>parkCar</code> method that puts a new car in any space in the parking lot and returns <code>true</code> if was able to do so. It should return <code>false</code> if there are no empty spaces. You should use the <code>openSpaces</code> method to receive full credit.**
 

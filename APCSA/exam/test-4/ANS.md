@@ -100,7 +100,8 @@
 
 # FRQ ANSWER SHEET
 
-## 1.  (a)
+## 1.  
+    (a)
 
     ```java
     public boolean findEmployeeForChild(Child c) {
@@ -132,7 +133,9 @@
     > (+1) True is returned if the child is assigned to an employee, false is returned otherwise.
 
 
-    **(b)**
+    ##
+
+    (b)
 
     ```java
     public boolean runDayCare() {
@@ -153,7 +156,9 @@
     > (+1) The findEmployeeForChild method is called correctly.
 
 
-    **(c)**
+    ##
+
+    (c)
 
     ```java
     public boolean addChild(Child c) {
@@ -172,9 +177,8 @@
     >
     > (+1) Children are added to the children list correctly if an employee is found.
 
-    ------------------------------------------------------------
-
-2.  (a)
+## 2.  
+    (a)
 
     ```java
     public class Player extends Person {
@@ -218,9 +222,8 @@
     >
     > (+1) The <code>changePosition</code> method correctly modifies the class-level String variable.
 
-    ------------------------------------------------------------
-
-3.  (a)
+## 3.
+    (a)
 
     ```java
     public static String getFirstName(String name) {
@@ -239,7 +242,6 @@
     >
     > (+1) The first name is returned correctly.
 
-    ------------------------------------------------------------
-
+    ##
     (b)
 

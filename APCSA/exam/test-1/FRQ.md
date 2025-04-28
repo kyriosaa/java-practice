@@ -177,11 +177,9 @@ SHOW ALL YOUR WORK. REMEMBER THAT PROGRAM SEGMENTS ARE TO BE WRITTEN IN JAVA.
     }
     ```
 
-    ------------------------------------------------------------
-    >
-    > Questions below
-    >
-    ------------------------------------------------------------
+    ##
+    Questions below
+    ##
 
     (a) **Write the <code>School</code> method <code>getElectiveByName</code>. Method <code>getElectiveByName</code> should return the <code>Elective</code> in <code>electiveList</code> that has the given name.**
 
@@ -195,7 +193,7 @@ SHOW ALL YOUR WORK. REMEMBER THAT PROGRAM SEGMENTS ARE TO BE WRITTEN IN JAVA.
     }
     ```
 
-    ------------------------------------------------------------
+    ##
 
     (b) **Write the <code>School</code> method <code>assignElectivesToStudents</code>. Method <code>assignElectivesToStudents</code> should assign electives to students as described at the beginning of this question.**
 
@@ -212,7 +210,7 @@ SHOW ALL YOUR WORK. REMEMBER THAT PROGRAM SEGMENTS ARE TO BE WRITTEN IN JAVA.
     }
     ```
 
-    ------------------------------------------------------------
+    ##
 
     (c) **Write the <code>School</code> method <code>studentsWithoutElectives</code>. Method <code>studentsWithoutElectives</code> should return <code>ArrayList</code> of all Students in <code>studentList</code> who do not have an <code>Elective</code> assigned to them.**
 
@@ -225,7 +223,7 @@ SHOW ALL YOUR WORK. REMEMBER THAT PROGRAM SEGMENTS ARE TO BE WRITTEN IN JAVA.
     }
     ```
 
-##
+------------------------------------------------------------
 
 2.  Consider a deck of *n* cards where *n* is even and each card is uniquely labeled from 1 to *n*.
 
@@ -265,11 +263,9 @@ SHOW ALL YOUR WORK. REMEMBER THAT PROGRAM SEGMENTS ARE TO BE WRITTEN IN JAVA.
     }
     ```
 
-    ------------------------------------------------------------
-    >
-    > Questions below
-    >
-    ------------------------------------------------------------
+    ##
+    Questions below
+    ##
 
     (a) **Write the <code>Deck</code> method <code>inOrder</code>. Method <code>inOrder</code> should return true if the cards in the deck are in numerical order from 0 to <code>cards.length - 1</code> and should return false otherwise. Cards are in numberical order if <code>cards[k] == k</code> for all <code>0 <= k < cards.length</code>.**
 
@@ -284,7 +280,7 @@ SHOW ALL YOUR WORK. REMEMBER THAT PROGRAM SEGMENTS ARE TO BE WRITTEN IN JAVA.
     }
     ```
 
-    ------------------------------------------------------------
+    ##
 
     (b) **Write the <code>Deck</code> method <code>shuffle</code>. Method <code>shuffle</code> should divide the deck into two equal stacks and interlace them evenly as described at the beginning of this question.**
 
@@ -297,7 +293,7 @@ SHOW ALL YOUR WORK. REMEMBER THAT PROGRAM SEGMENTS ARE TO BE WRITTEN IN JAVA.
     }
     ```
 
-    ------------------------------------------------------------
+    ##
 
     (c) **Write the <code>Deck</code> method <code>reorderCount</code>. Method <code>reorderCount</code> should return the number of shuffles necessary to return the deck into its original order.**
 
@@ -314,7 +310,7 @@ SHOW ALL YOUR WORK. REMEMBER THAT PROGRAM SEGMENTS ARE TO BE WRITTEN IN JAVA.
     }
     ```
         
-##
+------------------------------------------------------------
 
 3.  Consider the design of an electronic cookbook modeled with the following class declarations:
 
@@ -360,11 +356,9 @@ SHOW ALL YOUR WORK. REMEMBER THAT PROGRAM SEGMENTS ARE TO BE WRITTEN IN JAVA.
     }
     ```
 
-    ------------------------------------------------------------
-    >
-    > Questions below
-    >
-    ------------------------------------------------------------
+    ##
+    Questions below
+    ##
 
     (a) **A recipe in the cookbook is modeled by the class <code>Recipe</code> with the following data and operations:**
 
@@ -385,7 +379,7 @@ SHOW ALL YOUR WORK. REMEMBER THAT PROGRAM SEGMENTS ARE TO BE WRITTEN IN JAVA.
 
     Write the definition of the class <code>Recipe</code>, showing the appropriate data definitions and constructor and method signatures. You should *not* write the implementations of the constructor or methods for the <code>Recipe</code> class.
 
-    ------------------------------------------------------------
+    ##
 
     (b) **Using the signature you wrote in part (a), write the implementation for the method that scales the recipe to serve a given new number of people.**
 
@@ -393,7 +387,7 @@ SHOW ALL YOUR WORK. REMEMBER THAT PROGRAM SEGMENTS ARE TO BE WRITTEN IN JAVA.
 
     Write the implementation below
 
-    ------------------------------------------------------------
+    ##
 
     (c) **Write the <code>Cookbook</code> method <code>standardize</code> as described at the beginning of the question.**
 
@@ -409,17 +403,15 @@ SHOW ALL YOUR WORK. REMEMBER THAT PROGRAM SEGMENTS ARE TO BE WRITTEN IN JAVA.
     }
     ```
 
-##
+------------------------------------------------------------
 
 4.  Consider a school that contains x number of students that all start their first period class in one of n classrooms. This scenario can be represented using three classes. The <code>School</code> class contains an array of all the <code>Classrooms</code> in the school. The <code>Classroom</code> class has fields for the teacher in charge of the room <code>teacherName</code> and an array of all the <code>Students</code> in the classroom <code>Students</code>. The <code>Student</code> class has a field for the name of the student <code>studentName</code> and the ID number of the student <code>studentID</code>.
 
     The <code>School</code> class contains a method <code>findStudent</code> that takes a teacher's name and a student ID as arguments and returns the name of the student. The method utilizes a sequential search algorithm to find the correct classroom and a binary search algorithm to find the correct student. If the student is not found in the school, the method returns "Student Not Found."
 
-    ------------------------------------------------------------
-    >
-    > Question below
-    >
-    ------------------------------------------------------------
+    ##
+    Question below
+    ##
 
     **Write the complete <code>School</code>, <code>Classroom</code>, and <code>Student</code> classes, including any instance variables, constructors, and necessary methods. You may assume that the student ID numbers in each classroom are sorted in ascending order.**
 
