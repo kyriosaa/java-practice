@@ -190,7 +190,9 @@ SHOW ALL YOUR WORK. REMEMBER THAT PROGRAM SEGMENTS ARE TO BE WRITTEN IN JAVA.
     ```java
     // precondition:  name is the name of an Elective in electiveList
     // postcondition: returns the Elective in electiveList with the given name
-    private Elective getElectiveByName(String name)
+    private Elective getElectiveByName(String name) {
+        
+    }
     ```
 
     > --------------------
@@ -205,7 +207,9 @@ SHOW ALL YOUR WORK. REMEMBER THAT PROGRAM SEGMENTS ARE TO BE WRITTEN IN JAVA.
     // postcondition: All Students in studentList have been either assigned their 
     //                first available elective choice or not assigned
     //                All electives in electiveList have been updated appropriately as Students are assigned to them
-    public void assignElectivesToStudents()
+    public void assignElectivesToStudents() {
+
+    }
     ```
 
     > --------------------
@@ -216,7 +220,9 @@ SHOW ALL YOUR WORK. REMEMBER THAT PROGRAM SEGMENTS ARE TO BE WRITTEN IN JAVA.
 
     ```java
     // postcondition: returns a list of those Students who have not been assigned an Elective
-    public ArrayList studentsWithoutElectives()
+    public ArrayList studentsWithoutElectives() {
+
+    }
     ```
 
 ##
@@ -273,7 +279,9 @@ SHOW ALL YOUR WORK. REMEMBER THAT PROGRAM SEGMENTS ARE TO BE WRITTEN IN JAVA.
     // precondition:  For all k such that 0 <= k < cards.length, 0 <= cards[k] < cards.length and each cards[k] is unique
     // postcondition: returns true if cards[k] == k for all 0 <= k < cards.length
     //                returns false otherwise
-    public boolean inOrder()
+    public boolean inOrder() {
+
+    }
     ```
 
     > --------------------
@@ -284,7 +292,9 @@ SHOW ALL YOUR WORK. REMEMBER THAT PROGRAM SEGMENTS ARE TO BE WRITTEN IN JAVA.
 
     ```java
     // postcondition: the deck is shuffled by dividing the deck into two equal stacks that are evenly interlaced
-    public void shuffle()
+    public void shuffle() {
+
+    }
     ```
 
     > --------------------
@@ -299,7 +309,9 @@ SHOW ALL YOUR WORK. REMEMBER THAT PROGRAM SEGMENTS ARE TO BE WRITTEN IN JAVA.
     // postcondition: Returns the number of shuffles necessary to return the cards in the deck
     //                to their original numerical order such that inOrder() == true
     //                The cards in the deck are in their original numerical order
-    public int reorderCount()
+    public int reorderCount() {
+
+    }
     ```
         
 ##
@@ -392,7 +404,9 @@ SHOW ALL YOUR WORK. REMEMBER THAT PROGRAM SEGMENTS ARE TO BE WRITTEN IN JAVA.
     ```java
     // precondition:  numPeople > 0
     // postcondition: All recipes in recipeList have been scaled to serve numPeople number of people
-    public void standardize(int numPeople)
+    public void standardize(int numPeople) {
+
+    }
     ```
 
 ##
