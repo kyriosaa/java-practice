@@ -100,7 +100,7 @@
 
 ## FRQ ANSWER SHEET
 
-1. > --------------------
+1. 
 
     (a)
 
@@ -133,3 +133,63 @@
     > --------------------
 
     (b)
+
+    ```java
+    public boolean runDayCare() {
+        for(Child c: children) {
+            if(findEmployeeForChild(c) == false) {
+                return false;
+            }
+        }
+        return true;
+    }
+    ```
+
+    This can also be done with a typical for loop or a while loop and the .get method. A loop is needed to look at each <code>Child</code> in the ArrayList. You must then call the <code>findEmployeeForChild</code> method from Part A to see if there is an <code>Employee</code> eligible to teach the current <code>Child</code>. If not, you need to return false. You shouldn't return true inside the loop since it is possible there is a later <code>Child</code> who can't be taught by any of the <code>Employees</code> in the ArrayList.
+
+    **Rubric:**
+
+            (+1) For loop correctly iterates through all elements of the children list.
+            (+1) The findEmployeeForChild method is called correctly.
+
+    > --------------------
+
+    (c)
+
+    ```java
+    public boolean addChild(Child c) {
+        if(findEmployeeForChild(c) == true) {
+            children.add(c);
+            return true;
+        }
+        return false;
+    }
+    ```
+
+    You must then call the <code>findEmployeeForChild</code> method from Part A to see if there is an <code>Employee</code> eligible to teach the given <code>Child</code>. If there is, you add the <code>Child</code> to the ArrayList using the <code>add</code> method and return true. If there isn't, you return false.
+
+    **Rubric:**
+
+            (+1) The findEmployeeForChild method is called correctly.
+            (+1) Children are added to the children list correctly if an employee is found.
+
+    > --------------------
+
+2.  
+
+    (a)
+
+    ```java
+    public class Player extends Person {
+        private String position;
+
+        public Player(String name, int age, String pos) {
+            super(name, age);
+            position = pos;
+        }
+
+        public void changePosition(String p) {
+            position = p;
+        }
+    }
+    ```
