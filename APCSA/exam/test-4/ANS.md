@@ -122,11 +122,15 @@
 
     **Rubric:**
 
-            (+1) For loop correctly iterates through all elements of the employees list.
-            (+1) If statement correctly determines if children assigned to the current employee are less than the maximum allowed.
-            (+1) If statement correctly determines if current employee can teach the given child based on their age.
-            (+1) The child is assigned to the employee if they meet both conditions.
-            (+1) True is returned if the child is assigned to an employee, false is returned otherwise.
+    > (+1) For loop correctly iterates through all elements of the employees list.
+    >
+    > (+1) If statement correctly determines if children assigned to the current employee are less than the maximum allowed.
+    >
+    > (+1) If statement correctly determines if current employee can teach the given child based on their age.
+    >
+    > (+1) The child is assigned to the employee if they meet both conditions.
+    >
+    > (+1) True is returned if the child is assigned to an employee, false is returned otherwise.
 
     > --------------------
 
@@ -146,9 +150,9 @@
     This can also be done with a typical for loop or a while loop and the .get method. A loop is needed to look at each <code>Child</code> in the ArrayList. You must then call the <code>findEmployeeForChild</code> method from Part A to see if there is an <code>Employee</code> eligible to teach the current <code>Child</code>. If not, you need to return false. You shouldn't return true inside the loop since it is possible there is a later <code>Child</code> who can't be taught by any of the <code>Employees</code> in the ArrayList.
 
     **Rubric:**
-
-            (+1) For loop correctly iterates through all elements of the children list.
-            (+1) The findEmployeeForChild method is called correctly.
+    > (+1) For loop correctly iterates through all elements of the children list.
+    > 
+    > (+1) The findEmployeeForChild method is called correctly.
 
     > --------------------
 
@@ -173,9 +177,7 @@
 
     > --------------------
 
-2.  
-
-    (a)
+2.  (a)
 
     ```java
     public class Player extends Person {
@@ -191,3 +193,15 @@
         }
     }
     ```
+
+    The class header must look exactly the same as the header above. The public class Player part would be necessary for any class you are writing called <code>Player</code>. The extends Person part is necessary because a <code>Player</code> is a <code>Person</code>.
+
+    The position variable **must** be declared as private and it must be a String.
+
+    The constructor (public Player), must take three parameters in the order shown above since the example shows the name, age, and position in that order. They can be called whatever you want, however. The name and age variables must be sent to the <code>Person</code> class using the super() call and they must be in the given order. The position variable should be set after the super() call.
+
+    The <code>changePosition</code> method should be void and should take a String parameter. The only thing it needs to do is set the class-level position variable.
+
+    **Rubric:**
+
+            (+1) 
