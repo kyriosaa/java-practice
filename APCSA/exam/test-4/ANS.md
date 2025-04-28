@@ -100,7 +100,7 @@
 
 ## FRQ ANSWER SHEET
 
-1. (a)
+1.  (a)
 
     ```java
     public boolean findEmployeeForChild(Child c) {
@@ -121,7 +121,6 @@
     You should not return false inside the loop since it is possible a different <code>Employee</code> is eligible to teach the given <code>Child</code>.
 
     **Rubric:**
-
     > (+1) For loop correctly iterates through all elements of the employees list.
     >
     > (+1) If statement correctly determines if children assigned to the current employee are less than the maximum allowed.
@@ -171,9 +170,9 @@
     You must then call the <code>findEmployeeForChild</code> method from Part A to see if there is an <code>Employee</code> eligible to teach the given <code>Child</code>. If there is, you add the <code>Child</code> to the ArrayList using the <code>add</code> method and return true. If there isn't, you return false.
 
     **Rubric:**
-
-            (+1) The findEmployeeForChild method is called correctly.
-            (+1) Children are added to the children list correctly if an employee is found.
+    > (+1) The findEmployeeForChild method is called correctly.
+    >
+    > (+1) Children are added to the children list correctly if an employee is found.
 
     > --------------------
 
@@ -203,5 +202,46 @@
     The <code>changePosition</code> method should be void and should take a String parameter. The only thing it needs to do is set the class-level position variable.
 
     **Rubric:**
+    > (+1) <code>public class Player</code>
+    >
+    > (+1) <code>extends Person</code>
+    >
+    > (+1) A String variable is declared as private.
+    >
+    > (+1) The constructor header is correct (<code>public Player</code>)
+    >
+    > (+1) The constructor takes a String paremeter, an integer parameter, and a String parameter in that order.
+    >
+    > (+1) The constructor calls uses super to initialize the name and age.
+    >
+    > (+1) The constructor initializes the class-level String variable.
+    >
+    > (+1) The header for <code>changePosition</code> is correct.
+    >
+    > (+1) The <code>changePosition</code> method correctly modifies the class-level String variable.
 
-            (+1) 
+    > --------------------
+
+3.  (a)
+
+    ```java
+    public static String getFirstName(String name) {
+        int space = name.indexOf(" ");
+        String first = name.substring(0, space);
+        return first;
+    }
+    ```
+
+    You need to use the <code>indexOf</code> method to find the location of the space. Once you know where the space is located, you can use the <code>substring</code> method to extract from the beginning of the name (index 0) up to the space. Since the second parameter of the <code>substring</code> method is excluded, the space will not be included when the first name is returned.
+
+    **Rubric:**
+    > (+1) The <code>indexOf</code> method is used correctly to find the first space.
+    >
+    > (+1) The <code>substring</code> method is used correctly to extract the first name.
+    >
+    > (+1) The first name is returned correctly.
+
+    --------------------
+
+    (b)
+
