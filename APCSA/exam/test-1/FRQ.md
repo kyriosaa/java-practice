@@ -97,7 +97,8 @@ SHOW ALL YOUR WORK. REMEMBER THAT PROGRAM SEGMENTS ARE TO BE WRITTEN IN JAVA.
             returns studentList.size();
         }
 
-        // postcondition: All Students in studentList have been either assigned their first available elective choice or not assigned
+        // postcondition: All Students in studentList have been either assigned their 
+        //                first available elective choice or not assigned
         //                All Electives in electiveList have been updated appropriately as Students are assigned to them
         public void assignElectivesToStudents() {
             /* to be implemented in part (b) */
@@ -201,7 +202,8 @@ SHOW ALL YOUR WORK. REMEMBER THAT PROGRAM SEGMENTS ARE TO BE WRITTEN IN JAVA.
     Complete method <code>assignElectivesToStudents</code> below
 
     ```java
-    // postcondition: All Students in studentList have been either assigned their first available elective choice or not assigned
+    // postcondition: All Students in studentList have been either assigned their 
+    //                first available elective choice or not assigned
     //                All electives in electiveList have been updated appropriately as Students are assigned to them
     public void assignElectivesToStudents()
     ```
