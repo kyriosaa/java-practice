@@ -9,12 +9,12 @@
 > **Percent of Total Grade - 50%**
 
 
-## Directions:
+# Directions:
 
 Determine the answer to each of the following questions or incomplete statements, using the available space for any necessary scratchwork. Then decide which is the best of the choices given and fill in the corresponding oval on the answer sheet. No credit will be given for anything written in the examination booklet. Do not spend too much time on any one problem.
 
 
-## Notes:
+# Notes:
 
 - Assume that the classes listed in the Quick Reference have been imported where appropriate.
 - Assume that declarations of variables and methods appear within the context of an enclosing class.
@@ -22,7 +22,7 @@ Determine the answer to each of the following questions or incomplete statements
 - Unless otherwise noted in the question, assume that parameters in the method calls are not *null* and that methods are called only when their preconditions are satisfied.
 
 
-## MULTIPLE CHOICE QUESTIONS
+# MULTIPLE CHOICE QUESTIONS
 
 1.  **Consider the following code segment:**
 

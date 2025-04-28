@@ -101,7 +101,7 @@
 # FRQ ANSWER SHEET
 
 ## 1.  
-    (a)
+    `(a)`
 
     ```java
     public boolean findEmployeeForChild(Child c) {
