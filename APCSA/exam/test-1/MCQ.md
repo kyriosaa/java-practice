@@ -96,11 +96,26 @@ Determine the answer to each of the following questions or incomplete statements
     ```
 
     If selection sort is used to order the array from smallest to largest values, which of the following represents a possible state of the array at some point during the selection sort process?
-    - (A) <code>{1, 4, 10, 2, 3, 6, 7, 5}</code>
-    - (B) <code>{1, 2, 4, 6, 10, 7, 3, 5}</code>
-    - (C) <code>{1, 2, 3, 10, 6, 7, 4, 5}</code>
-    - (D) <code>{4, 3, 1, 2, 6, 7, 10, 5}</code>
-    - (E) <code>{5, 3, 7, 6, 2, 1, 10, 4}</code>
+    - (A)
+    ```java
+    {1, 4, 10, 2, 3, 6, 7, 5}
+    ```
+    - (B)
+    ```java
+    {1, 2, 4, 6, 10, 7, 3, 5}
+    ```
+    - (C)
+    ```java
+    {1, 2, 3, 10, 6, 7, 4, 5}
+    ```
+    - (D)
+    ```java
+    {4, 3, 1, 2, 6, 7, 10, 5}
+    ```
+    - (E)
+    ```java
+    {5, 3, 7, 6, 2, 1, 10, 4}
+    ```
 ##
 5. **Consider the following code segment:**
 
@@ -117,74 +132,89 @@ Determine the answer to each of the following questions or incomplete statements
     ```
 
     What values will A contain after the code segment is executed?
-    - (A) <code>{1, 1, 2, 3, 4, 5, 6}</code>
-    - (B) <code>{1, 2, 3, 4, 5, 6, 7}</code>
-    - (C) <code>{6, 6, 5, 4, 3, 2, 1}</code>
-    - (D) <code>{7, 7, 6, 5, 4, 3, 2}</code>
-    - (E) <code>{7, 7, 7, 7, 7, 7, 7}</code>
+    - (A)
+    ```java
+    {1, 1, 2, 3, 4, 5, 6}
+    ```
+    - (B)
+    ```java
+    {1, 2, 3, 4, 5, 6, 7}
+    ```
+    - (C)
+    ```java
+    {6, 6, 5, 4, 3, 2, 1}
+    ```
+    - (D)
+    ```java
+    {7, 7, 6, 5, 4, 3, 2}
+    ```
+    - (E)
+    ```java
+    {7, 7, 7, 7, 7, 7, 7}
+    ```
 ##
 **Questions 6-7 refer to the following two classes:**
 
-    ```java
-    public class PostOffice {
-        // constructor initializes boxes to length 100
-        public PostOffice() {
-            /* implementation not shown */
-        }
-
-        // returns the given p.o. box
-        // 0 <= theBox < getNumBoxes()
-        public Box getBox(int theBox) {
-            /* implementation not shown */
-        }
-
-        // returns the number of p.o. boxes
-        public int getNumBoxes() {
-            /* implementation not shown */
-        }
-
-        // private data members and other methods not shown
+```java
+public class PostOffice {
+    // constructor initializes boxes to length 100
+    public PostOffice() {
+        /* implementation not shown */
     }
 
-    public class Box {
-        // constructor
-        public Box() {
-            /* implementation not shown */
-        }
-
-        // returns the number of this box
-        public int getBoxNumber() {
-            /* implementation not shown */
-        }
-
-        // returns the number of pieces of mail in this box
-        publicint getMailCount() {
-            /* implementation not shown */
-        }
-
-        // returns the given piece of mail
-        // 0 <= thePiece < getMailCount()
-        public Mail getMail(int thePiece) {
-            /* implementation not shown */
-        }
-
-        // true if the box has been assigned to a customer
-        public boolean isAssigned() {
-            /* implementation not shown */
-        }
-
-        // true if the box contains mail
-        public boolean hasMail() {
-            /* implementation not shown */
-        }
-
-        // private data members and other methods not shown
+    // returns the given p.o. box
+    // 0 <= theBox < getNumBoxes()
+    public Box getBox(int theBox) {
+        /* implementation not shown */
     }
 
-    public class Mail {
-        // private members, constructors, and other methods not shown
+    // returns the number of p.o. boxes
+    public int getNumBoxes() {
+        /* implementation not shown */
     }
-    ```
+
+    // private data members and other methods not shown
+}
+
+public class Box {
+    // constructor
+    public Box() {
+        /* implementation not shown */
+    }
+
+    // returns the number of this box
+    public int getBoxNumber() {
+        /* implementation not shown */
+    }
+
+    // returns the number of pieces of mail in this box
+    publicint getMailCount() {
+        /* implementation not shown */
+    }
+
+    // returns the given piece of mail
+    // 0 <= thePiece < getMailCount()
+    public Mail getMail(int thePiece) {
+        /* implementation not shown */
+    }
+
+    // true if the box has been assigned to a customer
+    public boolean isAssigned() {
+        /* implementation not shown */
+    }
+
+    // true if the box contains mail
+    public boolean hasMail() {
+        /* implementation not shown */
+    }
+
+    // private data members and other methods not shown
+}
+
+public class Mail {
+    // private members, constructors, and other methods not shown
+}
+```
 
 6. **Consider the following code segment:**
 
@@ -194,11 +224,26 @@ Determine the answer to each of the following questions or incomplete statements
     ```
 
     Assuming that the box has been assigned and that it has at least four pieces of mail waiting in it, what is the correct way of getting the fourth piece of mail from the 57th box of the tenth post office of <code>p</code>?
-    - (A) <code>Mail m = p[10].getBox(57).getmail(4);</code>
-    - (B) <code>Mail m = p[9].getBox(56).getMail(3);</code>
-    - (C) <code>Mail m = p.getMail(57).getMail(4) [10];</code>
-    - (D) <code>Mail m = getMail(getBox(p[9], 560, 3));</code>
-    - (E) <code>Mail m = new Mail(10, 57, 4);</code>
+    - (A)
+    ```java
+    Mail m = p[10].getBox(57).getmail(4);
+    ```
+    - (B)
+    ```java
+    Mail m = p[9].getBox(56).getMail(3);
+    ```
+    - (C)
+    ```java
+    Mail m = p.getMail(57).getMail(4) [10];
+    ```
+    - (D)
+    ```java
+    Mail m = getMail(getBox(p[9], 560, 3));
+    ```
+    - (E)
+    ```java
+    Mail m = new Mail(10, 57, 4);
+    ```
 
 7. **Consider the incomplete function <code>printEmptyBoxes</code> given below. <code>printEmptyBoxes</code> should print the box numbers of all of the boxes that do not contain mail:**
 
@@ -225,37 +270,31 @@ Determine the answer to each of the following questions or incomplete statements
         System.out.println(p[x].getBox(k).getBoxNumber());
     }
     ```
-
-        (A)     if( p[k].getBox(x).isAssigned() && !p[k].getBox(x).hasMail() ) {
-                    System.out.println(P[k].getBox(x).getBoxNumber());
-                }
-
-        (B)     if( p[x].getBox(k).isAssigned() && !p[x].getBox(k).hasMail() ) {
-                    System.out.println(p[x].getBox(k).getBoxNumber());
-                }
-
-        (C)     if( p[k].getBox(x).isAssigned() && !p[x].getBox(x).hasMail() ) {
-                    System.out.println(p[k].getBoxNumber(x));
-                }
-
-        (D)     if( p[x].getBox(k).isAssigned() && !p[x].getBox(k).hasMail() ) {
-                    System.out.println(p[x].getBoxNumber(k));
-                }
-
-        (E)     if( p[x].getBox(k).isAssigned() && p[x].getBox(k).getMail() == 0 ) {
-                    System.out.println(k);
-                }
-
-    - (A)
-    - (B)
     - (C)
+    ```java
+    if( p[k].getBox(x).isAssigned() && !p[x].getBox(x).hasMail() ) {
+        System.out.println(p[k].getBoxNumber(x));
+    }
+    ```
     - (D)
+    ```java
+    if( p[x].getBox(k).isAssigned() && !p[x].getBox(k).hasMail() ) {
+        System.out.println(p[x].getBoxNumber(k));
+    }
+    ```
     - (E)
+    ```java
+    if( p[x].getBox(k).isAssigned() && p[x].getBox(k).getMail() == 0 ) {
+        System.out.println(k);
+    }
+    ```
 ##
 8. **Assume that <code>a</code> and <code>b</code> are Boolean variables that have been initialized. Consider the following code segment:**
 
-        a = a && b;
-        b = a || b;
+    ```java
+    a = a && b;
+    b = a || b;
+    ```
 
     Which of the following statements is true?
 
@@ -273,23 +312,25 @@ Determine the answer to each of the following questions or incomplete statements
 ##
 9. **Consider the following code segment:**
 
-        int x;
-        x = 53;
-        if (x > 10) {
-            System.out.print("A");
-        }
-        if (x > 30) {
-            System.out.print("B");
-        }
-        else if (x > 40) {
-            System.out.print("C");
-        }
-        if (x > 50) {
-            System.out.print("D");
-        }
-        if (x > 70) {
-            System.out.print("E");
-        }
+    ```java
+    int x;
+    x = 53;
+    if (x > 10) {
+        System.out.print("A");
+    }
+    if (x > 30) {
+        System.out.print("B");
+    }
+    else if (x > 40) {
+        System.out.print("C");
+    }
+    if (x > 50) {
+        System.out.print("D");
+    }
+    if (x > 70) {
+        System.out.print("E");
+    }
+    ```
     
     What is the output when the code is executed?
     - (A) A
@@ -300,13 +341,15 @@ Determine the answer to each of the following questions or incomplete statements
 ##
 10. **Consider the following code segment:**
 
-        int j;
-        int k;
-        for(j = -2; j <= 2; j = j + 2) {
-            for(k = j; k < j + 3; k++) {
-                System.out.print(k + " ");
-            }
+    ```java
+    int j;
+    int k;
+    for(j = -2; j <= 2; j = j + 2) {
+        for(k = j; k < j + 3; k++) {
+            System.out.print(k + " ");
         }
+    }
+    ```
 
     What is the output when the code is executed?
     - (A) -2  -1   0
@@ -317,21 +360,23 @@ Determine the answer to each of the following questions or incomplete statements
 ##
 11. **Consider the following method:**
 
-        public void mystery(int count, String s) {
-            if (count <= 0) {
-                return;
-            }
-            if (count % 3 == 0) {
-                System.out.print(s + "--" + s);
-            }
-            else if (count % 3 == 1) {
-                System.out.print(s + "--" + s);
-            }
-            else {
-                System.out.print(s);
-            }
-            mystery(count - 1, s);
+    ```java
+    public void mystery(int count, String s) {
+        if (count <= 0) {
+            return;
         }
+        if (count % 3 == 0) {
+            System.out.print(s + "--" + s);
+        }
+        else if (count % 3 == 1) {
+            System.out.print(s + "--" + s);
+        }
+        else {
+            System.out.print(s);
+        }
+        mystery(count - 1, s);
+    }
+    ```
 
     What is the output by the call <code>mystery(5, "X");</code>?
     - (A) XX - XX - - XXX - X
@@ -353,133 +398,177 @@ Determine the answer to each of the following questions or incomplete statements
 12. **Question:**
 
     What is the correct way to define the signature of the constructor for the <code>DiningRoomSet</code> class?
-    - (A) <code>public void DiningRoomSet(Table t, ArrayList, chairs)</code>
-    - (B) <code>public DiningRoomSet(Table t, ArrayList chairs)</code>
-    - (C) <code>public void DiningRoomSet(Table t, ArrayList Chair Chairs)</code>
-    - (D) <code>public DiningRoomSet(Table t, ArrayList Chair Chairs)</code>
-    - (E) <code>public DiningRoomSet(Table t, Chair Chairs)</code>
+    - (A)
+    ```java
+    public void DiningRoomSet(Table t, ArrayList, chairs)
+    ```
+    - (B)
+    ```java
+    public DiningRoomSet(Table t, ArrayList chairs)
+    ```
+    - (C)
+    ```java
+    public void DiningRoomSet(Table t, ArrayList Chair Chairs)
+    ```
+    - (D)
+    ```java
+    public DiningRoomSet(Table t, ArrayList Chair Chairs)
+    ```
+    - (E)
+    ```java
+    public DiningRoomSet(Table t, Chair Chairs)
+    ```
 
 13. **Question:**
 
     What is the correct way to implement the getPrice method of the <code>DiningRoomSet</code> class?
-
-        (A)     public double getPrice(Table t, ArrayList chairs) {
-                    return t.getPrice() + chairs.getPrice();
-                }
-
-        (B)     public double getPrice(Table t, ArrayList chairs) {
-                    return myTable.getPrice() + myChairs.getPrice();
-                }
-
-        (C)     public double getPrice() {
-                    return myTable.getPrice() + myChairs.getPrice();
-                }
-
-        (D)     public double getPrice() {
-                    double result = myTable.getPrice();
-                    for(int k = 0; k < myChairs.size() - 1; k++) {
-                        result += ((Chair)myChairs.get(k)).getPrice();
-                    }
-                    return result;
-                }
-
-        (E)     public double getPrice() {
-                    double result = myTable.getPrice();
-                    for(int k = 0; k < myChairs.length - 1; k++) {
-                        result += ((Chair)myChairs[k]).getPrice();
-                    }
-                    return result;
-                }
-
     - (A)
+    ```java
+    public double getPrice(Table t, ArrayList chairs) {
+        return t.getPrice() + chairs.getPrice();
+    }
+    ```
     - (B)
+    ```java
+    public double getPrice(Table t, ArrayList chairs) {
+        return myTable.getPrice() + myChairs.getPrice();
+    }
+    ```
     - (C)
+    ```java
+    public double getPrice() {
+        return myTable.getPrice() + myChairs.getPrice();
+    }
+    ```
     - (D)
+    ```java
+    public double getPrice() {
+        double result = myTable.getPrice();
+        for(int k = 0; k < myChairs.size() - 1; k++) {
+            result += ((Chair)myChairs.get(k)).getPrice();
+        }
+        return result;
+    }
+    ```
     - (E)
+    ```java
+    public double getPrice() {
+        double result = myTable.getPrice();
+        for(int k = 0; k < myChairs.length - 1; k++) {
+            result += ((Chair)myChairs[k]).getPrice();
+        }
+        return result;
+    }
+    ```
 ##
 14. **Consider the following output:**
 
-        6   5   4   3   2   1
-        5   4   3   2   1
-        4   3   2   1
-        3   2   1
-        2   1
-        1
+    ```java
+    6   5   4   3   2   1
+    5   4   3   2   1
+    4   3   2   1
+    3   2   1
+    2   1
+    1
+    ```
 
     Which of the following code segments produces the above output when executed?
-
-        (A)     for(int j = 6; j < 0; j--) {
-                    for(int k = j; k > 0; k--) {
-                        System.out.print(k + " ");
-                    }
-                    System.out.println(" ");
-                }
-
-        (B)     for(int j = 6; j >= 0; j--) {
-                    for(int k = j; k >= 0; k--) {
-                        System.out.print(k + " ");
-                    }
-                    System.out.println(" ");
-                }
-
-        (C)     for(int j = 0; j < 6; j++) {
-                    for(int k = 6 - j; k > 0; k--) {
-                        System.out.print(k + " ");
-                    }
-                    System.out.println(" ");
-                }
-
-        (D)     for(int j = 0; j < 6; j++) {
-                    for(int k = 7 - j; k > 0; k--) {
-                        System.out.print(k + " ");
-                    }
-                    System.out.println(" ");
-                }
-
-        (E)     for(int j = 0; j < 6; j++) {
-                    for(int k = 6 - j; k >= 0; k--) {
-                        System.out.print(k + " ");
-                    }
-                    System.out.println(" ");
-                }
-
     - (A)
+    ```java
+    for(int j = 6; j < 0; j--) {
+        for(int k = j; k > 0; k--) {
+            System.out.print(k + " ");
+        }
+        System.out.println(" ");
+    }
+    ```
     - (B)
+    ```java
+    for(int j = 6; j >= 0; j--) {
+        for(int k = j; k >= 0; k--) {
+            System.out.print(k + " ");
+        }
+        System.out.println(" ");
+    }
+    ```
     - (C)
+    ```java
+    for(int j = 0; j < 6; j++) {
+        for(int k = 6 - j; k > 0; k--) {
+            System.out.print(k + " ");
+        }
+        System.out.println(" ");
+    }
+    ```
     - (D)
+    ```java
+    for(int j = 0; j < 6; j++) {
+        for(int k = 7 - j; k > 0; k--) {
+            System.out.print(k + " ");
+        }
+        System.out.println(" ");
+    }
+    ```
     - (E)
+    ```java
+    for(int j = 0; j < 6; j++) {
+        for(int k = 6 - j; k >= 0; k--) {
+            System.out.print(k + " ");
+        }
+        System.out.println(" ");
+    }
+    ```
 ##
 15. **Consider the following code segment:**
 
-        List<Integer> list = new ArrayList<Integer>();
-        list.add(new Integer(7));
-        list.add(new Integer(6));
-        list.add(1, new Integer(5));
-        list.add(1, new Integer(4));
-        list.add(new Integer(3));
-        list.set(2, new Integer(2));
-        list.add(1, new Integer(1));
-        System.out.println(list);
+    ```java
+    List<Integer> list = new ArrayList<Integer>();
+    list.add(new Integer(7));
+    list.add(new Integer(6));
+    list.add(1, new Integer(5));
+    list.add(1, new Integer(4));
+    list.add(new Integer(3));
+    list.set(2, new Integer(2));
+    list.add(1, new Integer(1));
+    System.out.println(list);
+    ```
 
     What is printed as a result of executing this code segment?
-    - (A) <code>[1, 4, 2, 7, 6, 3]</code>
-    - (B) <code>[7, 1, 4, 2, 6, 3]</code>
-    - (C) <code>[7, 2, 5, 4, 3, 1]</code>
-    - (D) <code>[7, 6, 2, 4, 3, 1]</code>
-    - (E) <code>[7, 1, 2]</code>
+    - (A)
+    ```java
+    [1, 4, 2, 7, 6, 3]
+    ```
+    - (B)
+    ```java
+    [7, 1, 4, 2, 6, 3]
+    ```
+    - (C)
+    ```java
+    [7, 2, 5, 4, 3, 1]
+    ```
+    - (D)
+    ```java
+    [7, 6, 2, 4, 3, 1]
+    ```
+    - (E)
+    ```java
+    [7, 1, 2]
+    ```
 ##
 16. **Consider the following declarations:**
 
-        public interface Animal {
-            String makeSound();
-            String animalType();
-        }
+    ```java
+    public interface Animal {
+        String makeSound();
+        String animalType();
+    }
 
-        public static class Dog implements Animal {
-            public String makeSound(Animal a) {
-                // Implementation not shown
-            }
+    public static class Dog implements Animal {
+        public String makeSound(Animal a) {
+            // Implementation not shown
         }
+    }
+    ```
 
     Which of the following methods must be included in the declaration of the <code>Dog</code> class in order for the class to successfully compile?
 
@@ -497,158 +586,205 @@ Determine the answer to each of the following questions or incomplete statements
 ##
 17. **Consider the following two classes:**
 
-        public static class Fish {
-            public String endoskeleton = "bone";
+    ```java
+    public static class Fish {
+        public String endoskeleton = "bone";
 
-            public void action() {
-                System.out.println("splash splash");
-            }
+        public void action() {
+            System.out.println("splash splash");
+        }
+    }
+
+    public static class Shark extends Fish {
+        public void action() {
+            System.out.println("chomp chomp");
         }
 
-        public static class Shark extends Fish {
-            public void action() {
-                System.out.println("chomp chomp");
-            }
-
-            public String endoskeleton = "cartilage";
-        }
+        public String endoskeleton = "cartilage";
+    }
+    ```
 
     Which of the following is the correct output after the following code segment is executed?
 
-            Fish Bob = new Shark();
-            System.out.println(Bob.endoskeleton);
-            Bob.action();
-
-    >
-
-        (A)     bone
-                chomp chomp
-
-        (B)     bone
-                splash splash
-
-        (C)     cartilage
-                splash splash
-
-        (D)     cartilage
-                chomp chomp
-
-        (E)     cartilage
-                splash splash
-                chomp chomp
+    ```java
+    Fish Bob = new Shark();
+    System.out.println(Bob.endoskeleton);
+    Bob.action();
+    ```
 
     - (A)
+    ```java
+    bone
+    chomp chomp
+    ```
     - (B)
+    ```java
+    bone
+    splash splash
+    ```
     - (C)
+    ```java
+    cartilage
+    splash splash
+    ```
     - (D)
+    ```java
+    cartilage
+    chomp chomp
+    ```
     - (E)
+    ```java
+    cartilage
+    splash splash
+    chomp chomp
+    ```
 ##
 **Questions 18-19 refer to the following incomplete method:**
 
-        // The following insertSort method sorts the values in an integer array, sort, in ascending order.
-        Line 01:    public static void insertSort(int[] sort)
-        Line 02:    {
-        Line 03:        for(int index = 1; index < sort.length; index++)
-        Line 04:        {
-        Line 05:            int temp = sort[index];
-        Line 06:            while(index > 0 && sort[index-1] > temp)
-        Line 07:            {
-        Line 08:                // missing code
-        Line 09:            }
-        Line 10:        sort[index] = temp;
-        Line 11:        }
-        Line 12:    }
+    ```java
+    // The following insertSort method sorts the values in an integer array, sort, in ascending order.
+    Line 01:    public static void insertSort(int[] sort)
+    Line 02:    {
+    Line 03:        for(int index = 1; index < sort.length; index++)
+    Line 04:        {
+    Line 05:            int temp = sort[index];
+    Line 06:            while(index > 0 && sort[index-1] > temp)
+    Line 07:            {
+    Line 08:                // missing code
+    Line 09:            }
+    Line 10:        sort[index] = temp;
+    Line 11:        }
+    Line 12:    }
+    ```
 
-18. **Which of the following can be used to replace <code>//missing code</code> so that the <code>insertSort</code> method will execute properly?**
+18. **Question:**
 
-        (A)     sort[index] = sort[index-1];
-                index++;
-
-        (B)     sort[index-1] = sort[index];
-                index--;
-
-        (C)     sort[index] = sort[index+1];
-                index++;
-
-        (D)     sort[index] = sort[index-1];
-                index--;
-
-        (E)     sort[index] = sort[index+1];
-                index--;
-
+    Which of the following can be used to replace <code>//missing code</code> so that the <code>insertSort</code> method will execute properly?
     - (A)
+    ```java
+    sort[index] = sort[index-1];
+    index++;
+    ```
     - (B)
+    ```java
+    sort[index-1] = sort[index];
+    index--;
+    ```
     - (C)
+    ```java
+    sort[index] = sort[index+1];
+    index++;
+    ```
     - (D)
+    ```java
+    sort[index] = sort[index-1];
+    index--;
+    ```
     - (E)
+    ```java
+    sort[index] = sort[index+1];
+    index--;
+    ```
 
-19. **Assuming that the <code>//missing code</code> is implemented properly, what change can be made to the code in order for the array to be sorted in descending order?**
+19. **Question:**
+
+    Assuming that the <code>//missing code</code> is implemented properly, what change can be made to the code in order for the array to be sorted in descending order?
     - (A) Replace Line 06 with: <code>while(index < 0 && sort[index-1] < temp)</code>
     - (B) Replace Line 06 with: <code>while(index < 0 && sort[index+1] < temp)</code>
     - (C) Replace Line 06 with: <code>while(index > 0 && sort[index-1] < temp)</code>
     - (D) Replace Line 03 with: <code>for(int index = sort.length - 1; index > 0; index--)</code>
     - (E) Replace Line 03 with: <code>for(int index = 1; index > 0; index--)</code>
 ##
-20. **Which of the following arrays would be sorted the slowest using insertion sort?**
-    - (A) <code>[3  4  6  2  7  3  9]</code>
-    - (B) <code>[3  2  5  4  6  7  9]</code>
-    - (C) <code>[9  7  6  5  4  3  2]</code>
-    - (D) <code>[2  3  4  5  6  7  9]</code>
-    - (E) <code>[9  3  2  4  5  7  6]</code>
+20. **Question:**
+
+    Which of the following arrays would be sorted the slowest using insertion sort?
+    - (A)
+    ```java
+    [3  4  6  2  7  3  9]
+    ```
+    - (B)
+    ```java
+    [3  2  5  4  6  7  9]
+    ```
+    - (C)
+    ```java
+    [9  7  6  5  4  3  2]
+    ```
+    - (D)
+    ```java
+    [2  3  4  5  6  7  9]
+    ```
+    - (E)
+    ```java
+    [9  3  2  4  5  7  6]
+    ```
 ##
 **Questions 21-23 refer to the following incomplete class declaration used to represent fractions with integral numerators and denominators:**
 
-        public class Fraction {
-            private int numerator;
-            private int denominator;
+    ```java
+    public class Fraction {
+        private int numerator;
+        private int denominator;
 
-            public Fraction() {
-                numerator = 0;
-                denominator = 1;
-            }
-
-            public Fraction(int n, int d) {
-                numerator = n;
-                denominator = d;
-            }
-
-            // postcondition: returns the numerator
-            public int getNumerator() {
-                /* implementation not shown */
-            }
-
-            // postcondition: returns the denominator
-            public int getDenominator() {
-                /* implementation not shown */
-            }
-
-            // postcondition: returns the greatest common divisor of x and y
-            public int gcd(int x, int y) {
-                /* implementation not shown */
-            }
-
-            // postcondition: returns the Fraction that is the result of multiplying this Fraction and f
-            public Fraction multiply(Fraction f) {
-                /* implementation not shown */
-            }
-
-            // ... other methods not shown
+        public Fraction() {
+            numerator = 0;
+            denominator = 1;
         }
 
-21. **Consider the method multiply of the Fraction class:**
+        public Fraction(int n, int d) {
+            numerator = n;
+            denominator = d;
+        }
+
+        // postcondition: returns the numerator
+        public int getNumerator() {
+            /* implementation not shown */
+        }
+
+        // postcondition: returns the denominator
+        public int getDenominator() {
+            /* implementation not shown */
+        }
+
+        // postcondition: returns the greatest common divisor of x and y
+        public int gcd(int x, int y) {
+            /* implementation not shown */
+        }
 
         // postcondition: returns the Fraction that is the result of multiplying this Fraction and f
         public Fraction multiply(Fraction f) {
-            // missing code
+            /* implementation not shown */
         }
+
+        // ... other methods not shown
+    }
+    ```
+
+21. **Consider the method multiply of the Fraction class:**
+
+    ```java
+    // postcondition: returns the Fraction that is the result of multiplying this Fraction and f
+    public Fraction multiply(Fraction f) {
+        // missing code
+    }
+    ```
 
     Which of the following statements can be used to replace <code>//missing code</code> so that the multiply method is correctly implemented?
 
-    > I. <code>return Fraction(numerator * f.getNumerator(), denominator * f.getDenominator());</code>
-    >
-    > II. <code>return new Fraction(numerator * f.numerator, denominator * f.denominator());</code>
-    >
-    > III. <code>return new Fraction(numerator * f.getNumerator(), denominator * f.getDenominator());</code>
+    I.
+    ```java
+    return Fraction(numerator * f.getNumerator(), denominator * f.getDenominator());
+    ```
+    
+    II.
+    ```java
+    return new Fraction(numerator * f.numerator, denominator * f.denominator());
+    ```
+    
+    III.
+    ```java
+    return new Fraction(numerator * f.getNumerator(), denominator * f.getDenominator());
+    ```
 
     - (A) I only
     - (B) II only
