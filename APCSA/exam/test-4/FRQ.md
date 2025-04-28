@@ -93,6 +93,8 @@ SHOW ALL YOUR WORK. REMEMBER THAT PROGRAM SEGMENTS ARE TO BE WRITTEN IN JAVA.
     public boolean findEmployeeForChild(Child c)
     ```
 
+    > --------------------
+
     (b) **To run the <code>DayCare</code> for a day, each <code>Child</code> must be assigned to an <code>Employee</code>. If an <code>Employee</code> can not be found for a <code>Child</code>, the <code>DayCare</code> cannot run for the day.**
 
     Complete the <code>runDayCare</code> method below that finds an <code>Employee</code> for each <code>Child</code> in the <code>children</code> ArrayList.
@@ -101,6 +103,8 @@ SHOW ALL YOUR WORK. REMEMBER THAT PROGRAM SEGMENTS ARE TO BE WRITTEN IN JAVA.
     /* Return true if an Employee was found for each Child, false otherwise */
     public boolean runDayCare(Child c)
     ```
+
+    > --------------------
 
     (c) **When a <code>Child</code> is added to the roster of the <code>DayCare</code>, the <code>DayCare</code> should first make sure there could be an <code>Employee</code> available to teach that <code>Child</code>.**
 
