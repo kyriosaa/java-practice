@@ -1,5 +1,4 @@
 > **APCSA - PRACTICE TEST 4 ANSWER SHEET**
-------------------------------------------------------------
 
 **THESE ANSWERS ARE VERIFIED BY THE OFFICIAL ANSWER SHEET. PLEASE CHECK IT IN THE RESOURCES FOLDER IF NEED BE**
 
@@ -101,7 +100,7 @@
 
 ## FRQ ANSWER SHEET
 
-1.  (a)
+1.  ### (a)
 
     ```java
     public boolean findEmployeeForChild(Child c) {
@@ -132,9 +131,8 @@
     >
     > (+1) True is returned if the child is assigned to an employee, false is returned otherwise.
 
-    ------------------------------------------------------------
 
-    (b)
+    **(b)**
 
     ```java
     public boolean runDayCare() {
@@ -154,9 +152,8 @@
     > 
     > (+1) The findEmployeeForChild method is called correctly.
 
-    ------------------------------------------------------------
 
-    (c)
+    **(c)**
 
     ```java
     public boolean addChild(Child c) {

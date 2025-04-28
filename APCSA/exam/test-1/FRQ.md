@@ -7,7 +7,6 @@
 > **Number of Questions - 4**
 > 
 > **Percent of Total Grade - 50%**
-------------------------------------------------------------
 
 
 ## Directions:
