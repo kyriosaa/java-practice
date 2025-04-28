@@ -1344,3 +1344,5 @@ public class Fraction {
     - (C) A word processing application
     - (D) A mouse
     - (E) An external CD-ROM drive
+
+> **END SECTION 1**

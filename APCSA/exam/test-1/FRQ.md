@@ -408,3 +408,5 @@ SHOW ALL YOUR WORK. REMEMBER THAT PROGRAM SEGMENTS ARE TO BE WRITTEN IN JAVA.
     > --------------------
 
     **Write the complete <code>School</code>, <code>Classroom</code>, and <code>Student</code> classes, including any instance variables, constructors, and necessary methods. You may assume that the student ID numbers in each classroom are sorted in ascending order.**
+
+> **END SECTION 2**
