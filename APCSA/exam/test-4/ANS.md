@@ -1,4 +1,5 @@
 > **APCSA - PRACTICE TEST 4 ANSWER SHEET**
+------------------------------------------------------------
 
 **THESE ANSWERS ARE VERIFIED BY THE OFFICIAL ANSWER SHEET. PLEASE CHECK IT IN THE RESOURCES FOLDER IF NEED BE**
 
@@ -131,7 +132,7 @@
     >
     > (+1) True is returned if the child is assigned to an employee, false is returned otherwise.
 
-    > --------------------
+    ------------------------------------------------------------
 
     (b)
 
@@ -153,7 +154,7 @@
     > 
     > (+1) The findEmployeeForChild method is called correctly.
 
-    > --------------------
+    ------------------------------------------------------------
 
     (c)
 
@@ -174,7 +175,7 @@
     >
     > (+1) Children are added to the children list correctly if an employee is found.
 
-    > --------------------
+    ------------------------------------------------------------
 
 2.  (a)
 
@@ -220,7 +221,7 @@
     >
     > (+1) The <code>changePosition</code> method correctly modifies the class-level String variable.
 
-    > --------------------
+    ------------------------------------------------------------
 
 3.  (a)
 
@@ -241,7 +242,7 @@
     >
     > (+1) The first name is returned correctly.
 
-    --------------------
+    ------------------------------------------------------------
 
     (b)
 
