@@ -641,21 +641,21 @@ public class Mail {
 ##
 **Questions 18-19 refer to the following incomplete method:**
 
-    ```java
-    // The following insertSort method sorts the values in an integer array, sort, in ascending order.
-    Line 01:    public static void insertSort(int[] sort)
-    Line 02:    {
-    Line 03:        for(int index = 1; index < sort.length; index++)
-    Line 04:        {
-    Line 05:            int temp = sort[index];
-    Line 06:            while(index > 0 && sort[index-1] > temp)
-    Line 07:            {
-    Line 08:                // missing code
-    Line 09:            }
-    Line 10:        sort[index] = temp;
-    Line 11:        }
-    Line 12:    }
-    ```
+```java
+// The following insertSort method sorts the values in an integer array, sort, in ascending order.
+Line 01:    public static void insertSort(int[] sort)
+Line 02:    {
+Line 03:        for(int index = 1; index < sort.length; index++)
+Line 04:        {
+Line 05:            int temp = sort[index];
+Line 06:            while(index > 0 && sort[index-1] > temp)
+Line 07:            {
+Line 08:                // missing code
+Line 09:            }
+Line 10:        sort[index] = temp;
+Line 11:        }
+Line 12:    }
+```
 
 18. **Question:**
 
@@ -721,44 +721,44 @@ public class Mail {
 ##
 **Questions 21-23 refer to the following incomplete class declaration used to represent fractions with integral numerators and denominators:**
 
-    ```java
-    public class Fraction {
-        private int numerator;
-        private int denominator;
+```java
+public class Fraction {
+    private int numerator;
+    private int denominator;
 
-        public Fraction() {
-            numerator = 0;
-            denominator = 1;
-        }
-
-        public Fraction(int n, int d) {
-            numerator = n;
-            denominator = d;
-        }
-
-        // postcondition: returns the numerator
-        public int getNumerator() {
-            /* implementation not shown */
-        }
-
-        // postcondition: returns the denominator
-        public int getDenominator() {
-            /* implementation not shown */
-        }
-
-        // postcondition: returns the greatest common divisor of x and y
-        public int gcd(int x, int y) {
-            /* implementation not shown */
-        }
-
-        // postcondition: returns the Fraction that is the result of multiplying this Fraction and f
-        public Fraction multiply(Fraction f) {
-            /* implementation not shown */
-        }
-
-        // ... other methods not shown
+    public Fraction() {
+        numerator = 0;
+        denominator = 1;
     }
-    ```
+
+    public Fraction(int n, int d) {
+        numerator = n;
+        denominator = d;
+    }
+
+    // postcondition: returns the numerator
+    public int getNumerator() {
+        /* implementation not shown */
+    }
+
+    // postcondition: returns the denominator
+    public int getDenominator() {
+        /* implementation not shown */
+    }
+
+    // postcondition: returns the greatest common divisor of x and y
+    public int gcd(int x, int y) {
+        /* implementation not shown */
+    }
+
+    // postcondition: returns the Fraction that is the result of multiplying this Fraction and f
+    public Fraction multiply(Fraction f) {
+        /* implementation not shown */
+    }
+
+    // ... other methods not shown
+}
+```
 
 21. **Consider the method multiply of the Fraction class:**
 
@@ -771,17 +771,17 @@ public class Mail {
 
     Which of the following statements can be used to replace <code>//missing code</code> so that the multiply method is correctly implemented?
 
-    I.
+    > I.
     ```java
     return Fraction(numerator * f.getNumerator(), denominator * f.getDenominator());
     ```
     
-    II.
+    > II.
     ```java
     return new Fraction(numerator * f.numerator, denominator * f.denominator());
     ```
     
-    III.
+    > III.
     ```java
     return new Fraction(numerator * f.getNumerator(), denominator * f.getDenominator());
     ```
