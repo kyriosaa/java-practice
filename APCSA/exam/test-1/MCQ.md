@@ -572,11 +572,20 @@ public class Mail {
 
     Which of the following methods must be included in the declaration of the <code>Dog</code> class in order for the class to successfully compile?
 
-    > I. <code>public String makeSound()</code>
-    >
-    > II. <code>public String animalType()</code>
-    >
-    > III. <code>public String animalType(animal b)</code>
+    > I.
+    ```java
+    public String makeSound()
+    ```
+
+    > II.
+    ```java
+    public String animalType()
+    ```
+    
+    > III.
+    ```java
+    public String animalType(animal b)
+    ```
 
     - (A) I only
     - (B) II only
@@ -794,49 +803,77 @@ public class Fraction {
 
 22. **Consider the use of the Fraction class to multiply the fractions (3/4) and (7/19). Consider the following code:**
 
-        Fraction fractionOne;
-        Fraction fractionTwo;
-        Fraction answer;
-        fractionOne = new Fraction(3, 4);
-        fractionTwo = new Fraction(7, 19);
-        // missing code
+    ```java
+    Fraction fractionOne;
+    Fraction fractionTwo;
+    Fraction answer;
+    fractionOne = new Fraction(3, 4);
+    fractionTwo = new Fraction(7, 19);
+    // missing code
+    ```
 
     Which of the following could be used to replace <code>//missing code</code> so that the answer contains the result of multiplying fractionOne by fractionTwo?
-    - (A) <code>answer = fractionOne * fractionTwo</code>
-    - (B) <code>answer = multiply(fractionOne, fractionTwo);</code>
-    - (C) <code>answer = fractionOne.multiply(fractionTwo);</code>
-    - (D) <code>answer = new Fraction(fractionOne, fractionTwo);</code>
-    - (E) <code>answer = (fractionOne.getNumerator() * fractionTwo.getNumerator()) / (fractionOne.getDenominator() * fractionTwo.getDenominator());</code>
+    - (A)
+    ```java
+    answer = fractionOne * fractionTwo
+    ```
+    - (B)
+    ```java
+    answer = multiply(fractionOne, fractionTwo);
+    ```
+    - (C)
+    ```java
+    answer = fractionOne.multiply(fractionTwo);
+    ```
+    - (D)
+    ```java
+    answer = new Fraction(fractionOne, fractionTwo);
+    ```
+    - (E)
+    ```java
+    answer = (fractionOne.getNumerator() * fractionTwo.getNumerator()) / (fractionOne.getDenominator() * fractionTwo.getDenominator());
+    ```
 
 23. **The following incomplete class declaration is intended to extend the <code>Fraction</code> class so that fractions can be manipulated in reduced form (lowest terms):**
 
     Note that a fraction can be reduced to lowest terms by dividing both the numerator and denominator by the greatest common divisor (gcd) of the numerator and denominator.
 
-        public class ReducedFraction extends Fraction {
-            private int reducedNumerator;
-            private int reducedDenominator;
-            // ... constructors and other methods not shown
-        }
+    ```java
+    public class ReducedFraction extends Fraction {
+        private int reducedNumerator;
+        private int reducedDenominator;
+        // ... constructors and other methods not shown
+    }
+    ```
 
     Consider the following proposed constructors for the <code>ReducedFraction</code> class:
 
-        I.      public ReducedFraction() {
-                    reducedNumerator = 0;
-                    reducedDenominator = 1;
-                }
+    > I.
+    ```java
+    public ReducedFraction() {
+        reducedNumerator = 0;
+        reducedDenominator = 1;
+    }
+    ```
 
-        II.     public reducedFraction(int n, int d) {
-                    numerator = n;
-                    denominator = d;
-                    reducedNumerator = n / gcd(n, d);
-                    reducedDenominator = d / gcd(n, d);
-                }
+    > II.
+    ```java
+    public reducedFraction(int n, int d) {
+        numerator = n;
+        denominator = d;
+        reducedNumerator = n / gcd(n, d);
+        reducedDenominator = d / gcd(n, d);
+    }
+    ```
 
-        III.    public ReducedFraction(int n, int d) {
-                    super(n, d);
-                    reducedNumerator = n / gcd(n, d);
-                    reducedDenominator = d / gcd(n, d);
-                }
+    > III.
+    ```java
+    public ReducedFraction(int n, int d) {
+        super(n, d);
+        reducedNumerator = n / gcd(n, d);
+        reducedDenominator = d / gcd(n, d);
+    }
+    ```
 
     Which of these constructor(s) would be legal for the <code>ReducedFraction</code> class?
     - (A) I only
@@ -847,22 +884,33 @@ public class Fraction {
 ##
 24. **Consider <code>s1</code> and <code>s2</code> defined as follows:**
 
-        String s1 = new String("hello");
-        String s2 = new String("hello");
+    ```java
+    String s1 = new String("hello");
+    String s2 = new String("hello");
+    ```
 
     Which of the following is/are correct ways to see if <code>s1</code> and <code>s2</code> hold identical strings?
 
-        I.      if(s1 == s2) {
-                    // s1 and s2 are identical
-                }
+    > I.
+    ```java
+    if(s1 == s2) {
+        // s1 and s2 are identical
+    }
+    ```
 
-        II.     if(s1.compareTo(s2) == 0) {
-                    // s1 and s2 are identical
-                }
+    > II.
+    ```java
+    if(s1.compareTo(s2) == 0) {
+        // s1 and s2 are identical
+    }
+    ```
 
-        III.    if(s1.equals(s2)) {
-                    // s1 and s2 are identical
-                }
+    > III.
+    ```java
+    if(s1.equals(s2)) {
+        // s1 and s2 are identical
+    }
+    ``` 
 
     - (A) I only
     - (B) III only
@@ -872,12 +920,14 @@ public class Fraction {
 ##
 25. **Consider the following variable and method declarations:**
 
-        String s;
-        String t;
-        public void mystery(String a, String b) {
-            a = a + b;
-            b = b + a;
-        }
+    ```java
+    String s;
+    String t;
+    public void mystery(String a, String b) {
+        a = a + b;
+        b = b + a;
+    }
+    ```
 
     Assume that <code>s</code> has the value "<code>Elizabeth</code>" and <code>t</code> has the value "<code>Andrew</code>" and <code>mystery(s, t)</code> is called. What are the values of <code>s</code> and <code>t</code> after the call to mystery?
 
@@ -887,6 +937,7 @@ public class Fraction {
             (C) ElizabethAndrew                     AndrewElizabethAndrew
             (D) ElizabethAndrew                     ElizabethAndrewAndrew
             (E) ElizabethAndrewElizabeth            AndrewElizabethAndrew
+
     - (A) 
     - (B) 
     - (C) 
@@ -895,14 +946,16 @@ public class Fraction {
 ##
 26. **Consider the following incomplete and *incorrect* class declaration:**
 
-        public class Point implements Comparable {
-            private int x;
-            private int y;
-            public boolean compareTo(Point other) {
-                return (x == other.x && y == other.y);
-            }
-            // ... constructors and other methods not shown
+    ```java
+    public class Point implements Comparable {
+        private int x;
+        private int y;
+        public boolean compareTo(Point other) {
+            return (x == other.x && y == other.y);
         }
+        // ... constructors and other methods not shown
+    }
+    ```
 
     For which of the following reasons is the above class declaration incorrect?
 
@@ -920,91 +973,125 @@ public class Fraction {
 ##
 27. **Consider the following abstraction of a <code>for</code> loop where <code><1></code>, <code><2></code>, <code><3></code>, and <code><4></code> represent legal code in the indicated locations:**
 
-        for(<1>; <2>; <3>) {
-            <4>
-        }
+    ```java
+    for(<1>; <2>; <3>) {
+        <4>
+    }
+    ```
 
     Which of the following <code>while</code> loops has the same functionality as the above <code>for</code> loop?
-
-        (A)     <1>;
-                while(<2>) {
-                    <3>;
-                    <4>
-                }
-
-        (B)     <1>;
-                while(<2>) {
-                    <4>
-                    <3>;
-                }
-
-        (C)     <1>;
-                while(!<2>) {
-                    <3>;
-                    <4>
-                }
-
-        (D)     <1>;
-                while(!<2>) {
-                    <4>
-                    <3>;
-                }
-
-        (E)     <1>;
-                <3>;
-                while(<2>) {
-                    <4>
-                    <3>;
-                }
-
     - (A)
+    ```java
+    <1>;
+    while(<2>) {
+        <3>;
+        <4>
+    }
+    ```
     - (B)
+    ```java
+    <1>;
+    while(<2>) {
+        <4>
+        <3>;
+    }
+    ```
     - (C)
+    ```java
+    <1>;
+    while(!<2>) {
+        <3>;
+        <4>
+    }
+    ```
     - (D)
+    ```java
+    <1>;
+    while(!<2>) {
+        <4>
+        <3>;
+    }
+    ```
     - (E)
+    ```java
+    <1>;
+    <3>;
+    while(<2>) {
+        <4>
+        <3>;
+    }
+    ```
 ##
 28. **Consider the following expression:**
 
-        a / b + c - d % e * f
+    ```java
+    a / b + c - d % e * f
+    ```
 
     Which of the expressions given below is equivalent to the one given above?
-    - (A) <code>((a / b) + (c - d)) % (e * f)</code>
-    - (B) <code>((((a / b) + c) - d) % e) * f</code>
-    - (C) <code>((a / b) + c) - (d % (e * f))</code>
-    - (D) <code>(a / ((b + c) - d) % e) * f</code>
-    - (E) <code>((a / b) + c) - ((d % e) * f)</code>
+    - (A)
+    ```java
+    ((a / b) + (c - d)) % (e * f)
+    ```
+    - (B)
+    ```java
+    ((((a / b) + c) - d) % e) * f
+    ```
+    - (C)
+    ```java
+    ((a / b) + c) - (d % (e * f))
+    ```
+    - (D)
+    ```java
+    (a / ((b + c) - d) % e) * f
+    ```
+    - (E)
+    ```java
+    ((a / b) + c) - ((d % e) * f)
+    ```
 ##
 29. **Assume that a program declares and initializes x as follows:**
 
-        String[] x;
-        x = new String[10];
-        initialize(x);          // Fills the array x with valid strings each of length 5
+    ```java
+    String[] x;
+    x = new String[10];
+    initialize(x);          // Fills the array x with valid strings each of length 5
+    ```
 
     Which of the following code segments correctly traverses the array and prints out the first character of all ten strings followed by the second character of all ten strings, and so on?
 
-        I.      int i;
-                int j;
-                for(i = 0; i < 10; i++) {
-                    for(j = 0; j < 5; j++) {
-                        System.out.print(x[i].substring(j, j+1));
-                    }
-                }
+    > I.
+    ```java
+    int i;
+    int j;
+    for(i = 0; i < 10; i++) {
+        for(j = 0; j < 5; j++) {
+            System.out.print(x[i].substring(j, j+1));
+        }
+    }
+    ```
 
-        II.     int i;
-                int j;
-                for(i = 0; i < 5; i++) {
-                    for(j = 0; j < 10; j++) {
-                        System.out.print(x[j].substring(i, i+1));
-                    }
-                }
+    > II.
+    ```java
+    int i;
+    int j;
+    for(i = 0; i < 5; i++) {
+        for(j = 0; j < 10; j++) {
+            System.out.print(x[j].substring(i, i+1));
+        }
+    }
+    ```
 
-        III.    int i;
-                int j;
-                for(i = 0; i < 5; i++) {
-                    for(j = 0; j < 10; j++) {
-                        System.out.print(x[i].substring(j, j+1));
-                    }
-                }
+    > III.
+    ```java
+    int i;
+    int j;
+    for(i = 0; i < 5; i++) {
+        for(j = 0; j < 10; j++) {
+            System.out.print(x[i].substring(j, j+1));
+        }
+    }
+    ```
 
     - (A) I only
     - (B) II only
@@ -1014,10 +1101,12 @@ public class Fraction {
 ##
 30. **Consider the following declaration and assignment statements:**
 
-        int a = 7;
-        int b == 4;
-        double c;
-        c = a / b;
+    ```java
+    int a = 7;
+    int b == 4;
+    double c;
+    c = a / b;
+    ```
 
     After the assignment statement is executed, what's the value of <code>c</code>?
     - (A) 1.0
@@ -1028,10 +1117,12 @@ public class Fraction {
 ##
 31. **Consider the following code segment:**
 
-        int x;
-        x = /* initialized to an integer */
-        if(x % 2 == 0 && x / 3 == 1) 
-            System.out.print("Yes");
+    ```java
+    int x;
+    x = /* initialized to an integer */
+    if(x % 2 == 0 && x / 3 == 1) 
+        System.out.print("Yes");
+    ```
         
     For what values of <code>x</code> will the word "Yes" be printed when the code segment is executed?
     - (A) 0
@@ -1042,46 +1133,59 @@ public class Fraction {
 ##
 32. **Consider the following incomplete class definition:**
 
-        public class SomeClass {
-            private String myName;
+    ```java
+    public class SomeClass {
+        private String myName;
 
-            // postcondition: returns myName
-            public String getName() {
-                /* implementation not shown */
-            }
-
-            // postcondition: myName == name
-            public void setName(String name) {
-                /* implementation not shown */
-            }
-
-            // ... constructors, other methods and private data not shown
+        // postcondition: returns myName
+        public String getName() {
+            /* implementation not shown */
         }
+
+        // postcondition: myName == name
+        public void setName(String name) {
+            /* implementation not shown */
+        }
+
+        // ... constructors, other methods and private data not shown
+    }
+    ```
 
     Now consider the method swap, not part of the SomeClass class.
 
-        // precondition: x and y are correctly constructed
-        // postcondition: the names of objects x and y are swapped
-        public void swap(SomeClass x, SomeClass y) {
-            // missing code
-        }
+    ```java
+    // precondition: x and y are correctly constructed
+    // postcondition: the names of objects x and y are swapped
+    public void swap(SomeClass x, SomeClass y) {
+        // missing code
+    }
+    ```
 
     Which of the following code segments can replace <code>//missing code</code> so that the method swap works as intended?
 
-        I.      SomeClass temp;
-                temp = x;
-                x = y;
-                y = temp;
+    > I.
+    ```java
+    SomeClass temp;
+    temp = x;
+    x = y;
+    y = temp;
+    ```
 
-        II.     String temp;
-                temp = x.myName;
-                x.myName = y.myName;
-                y.myName = temp;
+    > II.
+    ```java
+    String temp;
+    temp = x.myName;
+    x.myName = y.myName;
+    y.myName = temp;
+    ```
 
-        III.    String temp;
-                temp = x.getName();
-                x.setName(y.getName());
-                y.setName(temp);
+    > III.
+    ```java
+    String temp;
+    temp = x.getName();
+    x.setName(y.getName());
+    y.setName(temp);
+    ```   
 
     - (A) I only
     - (B) III only
@@ -1106,12 +1210,14 @@ public class Fraction {
 ##
 34. **Consider the following code:**
 
-        public int mystery(int x) {
-            if(x == 1)
-                return //missing value;
-            else
-                return (2 * mystery(x-1)) + x;
-        }
+    ```java
+    public int mystery(int x) {
+        if(x == 1)
+            return //missing value;
+        else
+            return (2 * mystery(x-1)) + x;
+    }
+    ```
 
     Which of the following can be used to replace <code>//missing value</code> so that <code>mystery(4)</code> returns 34?
     - (A) 0
@@ -1122,21 +1228,38 @@ public class Fraction {
 ##
 35. **Consider the following code segment:**
 
-        int[] X;
-        int[] Y;
-        X = initializeX();      // returns a valid initialized int[]
-        Y = initializeY();      // returns a valid initialized int[]
+    ```java
+    int[] X;
+    int[] Y;
+    X = initializeX();      // returns a valid initialized int[]
+    Y = initializeY();      // returns a valid initialized int[]
 
-        for(int k = 0; k < X.length && X[k] == Y[k]; k++) {
-            /* some code */
-        }
+    for(int k = 0; k < X.length && X[k] == Y[k]; k++) {
+        /* some code */
+    }
+    ```
 
     Assuming that after <code>X</code> and <code>Y</code> are initialized, <code>X.length == Y.length</code>, which of the following must be true after executing this code segment?
-    - (A) <code>k < X.length</code>
-    - (B) <code>k < X.length && X[k] == Y[k]</code>
-    - (C) <code>k < X.length && X[k] != Y[k]</code>
-    - (D) <code>k >= X.length || X[k] == Y[k]</code>
-    - (E) <code>k >= X.length || X[k] != Y[k]</code>
+    - (A)
+    ```java
+    k < X.length
+    ```
+    - (B)
+    ```java
+    k < X.length && X[k] == Y[k]
+    ```
+    - (C)
+    ```java
+    k < X.length && X[k] != Y[k]
+    ```
+    - (D)
+    ```java
+    k >= X.length || X[k] == Y[k]
+    ```
+    - (E)
+    ```java
+    k >= X.length || X[k] != Y[k]
+    ```
 ##
 36. **Question:**
 
@@ -1151,13 +1274,30 @@ public class Fraction {
 
     Which of the following is an equivalent expression to:
 
-        a.doubleValue() != b.doubleValue()
+    ```java
+    a.doubleValue() != b.doubleValue()
+    ```
 
-    - (A) <code>a != b</code>
-    - (B) <code>a.notEquals(b)</code>
-    - (C) <code>!(a.doubleValue().equals(b.doubleValue()))</code>
-    - (D) <code>!(a.compareTo(b))</code>
-    - (E) <code>a.compareTo(b) != 0</code>
+    - (A)
+    ```java
+    a != b
+    ```
+    - (B)
+    ```java
+    a.notEquals(b)
+    ```
+    - (C)
+    ```java
+    !(a.doubleValue().equals(b.doubleValue()))
+    ```
+    - (D)
+    ```java
+    !(a.compareTo(b))
+    ```
+    - (E)
+    ```java
+    a.compareTo(b) != 0
+    ```
 ##
 38. **Question:**
 
