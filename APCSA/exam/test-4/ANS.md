@@ -104,17 +104,17 @@
 
     (a)
 
-    ```java
-    public boolean findEmployeeForChild(Child c) {
-        for(Employee e: employees) {
-            if(e.childrenAssigned() < maxRatio && e.canTeach(c.getAge())) {
-                e.assignChild(c);
-                return true;
+        ```java
+        public boolean findEmployeeForChild(Child c) {
+            for(Employee e: employees) {
+                if(e.childrenAssigned() < maxRatio && e.canTeach(c.getAge())) {
+                    e.assignChild(c);
+                    return true;
+                }
             }
+            return false;
         }
-        return false;
-    }
-    ```
+        ```
 
     This can also be done with a typical for loop or a while loop and the .get method. A loop is necessary to look at each <code>Employee</code> in the ArrayList. You must then make sure the chosen <code>Employee</code> doesn't already have the maximum number of children allowed. You must also send the age of the <code>Child</code> using the <code>getAge</code> accessor to the <code>canTeach</code> method to see if the chosen <code>Employee</code> is eligible to teach the given <code>Child</code>.
 
