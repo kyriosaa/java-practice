@@ -198,7 +198,7 @@
     >
     >>  This problem can be solved by creating a tree of the recursive calls. Based on the tree below, you can see there are 15 recursive calls.
     
-    ![alt text](https://github.com/kyriosaa/java-practice/blob/main/APCSA/exam/test-4/resources/ans-q40.png "ANS Q40")
+    <img src='./resources/ans-q40.png' width='100%' >
 
 
 # FRQ ANSWER SHEET
