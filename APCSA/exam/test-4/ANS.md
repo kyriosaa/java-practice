@@ -71,58 +71,155 @@
     >>  Since 14 is not less than 10, the loop ends.
 
 14. >   **B**
+    >
+    >>  The condition must be a condition that will be true when num is 1, otherwise the loop won’t run. This eliminates answers (A), (D), and (E) since 1 is not equal to 4, greater than 4, or greater than or equal to 4. If the condition is true when num is equal to 4, that will cause it to run one extra time and num will end up equal to 8 so this eliminates answer (C).
 
 15. >   **D**
+    >
+    >>  Since <code>i</code> and <code>num</code> are both equal to 0 when the for loop starts, answer (E) would cause the loop to not run at all. Since we want the loop to stop based on the value of num, we should be using num in the condition, which eliminates answers (A) and (B). If the loop continues to run when num equals 10, it will go beyond 10 so we don’t want the condition that checks if num is <= 10.
 
 16. >   **C**
+    >
+    >>  The loop variable <code>i</code> increases by 2 each time the loop runs (<code>i += 2</code>), so <code>i</code> will equal 0, 2, 4, 6, 8, and 10 while the loop is running. Once <code>i</code> becomes 12, the loop ends. That means the loop body ran 6 times.
 
 17. >   **C**
+    >
+    >>  The loop will start at 1000 (<code>int i = 1000</code>) and count down by 1 (<code>i--</code>) to 0, but not include the 0. This means it will run 1000 times.
 
 18. >   **E**
+    >
+    >>  The outer for loop will run 5 times (i = 0...i = 4). The inner for loop will run 2 times (k = 0...k = 1). This will cause the inner for loop body to run a total of 10 times (5 x 2), causing num to go up to a value of 10.
 
 19. >   **C**
+    >
+    >>  The loop will add a single character from <code>firstString</code> to <code>secondString</code> each time the loop runs. Using the <code>substring</code> method with i and i+1 as the arguments is what causes it to add a character at a time. Since the loop runs 5 times (0...4), it will add the first 5 characters from <code>firstString</code> “missi” to <code>secondString</code>.
 
 20. >   **C**
+    >
+    >>  This question uses an enhanced for loop, also known as a for-each loop. An enhanced for loop looks at every element in a collection and stores it in a temporary variable. The temporary variable in this case is called <code>city</code>. Since an enhanced for loop looks at every element and there are no errors in the code, we can eliminate answers (A) and (E). Since a <code>println</code> statement is used, the loop will print each element on a separate line. This eliminates answer (B). Finally, an enhanced for loop prints the elements from the collection in the same order so Chicago will be printed first and Manila will be printed last.
 
 21. >   **B**
+    >
+    >>  When you are trying to set the value of a variable that already exists, you shouldn’t precede the variable name with the variable type. This eliminates answers (C), (D), and (E). The variable you are trying to change should come before the = so <code>firstName</code>, <code>lastName</code>, and <code>number</code> should be to the left of the =.
 
 22. >   **D**
+    >
+    >>  You should never return something from a void method so that eliminates answers (A) and (B). As stated in the explanation for question 19, you shouldn’t precede a variable name with the variable type if you are trying to change the value of an already-existing variable. That eliminates answer (E). Since <code>position</code> is the variable we are trying to change, it should come to the left of the =.
 
 23. >   **D**
+    >
+    >>  You should not change the names of any variables you are given. Doing so could cause problems elsewhere in the program. This eliminates answers (A) and (B). The <code>this</code> keyword is used to access class-level variables if you have local variables with the same name.
 
 24. >   **E**
+    >
+    >>  When you initialize a new array, you need to initialize it with the size and variable type. That eliminates answers (C) and (D). You also need to put [ ] after the variable type when you declare the array, which eliminates answers (A) and (B).
 
 25. >   **B**
+    >
+    >>  The <code>compareTo</code> method returns a number less than 0 if the first String comes before the second String. That rules out answers (A), (C), and (E). The loop continues to run over the entire length of the array, so it will eventually find the String that comes first alphabetically.
 
 26. >   **D**
+    >
+    >>  The variable <code>x</code> is only going up by 1 (<code>x++</code>) each time the if statement is true, so the code can’t be getting a total of the numbers. This eliminates answers (B) and (C). The if statement uses modulus (<code>%</code>) to determine if the current number in the array is even since an even number has no remainder when it is divided by 2.
 
 27. >   **A**
+    >
+    >>  Since array indices start at 0, the 10th element of an array would be index 9. That eliminates answers (B), (D), and (E). Answer (C) is not correct either since it is attempting to set the array equal to 9 instead of accessing index 9 using square brackets [ ].
 
 28. >   **C**
+    >
+    >>  You can use binary search on any data structure, so that rules out answers (A), (B), and (E). Binary search can also be used on any primitive type (such as integers, doubles, and booleans) or any Comparable type (such as Strings), which rules out answer (D).
 
 29. >   **E**
+    >
+    >>  The <code>substring</code> method will look at the first letter of each element of <code>myList</code> (which are stored in the <code>temp</code> variable) and see if it is equal to “s”. The variable <code>x</code> will increment by 1 (<code>x++</code>) for each element that starts with “s.”
 
 30. >   **B**
+    >
+    >>  Insertion sort works by finding the minimum element and swapping it with the first element. It then moves to the second element and find the second-smallest element. Bubble sort and quick sort are not tested on the AP Computer Science A exam.
 
 31. >   **D**
+    >
+    >>  When initializing a 2D array, you declare the number of rows in the first pair of square brackets and the number of columns in the second pair. That eliminates answers (A), (C), and (E) since they declare 10 rows instead of 5 rows. Answer (B) is incorrect because it does not have two pairs of square brackets after the variable type to the left of the equals sign.
 
 32. >   **D**
+    >
+    >>  The nested for-each loops will iterate through the entire 2D array. Since the code is adding <code>temp</code> to the variable <code>x</code> (<code>x += temp</code>), that will result in a sum of all of the values in the 2D array being stored in <code>x</code>.
 
 33. >   **C**
+    >
+    >>  Getting the length of a 2D array gives you the number of rows. This eliminates answers (A) and (B). You need to access an element in a row of the 2D array and get its length to determine the number of columns. You can do this by putting <code>myArray[0].length</code> or <code>myArray[row].length</code>.
 
 34. >   **B**
+    >
+    >>  When you are creating a class that is a subclass of another class you need to use the <code>extends</code> keyword. This eliminates answers (A), (C), and (E). You always put the name of the current class directly after the keyword <code>class</code>, which eliminates answer (D).
 
 35. >   **A**
+    >
+    >>  When declaring a constructor, there is no return type like a normal method. Removing the void keyword would fix the error. Line 2 correctly sends the name to the superclass constructor and line 3 correctly initializes the class-level variable salary.
 
 36. >   **E**
+    >
+    >>  Abstraction is hiding the details of how something works and just focusing on what it does. For example, you may use the <code>substring</code> method quite a bit, but you don’t need to know how it actually calculates the substring you ask for in order to use it. Inheritance allows code reusability between classes. Encapsulation hides unnecessary details through the use of private variables and methods.
 
 37. >   **D**
+    >
+    >>  The <code>Object</code> class is the superclass for all other classes in Java.
 
 38. >   **C**
+    >
+    >>  The base case is the value that will be returned that stops making recursive calls. You can see that line 6 makes another recursive call so that rules out answer (D). The actual base case is when the value of the base case is set, which is why answers (B) and (E) are not correct.
 
 39. >   **E**
+    >
+    >>  Here is what the recursive calls look like:
+    >>
+    >>> <code>sum(5) = 5 + sum(4)</code>
+    >>>
+    >>> <code>sum(4) = 4 + sum(3)</code>
+    >>>
+    >>> <code>sum(3) = 3 + sum(2)</code>
+    >>>
+    >>> <code>sum(2) = 2 + sum(1)</code>
+    >>>
+    >>> <code>sum(1) = 1</code>
+    >>
+    >>  Going back through the stack of recursive calls:
+    >>
+    >>> <code>sum(2) = 2 + 1 = 3</code>
+    >>>
+    >>> <code>sum(3) = 3 + 3 = 6</code>
+    >>>
+    >>> <code>sum(4) = 4 + 6 = 10</code>
+    >>>
+    >>> <code>sum(5) = 5 + 10 = 15</code>
 
 40. >   **E**
+    >
+    >>  This problem can be solved by creating a tree of the recursive calls. Based on the tree below, you can see there are 15 recursive calls.
+    >>
+    >>      fib(5)
+    >>
+    >>>     fib(4)
+    >>>
+    >>>>    fib(3)
+    >>>>
+    >>>>>   fib(2)
+    >>>>>   
+    >>>>>>  fib(1)
+    >>>>>>
+    >>>>>>  fib(0)
+    >>>>>
+    >>>>>   fib(1)
+    >>>>
+    >>>>    fib(2)
+    >>>>
+    >>>>>   fib(1)
+    >>>>>
+    >>>>>   fib(0)
+    >>>
+    >>>     fib(3)
+
 
 # FRQ ANSWER SHEET
 
