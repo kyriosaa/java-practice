@@ -1,6 +1,6 @@
 > **APCSA - PRACTICE TEST 4 ANSWER SHEET**
 
-**THESE ANSWERS ARE VERIFIED BY THE OFFICIAL ANSWER SHEET. PLEASE CHECK IT IN THE RESOURCES FOLDER IF NEED BE**
+**THESE ANSWERS ARE VERIFIED TO BE CORRECT BUT DOUBLE CHECK IF YOU WANT**
 
 # MCQ ANSWER SHEET
 
@@ -33,16 +33,42 @@
     >>  Since result is a boolean variable, it can only store <code>true</code> or <code>false</code>. That rules out answers (A) and (D). Answer (E) might seem correct because the variable num is equal to 0 and you divide by num at the end of the expression, but there is no error because of short circuiting. Since the first part of the expression (<code>num == 0</code>) is true and the expression is combined using an or statement (<code>||</code>), the compiler does not need to check the second half of the expression since it has already determined that the expression is true.
 
 8.  >   **B**
+    >
+    >>  When you have an if/else if/else series, only one of the statements in the series will run. That eliminates options (D) and (E). When two objects have the same value, the <code>==</code> operator only returns true if they are stores in the same location in memory. Since city and president have the same value but were never set equal to each other, they are not stored in the same memory location. This eliminates option (A). Using the equals method on objects checks if they have the same value so the second statement will run.
 
 9.  >   **B**
+    >
+    >>  When you have an if/else if/else series, only one of the statement in the series will run. That means num will either go up by 1 (the if and else if statements) or be set equal to 10. This eliminates answers (A), (C), and (D). The if statement condition (<code>num < 10</code>) is true since num is equal to 0 at the start. That means that num will be increased by 1.
 
 10. >   **C**
+    >
+    >>  This question is almost equivalent to question 8. The only difference is the else if from question 8 is an if statement in question 9. We already know that the first if statement runs so num will not remain 0, eliminating answer (A). Since num is 1 when the second if statement (<code>num == 1</code>) is evaluated, num is again increased by 1 to reach 2. The else statement does not run because exactly one statement runs in an if/else pair.
 
 11. >   **E**
+    >
+    >>  We know that the first if statement runs since it is equivalent to the previous two questions, eliminating answer (A). The else if statement does not run because exactly one statement in an if/else if pair will run. Since num is equal to 1 when we get to the second if statement (<code>num == 2</code>), it will run the else statement resulting in num equaling 10 when the code is complete.
 
 12. >   **D**
+    >
+    >>  The condition of the while loop is <code>num < 10</code>. That means the loop will run as long as num is less than 10. Since num starts at 0, the loop will run at least once. This eliminates answer (A). The body of the loop increases num by 1 (<code>num++</code>) and since the loop runs 10 times (0...9) num will equal 10 when the loop ends.
 
 13. >   **C**
+    >
+    >>  The condition of the while loop is <code>num < 10</code>. That means the loop will run as long as num is less than 10. Since there is an if/else pair in the loop and num increases in the if and the else, num will eventually become 10 or greater. This eliminates answer (E). The modulus operator (%) returns the remainder of division. The <code>num % 2 == 0</code> condition is checking to see if num is divisible by 2. 
+    >>
+    >>  The variable num is divisible by 2 when it is 0, so num goes up to 1. 
+    >>
+    >>  When num is 1 it is not divisible by 2, so it is instead multiplied by 2 to go up to 2. 
+    >>
+    >>  2 is divisible by 2 so num becomes 3. 
+    >>
+    >>  3 is not divisible by 2 so num becomes 6. 
+    >>
+    >>  6 is divisible by 2 so num becomes 7. 
+    >>
+    >>  7 is not divisible by 2 so num becomes 14. 
+    >>
+    >>  Since 14 is not less than 10, the loop ends.
 
 14. >   **B**
 
@@ -170,11 +196,11 @@
 
 ------------------------------------------------------------
 
-2.  (a) The class header must look exactly the same as the header above. The public class Player part would be necessary for any class you are writing called <code>Player</code>. The extends Person part is necessary because a <code>Player</code> is a <code>Person</code>.
+2.  (a) The class header must look exactly the same as the header below. The public class Player part would be necessary for any class you are writing called <code>Player</code>. The extends Person part is necessary because a <code>Player</code> is a <code>Person</code>.
 
     The position variable **must** be declared as private and it must be a String.
 
-    The constructor (public Player), must take three parameters in the order shown above since the example shows the name, age, and position in that order. They can be called whatever you want, however. The name and age variables must be sent to the <code>Person</code> class using the super() call and they must be in the given order. The position variable should be set after the super() call.
+    The constructor (public Player), must take three parameters in the order shown below since the example shows the name, age, and position in that order. They can be called whatever you want, however. The name and age variables must be sent to the <code>Person</code> class using the super() call and they must be in the given order. The position variable should be set after the super() call.
 
     The <code>changePosition</code> method should be void and should take a String parameter. The only thing it needs to do is set the class-level position variable.
 
@@ -232,6 +258,100 @@
     > (+1) The first name is returned correctly.
 
     ##
-    
-    (b)
 
+    (b) The solution to part b is similar to part a. You still need to find the location of the space, but the substring starts at the location of the space plus 1, which will be the first letter of the last name. You could add a second parameter of <code>name.length()</code>, but it isn't required.
+
+    ```java
+    public static String getLastName(String name) {
+        int space = name.indexOf(" ");
+        String last = name.substring(space + 1);
+        return last;
+    }
+    ```
+
+    **Rubric:**
+    > (+1) The <code>indexOf</code> method is used correctly to find the first space.
+    >
+    > (+1) The <code>substring</code> method is used correctly to extract the last name.
+    >
+    > (+1) The last name is returned correctly.
+
+    ##
+
+    (c) You need to create a loop to go through the entire name. You could use a for-each loop to extract characters, but characters are not part of the AP subset. If you use them, make sure you use them correctly. With a traditional for loop, you need to extract the letter using the <code>substring</code> method and see if it equals one of the vowels. A count variable is increased by 1 each time a vowel is found.
+
+    ```java
+    public static int countVowels(String name) {
+        int count = 0;
+        for(int i = 0; i < name.length(); i++) {
+            String letter = name.substring(i, i+1);
+            if(letter.equals("a") || letter.equals("e") || letter.equals("i") || letter.equals("o") || letter.equals("u"))
+                count++;
+        }
+        return count;
+    }
+    ```
+
+    **Rubric:**
+    > (+1) A loop is used to look at each letter in the name.
+    >
+    > (+1) An if statement is used to determine if the current letter is a vowel.
+    >
+    > (+1) The correct vowel count is returned.
+
+------------------------------------------------------------
+
+4.  (a) You need to use nested for loops to iterate through the lot 2D array. You can also use <code>lot[0].length</code> in the second for loop that iterates through the columns instead of <code>lot[r].length</code>. If you find a spot that is not equal to <code>null</code> (meaning there is already a car parked there), then you should increase a counter variable by 1. That variable should be subtracted from the size of the 2D array to get the final result.
+
+    ```java
+    public int openSpaces() {
+        int taken = 0;
+        for(int r = 0; r < lot.length; r++) {
+            for(int c = 0; c < lot[r].length; c++) {
+                if(lot[r][c] != null)
+                    taken++;
+            }
+        }
+        return (lot.length * lot[0].length) - taken;
+    }
+    ```
+
+    **Rubric:**
+    > (+1) A variable is declared to keep track of the taken parking spaces.
+    >
+    > (+1) Nested for loops are used correctly to iterate through the lot 2D array.
+    >
+    > (+1) An if statement checks if the current spot in the array is not <code>null</code>.
+    >
+    > (+1) The correct number of open spaces is returned.
+
+    ##
+
+    (b) You need to use nested for loops to iterate through the lot 2D array. You can also use <code>lot[0].length</code> in the second for loop that iterates through the columns instead of <code>lot[r].length</code>. If you find a spot that is <code>null</code>, you need to set that spot to <code>newCar</code> and return <code>true</code>, in that order. There should be a <code>return false</code> at the end of the method, or in an else statement. On the real AP exam, if a question says to use a method (such as <code>openSpaces</code>) and you don't use it, you can lose points.
+
+    ```java
+    public boolean parkCar(Car newCar) {
+        if(openSpaces() > 0) {
+            for(int r = 0; r < lot.length; r++) {
+                for(int c = 0; c < lot[r].length; c++) {
+                    if(lot[r][c] == null) {
+                        lot[r][c] = newCar;
+                        return true;
+                    }
+                }
+            }
+        }
+        return false;
+    }
+    ```
+
+    **Rubric:**
+    > (+1) The <code>openSpaces</code> method is called correctly to determine if there are spaces available.
+    >
+    > (+1) Nested for loops are used correctly to iterate through the lot 2D array.
+    >
+    > (+1) An if statement checks if the current spot in the array is <code>null</code>.
+    >
+    > (+1) The <code>newCar</code> is assigned correctly to a <code>null</code> element in the 2D array.
+    >
+    > (+1) The method returns <code>true</code> if a spot was found, <code>false</code> otherwise.
