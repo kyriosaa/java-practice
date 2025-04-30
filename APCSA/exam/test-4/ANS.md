@@ -197,28 +197,8 @@
 40. >   **E**
     >
     >>  This problem can be solved by creating a tree of the recursive calls. Based on the tree below, you can see there are 15 recursive calls.
-    >>
-    >>      fib(5)
-    >>
-    >>>     fib(4)
-    >>>
-    >>>>    fib(3)
-    >>>>
-    >>>>>   fib(2)
-    >>>>>   
-    >>>>>>  fib(1)
-    >>>>>>
-    >>>>>>  fib(0)
-    >>>>>
-    >>>>>   fib(1)
-    >>>>
-    >>>>    fib(2)
-    >>>>
-    >>>>>   fib(1)
-    >>>>>
-    >>>>>   fib(0)
-    >>>
-    >>>     fib(3)
+    
+    ![alt text](https://github.com/kyriosaa/java-practice/blob/main/APCSA/exam/test-4/resources/ans-q40.png "ANS Q40")
 
 
 # FRQ ANSWER SHEET
